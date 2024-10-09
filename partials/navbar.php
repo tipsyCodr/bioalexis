@@ -68,6 +68,9 @@ $name = basename($url); ?>
 												<a href="about.php" style="width: 100%;">About</a>
 											</li>
 											<li class="hover:tw-bg-white hover:tw-text-white" style="width: 100%;">
+												<a href="dir_message.php" style="width: 100%;">Director's Message</a>
+											</li>
+											<li class="hover:tw-bg-white hover:tw-text-white" style="width: 100%;">
 												<a href="bussiness-plan.php" style="width: 100%;">Bussiness Plans</a>
 											</li>
 											<li class="hover:tw-bg-white hover:tw-text-white" style="width: 100%;">
@@ -87,6 +90,10 @@ $name = basename($url); ?>
 									</li>
 									<li class="<?php ($name == 'blogs.php') ? print ('active') : $c = 'ac'; ?>"><a
 											href="blogs.php">Blogs </a>
+									<li class="<?php ($name == 'contact.php') ? print ('active') : $c = 'ac'; ?>"><a
+											href="awards.php">Awards</a></li>
+									<li class="<?php ($name == 'contact.php') ? print ('active') : $c = 'ac'; ?>"><a
+											href="disclaimer.php">Disclaimer</a></li>
 									<li class="<?php ($name == 'contact.php') ? print ('active') : $c = 'ac'; ?>"><a
 											href="contact.php">Contact Us</a></li>
 								</ul>

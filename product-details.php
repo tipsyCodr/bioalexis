@@ -18,7 +18,11 @@ if (isset($_GET['description'])) {
     $product['description'] = $_GET['description'];
 }
 
-
+if (isset($_GET['youtube'])) {
+    $product['youtube'] = $_GET['youtube'];
+} else {
+    $product['youtube'] = "https://www.youtube.com/embed/s7n9vRFvmM0?si=Z7NKzsQoGv26rkf1";
+}
 // $product['title'] = "Alexis Vama";
 // $product['price'] = "1600";
 // $product['image'] = "plain/alexi8.png";
@@ -46,7 +50,20 @@ if (isset($_GET['description'])) {
 </head>
 
 <body>
+    <div onclick="document.querySelector('.popup_backdrop').style.display='none'"
+        class="popup_backdrop tw-z-[1000] tw-flex tw-justify-center tw-items-center tw-bg-black tw-fixed  tw-w-full tw-h-full tw-bg-opacity-50 tw-backdrop-blur-md "
+        style="display: none;">
+        <div class="popup tw-p-2  tw-bg-white tw-w-fit tw-h-fit">
+            <div class="head flex flex-row tw-justify-between tw-items-center gap-5">
+                <h2 class="tw-font-bold tw-text-black">News</h2>
+                <button class="close"
+                    onclick="document.querySelector('.popup_backdrop').style.display='none'">&times;</button>
+            </div>
+            <div id="notice" class="notice">
 
+            </div>
+        </div>
+    </div>
     <?php require_once 'partials/navbar.php' ?>
 
     <section class="section">
@@ -72,8 +89,20 @@ if (isset($_GET['description'])) {
                     <p class="tw-text-black tw-mb-4">Category: <?php echo $product['category']; ?></p>
                     <!-- <p class="tw-mb-4">Subcategory: <?php echo $product['subcategory']; ?></p> -->
                     <!-- <p class="tw-mb-4">Brand: <?php echo $product['brand']; ?></p> -->
-                    <div class="tw-flex tw-gap-5 tw-mt-8 tw-py-10">
-                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    <div class="tw-flex tw-flex-col tw-gap-5 tw-mt-8 tw-py-10">
+
+                        <div class="tw-flex tw-overflow-x-auto">
+                            <div class="tw-flex tw-gap-3 tw-whitespace-nowrap">
+                                <img width="300px" height="200"
+                                    onclick="openVideo('<?php echo $product['youtube']; ?>');" <?php
+                                       $video_id = substr($product['youtube'], strpos($product['youtube'], 'embed/') + 6);
+                                       ?>
+                                    src="https://img.youtube.com/vi/<?php echo $video_id; ?>/hqdefault.jpg"
+                                    alt="<?php echo $product['title']; ?> thumbnail" />
+                            </div>
+                        </div>
+
+                        <!-- <a href="#" class="btn btn-primary">Add to Cart</a> -->
                         <a href="https://wa.me/+918062245974?text=Hi!%20I'm%20interested%20in%20your%20product%20<?php echo $product['title']; ?> "
                             target="_blank" class="btn btn-success tw-p-5">
                             <i class="fa fa-whatsapp" aria-hidden="true"></i> Chat on WhatsApp
@@ -102,6 +131,18 @@ if (isset($_GET['description'])) {
             'resizeDuration': 200,
             'wrapAround': true
         })
+
+        function openVideo(url) {
+            // var url = "https://www.youtube.com/watch?v=" + url.src.split("/")[3];
+            // window.open(url, '_blank');
+            var embed = `
+            <iframe src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            `;
+            // $('#notice').append(embed);
+            $('#notice').css('display', 'block');
+            console.log(url);
+        }
     </script>
 </body>
 

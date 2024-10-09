@@ -88,6 +88,197 @@ require_once('couch/cms.php'); ?>
 
 	<!-- product Category section ends -->
 
+
+	<!-- Joining Product Section -->
+	<section class="section" style="padding-top:20px"
+		style="background-image:url('img/bg-featured.jpg');background-repeat: no-repeat;	background-attachment: fixed;">
+		<style>
+			.p-img img:hover {
+				opacity: 0.5;
+			}
+		</style>
+		<div class="">
+			<div class=" wrapper">
+				<div class="head">
+					<h2 class="tw-font-bold tw-text-3xl text-center tw-py-5">Joining Products</h2>
+				</div>
+				<div class="tw-flex tw-gap-10 flex-col tw-mx-auto tw-justify-center tw-items-center md:tw-flex-row">
+					<div
+						class="item tw-flex tw-flex-col sm:tw-flex-row tw-flex-wrap tw-gap-3 tw-justify-center tw-items-center">
+						<?php
+						$products = array(
+							array('name' => 'Alexis Trufit', 'price' => '1600', 'img' => 'alexis trufit.jpg', 'category' => 'Personal Care', 'description' => 'Alexis Trufit is a dietary supplement in the form of a tablet that is designed for women. To use, simply drop one tablet into a glass of water, watch it fizz, and then drink. Alexis Trufit is a convenient and easy way to support your overall health and wellness. The tablets are easy to take on-the-go, and can be taken at any time of day. The unique formula of Alexis Trufit is designed to provide a range of benefits, including supporting energy and vitality, and promoting a healthy metabolism. Alexis Trufit is a great choice for women who are looking for a convenient and effective way to support their health and wellness.'),
+							array('name' => 'Mr. Alexis ', 'price' => '933', 'img' => 'mr_alexis.jpg', 'category' => 'Personal Care', 'description' => 'Mr. Alexis is a dietary supplement in the form of a tablet that is designed for men. To use, simply drop one tablet into a glass of water, watch it fizz, and then drink. Mr. Alexis is a convenient and easy way to support your overall health and wellness. The tablets are easy to take on-the-go, and can be taken at any time of day. The unique formula of Mr. Alexis is designed to provide a range of benefits, including supporting energy and vitality, and promoting a healthy metabolism. Mr. Alexis is a great choice for men who are looking for a convenient and effective way to support their health and wellness.'),
+							array('name' => 'Alexis Vama', 'price' => '1350', 'img' => 'alexi8.png', 'category' => 'Personal Care', 'description' => 'Alexis Vama is a dietary supplement in the form of a tablet that is designed for women. To use, simply drop one tablet into a glass of water, watch it fizz, and then drink. Alexis Vama is a convenient and easy way to support your overall health and wellness. The tablets are easy to take on-the-go, and can be taken at any time of day. The unique formula of Alexis Vama is designed to provide a range of benefits, including supporting energy and vitality, and promoting a healthy metabolism. Alexis Vama is a great choice for women who are looking for a convenient and effective way to support their health and wellness.'),
+						);
+						foreach ($products as $product) {
+							?>
+
+							<div class="item rounded tw-p-2 tw-shadow  tw-min-w-[300px] tw-bg-white tw-bg-opacity-70 tw-transition tw-duration-300 hover:tw-bg-opacity-100"
+								onclick="location.href='product-details.php?title=<?php echo $product['name']; ?>&img=<?php echo $product['img']; ?>&description=<?php echo $product['description']; ?>&price=<?php echo $product['price']; ?>&category=<?php echo $product['category']; ?>'">
+								<div class="p-img tw-p-2 tw-relative">
+									<img class="tw-object-contain tw-w-full hover:tw-bg-opacity-40 tw-object-center"
+										style='height: 200px;' src="img/products/plain/<?php echo $product['img']; ?>"
+										height="200" alt="">
+									<div
+										class="tw-absolute tw-inset-0 tw-flex tw-gap-5 tw-items-center tw-justify-center tw-opacity-0 hover:tw-opacity-100 tw-transition tw-duration-300">
+										<div class="">
+											<a href="#" class="tw-bg-white tw-rounded-full tw-p-2 tw-shadow ">
+												<i style="" class="tw-text-xl icofont-eye"></i>
+											</a>
+										</div>
+										<div class="">
+											<a href="#" class="tw-bg-white tw-rounded-full tw-p-2 tw-shadow">
+												<i class="tw-text-xl icofont-shopping-cart"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="text tw-text-center">
+									<p class="tw-font-normal tw-text-black tw-text-md tw-text-center">
+										<?php echo $product['name']; ?>
+									</p>
+									<p class="tw-font-bold tw-text-green-600  tw-text-sm tw-text-center">
+										Rs. <?php echo $product['price']; ?>
+									</p>
+									<small class=" tw-mx-auto tw-text-center tw-w-full">Inclusive of all taxes</small>
+								</div>
+							</div>
+							<?php
+						}
+						?>
+
+					</div>
+
+				</div>
+
+			</div>
+
+	</section>
+	<!-- Joining Product Section ends -->
+
+	<!-- Product Testimony -->
+	<section class="section" style="padding-top:20px"
+		style="background-image:url('img/bg-featured.jpg');background-repeat: no-repeat;	background-attachment: fixed;">
+		<style>
+			.p-img img:hover {
+				opacity: 0.5;
+			}
+		</style>
+		<div class="">
+			<div class=" wrapper ">
+				<div class="head">
+					<h2 class="tw-font-bold tw-text-3xl text-center tw-py-5">Products Testimonies</h2>
+				</div>
+				<?php
+				$testimonials = array(
+					array('author' => 'Rahul Kumar', 'testimonial' => 'I have been using Alexis Vama for the past year and I have seen a significant improvement in my overall health and vitality. The product is easy to use and the customer service is top notch.'),
+					array('author' => 'Priya Singh', 'testimonial' => 'I was a bit skeptical about trying Alexis Vama at first, but after using it for a few months I noticed a huge difference in my energy levels. I feel more confident and motivated to take on the day.'),
+					array('author' => 'Vikram Singh', 'testimonial' => 'I have tried many different dietary supplements in the past, but none of them have delivered the same level of results as Alexis Vama. The product is easy to use and the benefits are undeniable.'),
+					array('author' => 'Anjali Yadav', 'testimonial' => 'I have been using Alexis Vama for the past six months and I have seen a significant improvement in my skin and hair health. The product is easy to use and the customer service is very helpful.'),
+					array('author' => 'Rajeev Kumar', 'testimonial' => 'I was a bit hesitant to try Alexis Vama at first, but after using it for a few months I noticed a huge improvement in my overall health and well being. The product is easy to use and the benefits are undeniable.')
+				);
+				?>
+				<div class="scroll-container">
+					<?php
+					foreach ($testimonials as $testimonial) {
+						?>
+						<div class="card">
+							<div class="card-body text-center">
+								<img src="img/author2.jpg"
+									class="tw-h-[50px] tw-w-[50px] tw-rounded-full tw-mr-3 tw-mb-3 tw-inline-block"
+									alt="profile image">
+								<h5 class="card-title"><?php echo $testimonial['author']; ?></h5>
+								<?php
+								if (empty($testimonial['testimonial']) || is_null($testimonial['testimonial'])) {
+									$testimonial['testimonial'] = 'No testimonial available.';
+								}
+								?>
+								<p class="tw-block card-text tw-max-h-[50px] tw-overflow-hidden">
+									<?php echo $testimonial['testimonial']; ?>
+								</p>
+								<!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+							</div>
+						</div>
+						<?php
+					}
+					?>
+				</div>
+				<?php
+				$videos = array(
+					array('id' => '8s7n9vRFvmM0', 'title' => 'Alexis Vama - Benefits'),
+					array('id' => 's7n9vRFvmM0', 'title' => 'Alexis Vama - Product Review'),
+					array('id' => 'Ys7n9vRFvmM0', 'title' => 'Alexis Vama - Customer Testimonial'),
+					array('id' => 'Ns7n9vRFvmM0', 'title' => 'Alexis Vama - How to use'),
+					array('id' => 'gs7n9vRFvmM0', 'title' => 'Alexis Vama - Unboxing')
+				);
+				?>
+				<style>
+					.scroll-container {
+						display: flex;
+						overflow-x: auto;
+						scroll-behavior: smooth;
+						/* Optional, for smooth scrolling */
+						gap: 16px;
+						/* Optional, space between cards */
+						padding: 10px;
+						/* Optional, add padding */
+					}
+
+					.card {
+						min-width: 200px;
+						max-width: 332px;
+						/* Ensure each card has a minimum width */
+						height: 210px;
+						/* Set height of each card */
+						background-color: #f0f0f0;
+						/* Card styling */
+						flex-shrink: 0;
+						/* Prevent cards from shrinking */
+						border-radius: 8px;
+						padding: 20px;
+						box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+					}
+				</style>
+				<!-- Video Testimony section  -->
+				<section class="section">
+					<h2 class="tw-font-bold tw-text-3xl text-center tw-py-5">Videos Testimonies</h2>
+
+					<div class="">
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<div class="">
+									<div class="scroll-container">
+										<?php
+										foreach ($videos as $video) {
+											?>
+											<div class="card">
+												<iframe width="300" height="150"
+													src="https://www.youtube.com/embed/<?php echo $video['id']; ?>"
+													title="<?php echo $video['title']; ?>" frameborder="0"
+													allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+													allowfullscreen></iframe>
+												<div class="tw-text-center tw-py-2">
+													By: <?php echo $video['title']; ?>
+												</div>
+											</div>
+											<?php
+										}
+										?>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			</div>
+
+	</section>
+
+	<!-- Product Testimony Ends -->
+
 	<!-- Featured Product section  -->
 	<section class="section"
 		style="background-image:url('img/bg-featured.jpg');background-repeat: no-repeat;	background-attachment: fixed;">
