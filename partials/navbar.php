@@ -71,7 +71,7 @@ $name = basename($url); ?>
 												<a href="dir_message.php" style="width: 100%;">Director's Message</a>
 											</li>
 											<li class="hover:tw-bg-white hover:tw-text-white" style="width: 100%;">
-												<a href="bussiness-plan.php" style="width: 100%;">Bussiness Plans</a>
+												<a href="bussiness-plan.php" style="width: 100%;">Bussiness Plan</a>
 											</li>
 											<li class="hover:tw-bg-white hover:tw-text-white" style="width: 100%;">
 												<a href="terms.php" style="width: 100%;">Terms & Conditions</a>

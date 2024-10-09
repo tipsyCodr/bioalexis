@@ -81,6 +81,174 @@
           </ol>
         </div>
       </div>
+
+
+
+      <!-- Start Feautes -->
+      <section class=" Feautess section" style="padding:0; padding-top: 20px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="section-title">
+                <h2>Transforming Lives through Wellness and Opportunity</h2>
+                <p style="text-align: justify">Bioalexis is a Direct selling company
+                  founded in November 2021
+                  based in Raipur C.G. Founded on the principle of changing lives
+                  through its remarkable
+                  wellness products and Proven compensation income plan. With
+                  extensive experience as network
+                  leaders of our board of directors and their innovative spirit
+                  and visionary leadership,
+                  opening the doors of opportunity and prosperity by empowering
+                  distributors to achieve
+                  financial independence and economic stability by maximizing the
+                  wealth of the market through
+                  our products and services.
+                </p>
+              </div>
+            </div>
+          </div>
+
+      </section>
+      <!--/ End Feautes -->
+
+
+
+      <!-- Start Why choose -->
+      <section class="why-choose section" style="padding:0; padding-top: 40px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="section-title">
+                <h2>Our goal: transforming
+                  lives, globally, through financial freedom and limitless growth.</h2>
+                <!-- <img src="img/section-img.png" alt="#"> -->
+                <p>
+                  Empowering entrepreneurs, one connection at a time, through
+                  innovative strategies and unstoppable teamwork
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-12">
+              <!-- Start Choose Left -->
+              <div class="choose-left">
+                <h3>Our Mission</h3>
+
+
+                <p style="color:black">Our methodology begins with our lasting mission of asserting our purpose
+                  as a company and
+                  serves a benchmark for our actions and decisions.</p>
+                <ol style="padding-left: 20px;list-style: disc;color:black">
+                  <li>To empower the world.</li>
+                  <li>To encourage confidence, optimism and happiness.</li>
+                  <li>To create worth and make a distinction.</li>
+                </ol>
+
+                <h3>Our Vision</h3>
+                <p style="color:black">Our vision serves as the outline of our methodology and directs every
+                  aspect of our business
+                  by unfolding what we need to achieve in order to continue sustainable and quality growth.
+                </p>
+                <ol style="padding-left: 20px;color:black">
+                  <li><b>Distributors</b>: To have a great place to work where distributors are inspired to be
+                    the
+                    best that they can be.</li>
+                  <li><b>Products</b>: Bring to the world a portfolio of quality revolutionary products that
+                    anticipate and satisfy people’s health desires and needs.</li>
+                  <li><b>Partners</b>: Nurture a winning network of customers and distributors, together we
+                    creat
+                    joint,long term value.</li>
+                  <li><b>Efficiency</b>: Be a highly exciting and dynamic organization that will be flexible
+                    to
+                    furnish the trending needs and desires of the market..</li>
+                </ol>
+
+
+              </div>
+              <!-- End Choose Left -->
+            </div>
+            <div class="col-lg-6 col-12">
+              <!-- Start Choose Rights -->
+              <div class="choose-right">
+                <div class="video-image">
+                  <!-- Video Animation -->
+                  <div class="promo-video">
+                    <div class="waves-block">
+                      <div class="waves wave-1"></div>
+                      <div class="waves wave-2"></div>
+                      <div class="waves wave-3"></div>
+                    </div>
+                  </div>
+                  <!--/ End Video Animation -->
+                  <a href="https://www.youtube.com/watch?v=De_-bXyBBOc" class="video video-popup mfp-iframe"><i
+                      class="fa fa-play"></i></a>
+                </div>
+              </div>
+              <!-- End Choose Rights -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Start Blog Area -->
+      <section class="blog section" id="blog">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="section-title">
+                <h2>Our Creative Talents</h2>
+                <p>Great things in business are never done by one person. They’re done by a team of people.
+                  We have that dynamic group of peoples</p>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-12">
+              <!-- Single Blog -->
+              <div class="single-news">
+                <div class="news-head"><a href="#">
+                    <img src="img/tarun_yadav.jpg" alt="#"></a>
+                </div>
+                <div class="news-body">
+                  <div class="news-content">
+
+                    <h2><a style="" href="#">
+                        Tarun Yadav
+                      </a></h2>
+                    <p class="text">
+                      Director
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+              <!-- Single Blog -->
+              <div class="single-news">
+                <div class="news-head"><a href="#">
+                    <img style="max-height:360px;" src="img/deepak_dewangan.jpg" alt="#"></a>
+                </div>
+                <div class="news-body">
+                  <div class="news-content">
+
+                    <h2><a style="" href="#">
+                        Deepak Dewangan
+                      </a></h2>
+                    <p class="text">
+                      Director
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Single Blog -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Blog Area -->
       <div class="contact-info">
         <div class="row">
           <!-- single-info -->

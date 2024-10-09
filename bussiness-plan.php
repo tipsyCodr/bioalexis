@@ -18,11 +18,11 @@
             <div class="bread-inner">
                 <div class="row">
                     <div class="col-12">
-                        <h2>Business Plans</h2>
+                        <h2>Business Plan</h2>
                         <ul class="bread-list">
                             <li><a href="index.html">Home</a></li>
                             <li><i class="icofont-simple-right"></i></li>
-                            <li class="active">Business Plans</li>
+                            <li class="active">Business Plan</li>
                         </ul>
                     </div>
                 </div>

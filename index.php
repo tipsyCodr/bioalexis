@@ -156,7 +156,33 @@ require_once('couch/cms.php'); ?>
 
 	</section>
 	<!-- Joining Product Section ends -->
+	<style>
+		.scroll-container {
+			display: flex;
+			overflow-x: auto;
+			scroll-behavior: smooth;
+			/* Optional, for smooth scrolling */
+			gap: 16px;
+			/* Optional, space between cards */
+			padding: 10px;
+			/* Optional, add padding */
+		}
 
+		.card {
+			min-width: 200px;
+			max-width: 332px;
+			/* Ensure each card has a minimum width */
+			height: 210px;
+			/* Set height of each card */
+			background-color: #f0f0f0;
+			/* Card styling */
+			flex-shrink: 0;
+			/* Prevent cards from shrinking */
+			border-radius: 8px;
+			padding: 20px;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		}
+	</style>
 	<!-- Product Testimony -->
 	<section class="section" style="padding-top:20px"
 		style="background-image:url('img/bg-featured.jpg');background-repeat: no-repeat;	background-attachment: fixed;">
@@ -213,33 +239,7 @@ require_once('couch/cms.php'); ?>
 					array('id' => 'gs7n9vRFvmM0', 'title' => 'Alexis Vama - Unboxing')
 				);
 				?>
-				<style>
-					.scroll-container {
-						display: flex;
-						overflow-x: auto;
-						scroll-behavior: smooth;
-						/* Optional, for smooth scrolling */
-						gap: 16px;
-						/* Optional, space between cards */
-						padding: 10px;
-						/* Optional, add padding */
-					}
 
-					.card {
-						min-width: 200px;
-						max-width: 332px;
-						/* Ensure each card has a minimum width */
-						height: 210px;
-						/* Set height of each card */
-						background-color: #f0f0f0;
-						/* Card styling */
-						flex-shrink: 0;
-						/* Prevent cards from shrinking */
-						border-radius: 8px;
-						padding: 20px;
-						box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-					}
-				</style>
 				<!-- Video Testimony section  -->
 				<section class="section">
 					<h2 class="tw-font-bold tw-text-3xl text-center tw-py-5">Videos Testimonies</h2>
@@ -337,9 +337,9 @@ require_once('couch/cms.php'); ?>
 									<p class="tw-font-normal tw-text-black tw-text-md tw-text-center">
 										<?php echo $product['name']; ?>
 									</p>
-									<p class="tw-font-bold tw-text-green-600  tw-text-sm tw-text-center">
+									<!-- <p class="tw-font-bold tw-text-green-600  tw-text-sm tw-text-center">
 										Rs. <?php echo $product['price']; ?>
-									</p>
+									</p> -->
 									<small class=" tw-mx-auto tw-text-center tw-w-full">Inclusive of all taxes</small>
 								</div>
 							</div>
@@ -356,348 +356,118 @@ require_once('couch/cms.php'); ?>
 	</section>
 	<!-- Featured Product section ends -->
 
-	<!-- Start Feautes -->
-	<section class=" Feautess section" style="padding:0; padding-top: 20px;">
+	<section class="Feautes section">
 		<div class="container">
+			<h2 class="text-center"> Now is the time to do something! Becoming a distributor is simple and easy
+				awesome
+			</h2>
 			<div class="row">
-				<div class="col-lg-12">
-					<div class="section-title">
-						<h2>Transforming Lives through Wellness and Opportunity</h2>
-						<p style="text-align: justify">Bioalexis is a Direct selling company
-							founded in November 2021
-							based in Raipur C.G. Founded on the principle of changing lives
-							through its remarkable
-							wellness products and Proven compensation income plan. With
-							extensive experience as network
-							leaders of our board of directors and their innovative spirit
-							and visionary leadership,
-							opening the doors of opportunity and prosperity by empowering
-							distributors to achieve
-							financial independence and economic stability by maximizing the
-							wealth of the market through
-							our products and services.
-						</p>
-					</div>
-				</div>
-			</div>
-
-	</section>
-	<!--/ End Feautes -->
-
-
-	<!-- Start Why choose -->
-	<section class="why-choose section" style="padding:0; padding-top: 40px;">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="section-title">
-						<h2>Our goal: transforming
-							lives, globally, through financial freedom and limitless growth.</h2>
-						<!-- <img src="img/section-img.png" alt="#"> -->
-						<p>
-							Empowering entrepreneurs, one connection at a time, through
-							innovative strategies and unstoppable teamwork
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-6 col-12">
-					<!-- Start Choose Left -->
-					<div class="choose-left">
-						<h3>Our Mission</h3>
-
-
-						<p style="color:black">Our methodology begins with our lasting mission of asserting our purpose
-							as a company and
-							serves a benchmark for our actions and decisions.</p>
-						<ol style="padding-left: 20px;list-style: disc;color:black">
-							<li>To empower the world.</li>
-							<li>To encourage confidence, optimism and happiness.</li>
-							<li>To create worth and make a distinction.</li>
-						</ol>
-
-						<h3>Our Vision</h3>
-						<p style="color:black">Our vision serves as the outline of our methodology and directs every
-							aspect of our business
-							by unfolding what we need to achieve in order to continue sustainable and quality growth.
-						</p>
-						<ol style="padding-left: 20px;color:black">
-							<li><b>Distributors</b>: To have a great place to work where distributors are inspired to be
-								the
-								best that they can be.</li>
-							<li><b>Products</b>: Bring to the world a portfolio of quality revolutionary products that
-								anticipate and satisfy people’s health desires and needs.</li>
-							<li><b>Partners</b>: Nurture a winning network of customers and distributors, together we
-								creat
-								joint,long term value.</li>
-							<li><b>Efficiency</b>: Be a highly exciting and dynamic organization that will be flexible
-								to
-								furnish the trending needs and desires of the market..</li>
-						</ol>
-
-
-					</div>
-					<!-- End Choose Left -->
-				</div>
-				<div class="col-lg-6 col-12">
-					<!-- Start Choose Rights -->
-					<div class="choose-right">
-						<div class="video-image">
-							<!-- Video Animation -->
-							<div class="promo-video">
-								<div class="waves-block">
-									<div class="waves wave-1"></div>
-									<div class="waves wave-2"></div>
-									<div class="waves wave-3"></div>
-								</div>
-							</div>
-							<!--/ End Video Animation -->
-							<a href="https://www.youtube.com/watch?v=De_-bXyBBOc"
-								class="video video-popup mfp-iframe"><i class="fa fa-play"></i></a>
+				<div class="col-lg-4 col-12">
+					<!-- Start Single features -->
+					<div class="single-features">
+						<div class="signle-icon">
+							<i class="icofont-user"></i>
 						</div>
+						<h3>Register Yourself</h3>
+						<p>Register yourself as a Distributor !</p>
 					</div>
-					<!-- End Choose Rights -->
+					<!-- End Single features -->
 				</div>
+				<div class="col-lg-4 col-12">
+					<!-- Start Single features -->
+					<div class="single-features">
+						<div class="signle-icon">
+							<i class="icofont-cart"></i>
+						</div>
+						<h3>Buy Products</h3>
+						<p>Buy Products at DP Price </p>
+					</div>
+					<!-- End Single features -->
+				</div>
+				<div class="col-lg-4 col-12">
+					<!-- Start Single features -->
+					<div class="single-features last">
+						<div class="signle-icon">
+							<i class="icofont-money"></i>
+						</div>
+						<h3>Sell and earn</h3>
+						<p> Sell and Earn Extra Income </p>
+					</div>
+					<!-- End Single features -->
+				</div>
+
 			</div>
 		</div>
 	</section>
-	< <!-- Start Blog Area -->
-		<section class="blog section" id="blog">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="section-title">
-							<h2>Our Creative Talents</h2>
-							<p>Great things in business are never done by one person. They’re done by a team of people.
-								We have that dynamic group of peoples</p>
-						</div>
-					</div>
-				</div>
-				<div class="row justify-content-center">
-					<div class="col-lg-4 col-md-6 col-12">
-						<!-- Single Blog -->
-						<div class="single-news">
-							<div class="news-head"><a href="#">
-									<img src="img/tarun_yadav.jpg" alt="#"></a>
-							</div>
-							<div class="news-body">
-								<div class="news-content">
 
-									<h2><a style="" href="#">
-											Tarun Yadav
-										</a></h2>
-									<p class="text">
-										Director
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-12">
-						<!-- Single Blog -->
-						<div class="single-news">
-							<div class="news-head"><a href="#">
-									<img style="max-height:360px;" src="img/deepak_dewangan.jpg" alt="#"></a>
-							</div>
-							<div class="news-body">
-								<div class="news-content">
-
-									<h2><a style="" href="#">
-											Deepak Dewangan
-										</a></h2>
-									<p class="text">
-										Director
-									</p>
-								</div>
-							</div>
-						</div>
-						<!-- End Single Blog -->
+	<!-- Start Appointment -->
+	<section class="appointment">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="section-title">
+						<h2>Got Questions? Reach Out for our Guidance!</h2>
 					</div>
 				</div>
 			</div>
-		</section>
-		<!-- End Blog Area -->
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-12">
+					<form class="form" action="#">
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-12">
+								<div class="form-group">
+									<input name="name" type="text" placeholder="Name">
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-12">
+								<div class="form-group">
+									<input name="email" type="email" placeholder="Email">
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-12">
+								<div class="form-group">
+									<input name="phone" type="text" placeholder="Phone">
+								</div>
+							</div>
 
-		<!-- Start Video Area -->
-		<section class="video-section">
-			<div class="container">
-				<div class="">
-					<div class="tw-flex tw-flex-col sm:tw-flex-row tw-gap-10">
-						<div class="video-content">
-							<div class="video-image">
-								<iframe class="w-full" width="560" height="315"
-									src="https://www.youtube.com/embed/De_-bXyBBOc" title="YouTube video player"
-									frameborder="0"
-									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-									allowfullscreen></iframe>
+							<div class="col-lg-6 col-md-6 col-12">
+								<div class="form-group">
+									<input type="text" placeholder="Date" id="datepicker">
+								</div>
 							</div>
-							<div class="video-text text-center">
-								<h2 class="text-white">Watch Video</h2>
-								<a href="https://www.youtube.com/watch?v=De_-bXyBBOc"
-									class="video video-popup mfp-iframe"><i class="fa fa-play text-white"></i></a>
+							<div class="col-lg-12 col-md-12 col-12">
+								<div class="form-group">
+									<textarea name="message" placeholder="Write Your Message Here....."></textarea>
+								</div>
 							</div>
 						</div>
-						<div class="video-content">
-							<div class="video-image">
-								<iframe class="w-full" width="560" height="315"
-									src="https://www.youtube.com/embed/De_-bXyBBOc" title="YouTube video player"
-									frameborder="0"
-									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-									allowfullscreen></iframe>
+						<div class="row">
+							<div class="col-lg-5 col-md-4 col-12">
+								<div class="form-group">
+									<div class="button">
+										<button type="submit" class="btn">Send</button>
+									</div>
+								</div>
 							</div>
-							<div class="video-text text-center">
-								<h2 class="text-white">Watch Video</h2>
-								<a href="https://www.youtube.com/watch?v=De_-bXyBBOc"
-									class="video video-popup mfp-iframe"><i class="fa fa-play text-white"></i></a>
+							<div class="col-lg-7 col-md-8 col-12">
+								<p>( We will be confirm by an Text Message )</p>
 							</div>
 						</div>
-					</div>
+					</form>
 				</div>
-			</div>
-		</section>
-		<!-- End Video Area -->
-
-		<section class="Feautes section">
-			<div class="container">
-				<h2 class="text-center"> Now is the time to do something! Becoming a distributor is simple and easy
-					awesome
-				</h2>
-				<div class="row">
-					<div class="col-lg-4 col-12">
-						<!-- Start Single features -->
-						<div class="single-features">
-							<div class="signle-icon">
-								<i class="icofont-user"></i>
-							</div>
-							<h3>Register Yourself</h3>
-							<p>Register yourself as a Distributor !</p>
-						</div>
-						<!-- End Single features -->
-					</div>
-					<div class="col-lg-4 col-12">
-						<!-- Start Single features -->
-						<div class="single-features">
-							<div class="signle-icon">
-								<i class="icofont-cart"></i>
-							</div>
-							<h3>Buy Products</h3>
-							<p>Buy Products at DP Price </p>
-						</div>
-						<!-- End Single features -->
-					</div>
-					<div class="col-lg-4 col-12">
-						<!-- Start Single features -->
-						<div class="single-features last">
-							<div class="signle-icon">
-								<i class="icofont-money"></i>
-							</div>
-							<h3>Sell and earn</h3>
-							<p> Sell and Earn Extra Income </p>
-						</div>
-						<!-- End Single features -->
-					</div>
-
-				</div>
-			</div>
-		</section>
-
-
-		<!-- Start Appointment -->
-		<section class="appointment">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="section-title">
-							<h2>Got Questions? Reach Out for our Guidance!</h2>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-12 col-md-12 col-12">
-						<form class="form" action="#">
-							<div class="row">
-								<div class="col-lg-6 col-md-6 col-12">
-									<div class="form-group">
-										<input name="name" type="text" placeholder="Name">
-									</div>
-								</div>
-								<div class="col-lg-6 col-md-6 col-12">
-									<div class="form-group">
-										<input name="email" type="email" placeholder="Email">
-									</div>
-								</div>
-								<div class="col-lg-6 col-md-6 col-12">
-									<div class="form-group">
-										<input name="phone" type="text" placeholder="Phone">
-									</div>
-								</div>
-
-								<div class="col-lg-6 col-md-6 col-12">
-									<div class="form-group">
-										<input type="text" placeholder="Date" id="datepicker">
-									</div>
-								</div>
-								<div class="col-lg-12 col-md-12 col-12">
-									<div class="form-group">
-										<textarea name="message" placeholder="Write Your Message Here....."></textarea>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-lg-5 col-md-4 col-12">
-									<div class="form-group">
-										<div class="button">
-											<button type="submit" class="btn">Send</button>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-7 col-md-8 col-12">
-									<p>( We will be confirm by an Text Message )</p>
-								</div>
-							</div>
-						</form>
-					</div>
-					<!-- <div class="col-lg-6 col-md-12 ">
+				<!-- <div class="col-lg-6 col-md-12 ">
 						<div class="appointment-image">
 							<img src="img/contact-img.png" alt="#">
 						</div>
 					</div> -->
-				</div>
 			</div>
-		</section>
-		<!-- End Appointment -->
+		</div>
+	</section>
+	<!-- End Appointment -->
 
-		<!-- Start Newsletter Area -->
-		<section class="newsletter section">
-			<div class="container">
-				<div class="row ">
-					<div class="col-lg-6  col-12">
-						<!-- Start Newsletter Form -->
-						<div class="subscribe-text ">
-							<h6>Sign up for newsletter</h6>
-							<p class="">Subscribe for our newsletter and always stay up to date<br> </p>
-						</div>
-						<!-- End Newsletter Form -->
-					</div>
-					<div class="col-lg-6  col-12">
-						<!-- Start Newsletter Form -->
-						<div class="subscribe-form ">
-							<form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
-								<input name="EMAIL" placeholder="Your email address" class="common-input"
-									onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'"
-									required="" type="email">
-								<button class="btn">Subscribe</button>
-							</form>
-						</div>
-						<!-- End Newsletter Form -->
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- /End Newsletter Area -->
-		<?php require_once 'partials/footer.php'; ?>
-		<?php require_once 'partials/scripts.php'; ?>
+	<!-- /End Newsletter Area -->
+	<?php require_once 'partials/footer.php'; ?>
+	<?php require_once 'partials/scripts.php'; ?>
 </body>
 
 </html>
