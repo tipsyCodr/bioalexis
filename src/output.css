@@ -604,10 +604,6 @@ video {
   display: flex;
 }
 
-.tw-h-\[80vh\] {
-  height: 80vh;
-}
-
 .tw-h-fit {
   height: -moz-fit-content;
   height: fit-content;
@@ -644,10 +640,6 @@ video {
 
 .tw-flex-wrap {
   flex-wrap: wrap;
-}
-
-.tw-items-start {
-  align-items: flex-start;
 }
 
 .tw-items-center {
@@ -750,6 +742,11 @@ video {
   line-height: 2.25rem;
 }
 
+.tw-text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .tw-text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -758,11 +755,6 @@ video {
 .tw-text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.tw-text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .tw-font-bold {
@@ -775,6 +767,10 @@ video {
 
 .tw-font-semibold {
   font-weight: 600;
+}
+
+.tw-uppercase {
+  text-transform: uppercase;
 }
 
 .tw-text-black {

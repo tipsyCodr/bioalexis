@@ -78,24 +78,17 @@
 							<a href="<cms:show gg_image />" data-lg-size="1600-2400">
 								<img alt="img1" src="<cms:show gg_image />" />
 							</a>
-							<!-- style="height:200px;width:200px"  -->
+
 						</div>
 						<div class="desc">
 							<p class="" style="width:204px"><b class='clamp-text' style="font-size:1.5rem ">
 									<cms:show k_page_title />
 								</b></p>
-							<!-- <p class="clamp-text"><b>Botanical Name:</b>
-								<cms:show botanical_name />
-							</p> -->
+
 							<p style="padding-top: 10px;font-size:.9	rem"><b>Price: </b>₹
 								<cms:show price />
 							</p>
-							<!-- <p><b>Min. Order Quantity:</b>
-								<cms:show min_ord_qty /> pcs
-							</p>
-							<p><b>Soil Specific:</b>
-								<cms:show soil_specific />
-							</p> -->
+
 							<a aria-label="Chat " target="_blank"
 								href="https://wa.me/+918062245974?text=Hi!%20I'm%20interested%20in%20your%20product%20<cms:show k_page_title />">
 								<img alt="Chat " src="img/WhatsAppButtonGreenMedium.svg"
