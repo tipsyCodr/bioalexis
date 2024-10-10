@@ -49,3 +49,6 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="css/responsive.css">
 <link rel="stylesheet" href="src/output.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/css/lightbox.min.css"
+	integrity="sha512-xtV3HfYNbQXS/1R1jP53KbFcU9WXiSA1RFKzl5hRlJgdOJm4OxHCWYpskm6lN0xp0XtKGpAfVShpbvlFH3MDAA=="
+	crossorigin="anonymous" referrerpolicy="no-referrer" />

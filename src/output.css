@@ -574,9 +574,23 @@ video {
   z-index: 1000;
 }
 
+.tw-m-10 {
+  margin: 2.5rem;
+}
+
 .tw-mx-10 {
   margin-left: 2.5rem;
   margin-right: 2.5rem;
+}
+
+.tw-mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.tw-mx-7 {
+  margin-left: 1.75rem;
+  margin-right: 1.75rem;
 }
 
 .tw-mx-auto {
@@ -589,14 +603,14 @@ video {
   margin-bottom: 2rem;
 }
 
-.tw-mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+.tw-my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
-.tw-mx-7 {
-  margin-left: 1.75rem;
-  margin-right: 1.75rem;
+.tw-mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .tw-mb-3 {
@@ -635,6 +649,10 @@ video {
   display: flex;
 }
 
+.tw-grid {
+  display: grid;
+}
+
 .tw-h-\[180px\] {
   height: 180px;
 }
@@ -650,6 +668,10 @@ video {
 
 .tw-h-full {
   height: 100%;
+}
+
+.tw-h-\[200px\] {
+  height: 200px;
 }
 
 .tw-max-h-\[50px\] {
@@ -681,12 +703,28 @@ video {
   min-width: 300px;
 }
 
+.tw-max-w-\[300px\] {
+  max-width: 300px;
+}
+
+.tw-max-w-\[240px\] {
+  max-width: 240px;
+}
+
+.tw-max-w-\[200px\] {
+  max-width: 200px;
+}
+
 .tw-flex-initial {
   flex: 0 1 auto;
 }
 
 .tw-list-disc {
   list-style-type: disc;
+}
+
+.tw-grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .tw-flex-col {
@@ -757,6 +795,10 @@ video {
   border-radius: 9999px;
 }
 
+.tw-rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .tw-bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -796,6 +838,11 @@ video {
      object-fit: contain;
 }
 
+.tw-object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .tw-object-center {
   -o-object-position: center;
      object-position: center;
@@ -807,6 +854,18 @@ video {
 
 .tw-p-5 {
   padding: 1.25rem;
+}
+
+.tw-p-4 {
+  padding: 1rem;
+}
+
+.tw-p-6 {
+  padding: 1.5rem;
+}
+
+.tw-p-10 {
+  padding: 2.5rem;
 }
 
 .tw-py-10 {
@@ -834,10 +893,6 @@ video {
 
 .tw-text-justify {
   text-align: justify;
-}
-
-.tw-font-sans {
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .tw-text-2xl {
@@ -928,12 +983,24 @@ video {
   transition-duration: 150ms;
 }
 
+.tw-transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .tw-duration-300 {
   transition-duration: 300ms;
 }
 
 .\[hostname\:port\] {
   hostname: port;
+}
+
+.hover\:tw-scale-110:hover {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:tw-bg-primary:hover {
@@ -971,6 +1038,10 @@ video {
     width: 100%;
   }
 
+  .sm\:tw-grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .sm\:tw-flex-row {
     flex-direction: row;
   }
@@ -979,5 +1050,11 @@ video {
 @media (min-width: 768px) {
   .md\:tw-flex-row {
     flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:tw-grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
