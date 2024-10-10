@@ -52,3 +52,44 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/css/lightbox.min.css"
 	integrity="sha512-xtV3HfYNbQXS/1R1jP53KbFcU9WXiSA1RFKzl5hRlJgdOJm4OxHCWYpskm6lN0xp0XtKGpAfVShpbvlFH3MDAA=="
 	crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<?php
+function converToEmbed($url)
+{
+	// The original YouTube link
+	$youtube_url = $url;
+	// $youtube_url = "https://youtu.be/_VkkH1j3nTQ?si=Z3HFAantgCK8UKdg";
+
+	// Initialize the video ID variable
+	$video_id = '';
+
+	// Check if the URL contains 'youtu.be' or 'youtube.com'
+	if (strpos($youtube_url, 'youtu.be') !== false) {
+		// Handle the shortened URL format
+		$parsed_url = parse_url($youtube_url);
+		// Extract the video ID from the path (removes the leading "/")
+		$video_id = ltrim($parsed_url['path'], '/');
+	} elseif (strpos($youtube_url, 'youtube.com') !== false) {
+		// Handle the full URL format
+		$parsed_url = parse_url($youtube_url);
+
+		// Check if the query key exists
+		if (isset($parsed_url['query'])) {
+			// Parse the query string to get the video ID
+			parse_str($parsed_url['query'], $query_params);
+
+			// Check if 'v' key exists in the query parameters
+			if (isset($query_params['v'])) {
+				$video_id = $query_params['v'];
+			}
+		}
+	}
+
+	// Generate the embed URL only if we have a valid video ID
+	$embed_url = !empty($video_id) ? "https://www.youtube.com/embed/" . $video_id : '';
+
+
+	// echo "The embed URL is: " . $embed_url . "<br>";
+	return $embed_url;
+}
+?>

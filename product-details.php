@@ -20,8 +20,6 @@ if (isset($_GET['description'])) {
 
 if (isset($_GET['youtube'])) {
     $product['youtube'] = $_GET['youtube'];
-} else {
-    $product['youtube'] = "https://www.youtube.com/embed/s7n9vRFvmM0?si=Z7NKzsQoGv26rkf1";
 }
 // $product['title'] = "Alexis Vama";
 // $product['price'] = "1600";
@@ -90,15 +88,15 @@ if (isset($_GET['youtube'])) {
                     <!-- <p class="tw-mb-4">Subcategory: <?php echo $product['subcategory']; ?></p> -->
                     <!-- <p class="tw-mb-4">Brand: <?php echo $product['brand']; ?></p> -->
                     <div class="tw-flex tw-flex-col tw-gap-5 tw-mt-8 tw-py-10">
-
+                        <?php $embedLink = converToEmbed($product['youtube']) ?>
                         <div class="tw-flex tw-overflow-x-auto">
                             <div class="tw-flex tw-gap-3 tw-whitespace-nowrap">
-                                <img width="300px" height="200"
-                                    onclick="openVideo('<?php echo $product['youtube']; ?>');" <?php
-                                       $video_id = substr($product['youtube'], strpos($product['youtube'], 'embed/') + 6);
-                                       ?>
-                                    src="https://img.youtube.com/vi/<?php echo $video_id; ?>/hqdefault.jpg"
-                                    alt="<?php echo $product['title']; ?> thumbnail" />
+                                <?php if (isset($product['youtube'])): ?>
+                                    <iframe width="300px" height="200" src="<?php echo $embedLink; ?>"
+                                        title="<?php echo $product['title']; ?>" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                <?php endif; ?>
                             </div>
                         </div>
 
@@ -132,17 +130,17 @@ if (isset($_GET['youtube'])) {
             'wrapAround': true
         })
 
-        function openVideo(url) {
-            // var url = "https://www.youtube.com/watch?v=" + url.src.split("/")[3];
-            // window.open(url, '_blank');
-            var embed = `
-            <iframe src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                </iframe>
-            `;
-            // $('#notice').append(embed);
-            $('#notice').css('display', 'block');
-            console.log(url);
-        }
+        // function openVideo(url) {
+        //     // var url = "https://www.youtube.com/watch?v=" + url.src.split("/")[3];
+        //     // window.open(url, '_blank');
+        //     var embed = `
+        //     <iframe src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        //         </iframe>
+        //     `;
+        //     // $('#notice').append(embed);
+        //     $('#notice').css('display', 'block');
+        //     console.log(url);
+        // }
     </script>
 </body>
 

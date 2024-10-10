@@ -1,3 +1,5 @@
+<?php require_once('couch/cms.php'); ?>
+<cms:template title='Bussiness Plans'></cms:template>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -70,11 +72,22 @@
                     </ul>
                 </div>
             </div>
+        </div>
+        <div class="">
+            <!-- <h1 class="tw-font-bold tw-text-2xl tw-text-center tw-my-8">Company Disclaimer</h1> -->
+            <p class="tw-text-black">
+                <cms:editable name='business_plan' label='Edit Bussiness Plan' type='richtext'>
+                </cms:editable>
+            </p>
+        </div>
 
-            <?php require_once 'partials/bussiness-details.php'; ?>
+
+        <?php //require_once 'partials/bussiness-details.php'; ?>
     </section>
+
     <?php require_once 'partials/scripts.php' ?>
     <?php require_once 'partials/footer.php' ?>
 </body>
+<?php COUCH::invoke(); ?>
 
 </html>
