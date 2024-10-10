@@ -101,7 +101,7 @@ if (isset($_GET['youtube'])) {
                         </div>
 
                         <!-- <a href="#" class="btn btn-primary">Add to Cart</a> -->
-                        <a href="https://wa.me/+918062245974?text=Hi!%20I'm%20interested%20in%20your%20product%20<?php echo $product['title']; ?> "
+                        <a href="https://wa.me/+918827268754?text=Hi!%20I'm%20interested%20in%20your%20product%20<?php echo $product['title']; ?> "
                             target="_blank" class="btn btn-success tw-p-5">
                             <i class="fa fa-whatsapp" aria-hidden="true"></i> Chat on WhatsApp
                         </a>
