@@ -63,24 +63,48 @@ $name = basename($url); ?>
 										<a href="#" class="dropdown-toggle">
 											About Us
 										</a>
-										<ul class="dropdown-menu active">
-											<li class="hover:tw-bg-white hover:tw-text-white" style="width: 100%;">
+										<ul class="dropdown-menu ">
+											<li class="hover:tw-bg-primary hover:tw-text-white" style="width: 100%;">
 												<a href="about.php" style="width: 100%;">About</a>
 											</li>
-											<li class="hover:tw-bg-white hover:tw-text-white" style="width: 100%;">
-												<a href="dir_message.php" style="width: 100%;">Director's Message</a>
-											</li>
-											<li class="hover:tw-bg-white hover:tw-text-white" style="width: 100%;">
-												<a href="bussiness-plan.php" style="width: 100%;">Bussiness Plan</a>
-											</li>
-											<li class="hover:tw-bg-white hover:tw-text-white" style="width: 100%;">
-												<a href="terms.php" style="width: 100%;">Terms & Conditions</a>
-											</li>
-											<li class="hover:tw-bg-white hover:tw-text-white" style="width: 100%;">
+
+
+
+											<li class="hover:tw-bg-primary hover:tw-text-white" style="width: 100%;">
 												<a href="legal.php" style="width: 100%;">Legal</a>
 											</li>
-											<li class="hover:tw-bg-white hover:tw-text-white" style="width: 100%;">
+											<li class="hover:tw-bg-primary hover:tw-text-white" style="width: 100%;">
 												<a href="bank.php" style="width: 100%;">Our Bankers</a>
+											</li>
+										</ul>
+									</li>
+									<li
+										class="dropdown <?php ($name == 'disclaimer.php') ? print ('active') : $c = 'ac'; ?>">
+										<a href="#" class="dropdown-toggle">
+											Company
+										</a>
+										<ul class="dropdown-menu  ">
+
+											<li class="hover:tw-bg-primary hover:tw-text-white <?php ($name == 'contact.php') ? print ('active') : $c = 'ac'; ?>"
+												style="width: 100%;">
+												<a class="tw-block tw-w-full" href="disclaimer.php">Disclaimer</a>
+											</li>
+											<li class="hover:tw-bg-primary hover:tw-text-white" style="width: 100%;">
+												<a href="dir_message.php" style="width: 100%;">Director's Message</a>
+											</li>
+											<li class="<?php ($name == 'blogs.php') ? print ('active') : $c = 'ac'; ?>"
+												style="width: 100%;">
+												<a class="tw-block tw-w-full" href="blogs.php">Blogs</a>
+											</li>
+
+
+											<li class="hover:tw-bg-primary hover:tw-text-white" style="width: 100%;">
+												<a class="tw-block tw-w-full" href="legal.php"
+													style="width: 100%;">Legal</a>
+											</li>
+											<li class="hover:tw-bg-primary hover:tw-text-white" style="width: 100%;">
+												<a class="tw-block tw-w-full" href="bank.php" style="width: 100%;">Our
+													Bankers</a>
 											</li>
 										</ul>
 									</li>
@@ -88,12 +112,10 @@ $name = basename($url); ?>
 										class="<?php ($name == "categories.php?category=All") ? print ('active') : $c = 'ac'; ?>">
 										<a href="categories.php?category=All ">Products </a>
 									</li>
-									<li class="<?php ($name == 'blogs.php') ? print ('active') : $c = 'ac'; ?>"><a
-											href="blogs.php">Blogs </a>
-									<li class="<?php ($name == 'contact.php') ? print ('active') : $c = 'ac'; ?>"><a
-											href="awards.php">Awards</a></li>
-									<li class="<?php ($name == 'contact.php') ? print ('active') : $c = 'ac'; ?>"><a
-											href="disclaimer.php">Disclaimer</a></li>
+
+									<li class="<?php ($name == 'awards.php') ? print ('active') : $c = 'ac'; ?>">
+										<a href="awards.php">Awards</a>
+									</li>
 									<li class="<?php ($name == 'contact.php') ? print ('active') : $c = 'ac'; ?>"><a
 											href="contact.php">Contact Us</a></li>
 								</ul>
@@ -113,3 +135,4 @@ $name = basename($url); ?>
 	<!--/ End Header Inner -->
 </header>
 <!-- End Header Area -->
+<?php require_once 'partials/breadcrumbs.php' ?>

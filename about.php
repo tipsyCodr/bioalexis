@@ -7,33 +7,7 @@
 <body>
   <?php require_once 'partials/navbar.php' ?>
 
-  <!-- Breadcrumbs -->
-  <div class="breadcrumbs overlay">
-    <div class="container">
-      <div class="bread-inner">
-        <div class="row">
-          <div class="col-12">
-            <h2>About Us</h2>
-            <ul class="bread-list">
-              <li><a href="index.html">Home</a></li>
-              <li><i class="icofont-simple-right"></i></li>
-              <li class="active">About Us</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Breadcrumbs -->
-  <style>
-    .breadcrumbs {
-      background-image: url('img/networking.jpg');
-    }
-
-    p {
-      padding: 20px 10px;
-    }
-  </style>
+  <?php breadcrumbs('About Us', 'About Us') ?>
   <!-- Start Contact Us -->
   <section class="contact-us section">
     <div class="container">

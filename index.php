@@ -57,31 +57,34 @@ require_once('couch/cms.php'); ?>
 	<!-- product Category section -->
 	<section class="primary-bg" style="padding-top: 30px; padding-bottom: 30px;">
 		<div class="container">
-			<div class="d-flex flex-wrap justify-content-between" style="padding: 10px;"
-				onclick="location.href='categories.php?category=Health Care'">
-				<div class="col-sm-12 col-md-4 col-lg-4 my-2" style="border-radius: 10px;overflow: hidden;">
-					<div class="health-care"><a href="#" class="block d-flex align-items-center"
-							style="border-radius:20px;background-image:url('img/categories/new/health.png'); background-repeat: no-repeat;background-size:cover;height: 180px;">
-						</a></div>
+			<div class="row">
+				<div class="col-12 col-sm-6 col-md-4 col-lg-4 my-2">
+					<a href="products.php?category=Health">
+						<div class="health-care tw-bg-cover tw-bg-no-repeat tw-bg-center tw-h-[180px]"
+							style="border-radius: 10px; overflow: hidden;">
+							<img src="img/categories/new/health.png" class="tw-h-full tw-w-full tw-object-contain"
+								alt="">
+						</div>
+					</a>
 				</div>
-				<div class="col-sm-12 col-md-4 col-lg-4 my-2" style="border-radius: 10px;overflow: hidden;"
-					onclick="location.href='categories.php?category=Personal Care'">
-					<div class="personal-care"><a href="#" class="block d-flex align-items-center"
-							style="border-radius:20px;background-image:url('img/categories/new/personal.png'); background-repeat: no-repeat;background-size:cover;height: 180px;">
-
-						</a>
-					</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-4 my-2">
+					<a href="products.php?category=Personal">
+						<div class="personal-care tw-bg-contain tw-bg-no-repeat tw-bg-center tw-h-[180px]"
+							style="border-radius: 10px; overflow: hidden;">
+							<img src="img/categories/new/personal.png" class="tw-h-full tw-w-full tw-object-contain"
+								alt="">
+						</div>
+					</a>
 				</div>
-				<div class="col-sm-12 col-md-4 col-lg-4 my-2" style="border-radius: 10px;overflow: hidden;"
-					onclick="location.href='categories.php?category=Agro Care'">
-					<div class="agriculture-care"><a href="#" class="block d-flex align-items-center"
-							style="border-radius:20px;background-image:url('img/categories/new/agro.png'); background-repeat: no-repeat;background-size:cover;height: 180px;">
-
-						</a>
-					</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-4 my-2">
+					<a href="products.php?category=Agriculture">
+						<div class="agriculture-care tw-bg-cover tw-bg-no-repeat tw-bg-center tw-h-[180px]"
+							style="border-radius: 10px; overflow: hidden;">
+							<img src="img/categories/new/agro.png" class="tw-h-full tw-w-full tw-object-contain" alt="">
+						</div>
+					</a>
 				</div>
 			</div>
-
 
 		</div>
 	</section>
@@ -138,9 +141,9 @@ require_once('couch/cms.php'); ?>
 									<p class="tw-font-normal tw-text-black tw-text-md tw-text-center">
 										<?php echo $product['name']; ?>
 									</p>
-									<p class="tw-font-bold tw-text-green-600  tw-text-sm tw-text-center">
+									<!-- <p class="tw-font-bold tw-text-green-600  tw-text-sm tw-text-center">
 										Rs. <?php echo $product['price']; ?>
-									</p>
+									</p> -->
 									<small class=" tw-mx-auto tw-text-center tw-w-full">Inclusive of all taxes</small>
 								</div>
 							</div>

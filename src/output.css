@@ -574,6 +574,11 @@ video {
   z-index: 1000;
 }
 
+.tw-mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
 .tw-mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -620,10 +625,6 @@ video {
   display: flex;
 }
 
-.tw-hidden {
-  display: none;
-}
-
 .tw-h-\[50px\] {
   height: 50px;
 }
@@ -637,12 +638,20 @@ video {
   height: 100%;
 }
 
+.tw-h-\[180px\] {
+  height: 180px;
+}
+
 .tw-max-h-\[50px\] {
   max-height: 50px;
 }
 
 .tw-w-1\/2 {
   width: 50%;
+}
+
+.tw-w-\[205px\] {
+  width: 205px;
 }
 
 .tw-w-\[50px\] {
@@ -660,6 +669,10 @@ video {
 
 .tw-min-w-\[300px\] {
   min-width: 300px;
+}
+
+.tw-flex-initial {
+  flex: 0 1 auto;
 }
 
 .tw-list-disc {
@@ -690,6 +703,10 @@ video {
   justify-content: space-around;
 }
 
+.tw-justify-evenly {
+  justify-content: space-evenly;
+}
+
 .tw-gap-10 {
   gap: 2.5rem;
 }
@@ -704,6 +721,10 @@ video {
 
 .tw-gap-5 {
   gap: 1.25rem;
+}
+
+.tw-gap-7 {
+  gap: 1.75rem;
 }
 
 .tw-overflow-hidden {
@@ -742,6 +763,22 @@ video {
 
 .tw-bg-opacity-70 {
   --tw-bg-opacity: 0.7;
+}
+
+.tw-bg-contain {
+  background-size: contain;
+}
+
+.tw-bg-cover {
+  background-size: cover;
+}
+
+.tw-bg-center {
+  background-position: center;
+}
+
+.tw-bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .tw-object-contain {
@@ -785,6 +822,10 @@ video {
   text-align: center;
 }
 
+.tw-text-justify {
+  text-align: justify;
+}
+
 .tw-text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -824,6 +865,14 @@ video {
 
 .tw-uppercase {
   text-transform: uppercase;
+}
+
+.tw-lowercase {
+  text-transform: lowercase;
+}
+
+.tw-capitalize {
+  text-transform: capitalize;
 }
 
 .tw-text-black {
@@ -873,9 +922,19 @@ video {
   hostname: port;
 }
 
+.hover\:tw-bg-\[\#0a3b3f\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(10 59 63 / var(--tw-bg-opacity));
+}
+
 .hover\:tw-bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:tw-bg-primary:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(10 59 63 / var(--tw-bg-opacity));
 }
 
 .hover\:tw-bg-opacity-100:hover {
@@ -896,6 +955,18 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:tw-ml-\[4rem\] {
+    margin-left: 4rem;
+  }
+
+  .sm\:tw-w-\[270px\] {
+    width: 270px;
+  }
+
+  .sm\:tw-w-full {
+    width: 100%;
+  }
+
   .sm\:tw-flex-row {
     flex-direction: row;
   }
