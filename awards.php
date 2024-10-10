@@ -78,11 +78,10 @@
                             <cms:show caption />
                         </p>
                         <a class="tw-block tw-overflow-hidden" href="<cms:show image />"
-                            data-lightbox="<cms:show caption/>">
+                            data-lightbox="<cms:show caption/>" onclick="event.preventDefault();">
                             <img class="tw-w-full tw-h-[200px] tw-object-cover" src="<cms:show image />"
                                 alt="<cms:show caption />" />
                         </a>
-
 
 
                     </div>
