@@ -78,7 +78,7 @@
                             <cms:show caption />
                         </p>
                         <a class="tw-block tw-overflow-hidden" href="<cms:show image />"
-                            data-lightbox="<cms:show caption/>" target="_blank">
+                            data-lightbox="<cms:show caption/>">
                             <img class="tw-w-full tw-h-[200px] tw-object-cover" src="<cms:show image />"
                                 alt="<cms:show caption />" />
                         </a>
