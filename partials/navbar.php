@@ -91,10 +91,10 @@ $name = basename($url); ?>
 											<li class="hover:tw-bg-primary hover:tw-text-white" style="width: 100%;">
 												<a href="director_msg.php" style="width: 100%;">Director's Message</a>
 											</li>
-											<li class="<?php ($name == 'blogs.php') ? print ('active') : $c = 'ac'; ?>"
+											<!-- <li class="<?php ($name == 'blogs.php') ? print ('active') : $c = 'ac'; ?>"
 												style="width: 100%;">
 												<a class="tw-block tw-w-full" href="blogs.php">Blogs</a>
-											</li>
+											</li> -->
 
 
 											<li class="hover:tw-bg-primary hover:tw-text-white" style="width: 100%;">
