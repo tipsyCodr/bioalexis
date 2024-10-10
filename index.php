@@ -5,11 +5,15 @@ require_once('couch/cms.php'); ?>
 	<cms:editable name="gg_image" label="Image" desc="Upload your main image here" width="500" show_preview='1'
 		preview_height='200' type="image" />
 	<cms:editable name="price" type="text" />
-	<cms:editable name="min_ord_qty" type="text" />
-	<cms:editable name="usage_application" type="dropdown"
-		opt_values='Garden | Fruits | Medicinal | Vegetable | Cultivation | Decorative | Flower Bulb |' />
-	<cms:editable name="botanical_name" type="text" />
-	<cms:editable name="soil_specific" type="text" />
+	<cms:editable name="joining" label="Best for Joining? " type="radio" opt_values='Yes==1|No==0' />
+	<cms:editable name="featured" label="Featured Product?" type="radio" opt_values='Yes==1|No==0' />
+	<cms:editable name="description" label="Description" type="textarea" />
+	<cms:repeatable name='videos' label="Add YouTube Videos" label='Videos' order='1'>
+
+		<cms:editable name="video_id" label="Video ID" desc="Enter the id of the video" type="text" />
+		<cms:editable name="video_title" label="Video Title" desc="Enter the title of the video" type="text" />
+
+	</cms:repeatable>
 
 	<cms:editable name="gg_thumb" assoc_field="gg_image" label="Image Thumbnail" desc="Thumbnail of image above"
 		width='115' height='115' enforce_max='1' type="thumbnail" />
