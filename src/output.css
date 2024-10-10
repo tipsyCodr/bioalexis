@@ -589,6 +589,16 @@ video {
   margin-bottom: 2rem;
 }
 
+.tw-mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.tw-mx-7 {
+  margin-left: 1.75rem;
+  margin-right: 1.75rem;
+}
+
 .tw-mb-3 {
   margin-bottom: 0.75rem;
 }

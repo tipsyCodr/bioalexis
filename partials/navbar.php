@@ -90,7 +90,7 @@ $name = basename($url); ?>
 												<a class="tw-block tw-w-full" href="disclaimer.php">Disclaimer</a>
 											</li>
 											<li class="hover:tw-bg-primary hover:tw-text-white" style="width: 100%;">
-												<a href="dir_message.php" style="width: 100%;">Director's Message</a>
+												<a href="director_msg.php" style="width: 100%;">Director's Message</a>
 											</li>
 											<li class="<?php ($name == 'blogs.php') ? print ('active') : $c = 'ac'; ?>"
 												style="width: 100%;">

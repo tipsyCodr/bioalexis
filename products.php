@@ -74,7 +74,7 @@ $category = $_GET['category'] ?? 'All';
 
 	<section class=" section">
 		<div id="lightgallery">
-			<div class="container flex">
+			<div class="container flex flex-wrap tw-justify-center tw-gap-5">
 				<cms:pages masterpage='index.php' folder='<?php echo strtolower($category) ?>' paginate='1' limit='30'>
 					<div class="item rounded tw-p-2 tw-shadow  tw-min-w-[300px] tw-bg-white tw-bg-opacity-70 tw-transition tw-duration-300 hover:tw-bg-opacity-100"
 						onclick="location.href='product-details.php?title=<cms:show k_page_title />&img=<cms:show gg_image />&description=<cms:show k_page_title />&price=<cms:show price />&category=<cms:show k_page_title />'">

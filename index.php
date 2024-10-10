@@ -57,9 +57,9 @@ require_once('couch/cms.php'); ?>
 	<!-- product Category section -->
 	<section class="primary-bg" style="padding-top: 30px; padding-bottom: 30px;">
 
-		<div class="container">
+		<div class="tw-mx-2 sm:tw-ml-[4rem]">
 			<div class="row">
-				<div class="col-12 col-sm-6 col-md-4 col-lg-4 my-2">
+				<div class="col-12 col-sm-6 col-md-3 col-lg-3 my-2">
 					<a href="products.php?category=Health">
 						<div class="health-care tw-bg-cover tw-bg-no-repeat tw-bg-center tw-h-[180px]"
 							style="border-radius: 10px; overflow: hidden;">
@@ -68,7 +68,7 @@ require_once('couch/cms.php'); ?>
 						</div>
 					</a>
 				</div>
-				<div class="col-12 col-sm-6 col-md-4 col-lg-4 my-2">
+				<div class="col-12 col-sm-6 col-md-3 col-lg-3 my-2">
 					<a href="products.php?category=Personal">
 						<div class="personal-care tw-bg-contain tw-bg-no-repeat tw-bg-center tw-h-[180px]"
 							style="border-radius: 10px; overflow: hidden;">
@@ -77,11 +77,20 @@ require_once('couch/cms.php'); ?>
 						</div>
 					</a>
 				</div>
-				<div class="col-12 col-sm-6 col-md-4 col-lg-4 my-2">
+				<div class="col-12 col-sm-6 col-md-3 col-lg-3 my-2">
 					<a href="products.php?category=Agriculture">
 						<div class="agriculture-care tw-bg-cover tw-bg-no-repeat tw-bg-center tw-h-[180px]"
 							style="border-radius: 10px; overflow: hidden;">
 							<img src="img/categories/new/agro.png" class="tw-h-full tw-w-full tw-object-contain" alt="">
+						</div>
+					</a>
+				</div>
+				<div class="col-12 col-sm-6 col-md-3 col-lg-3 my-2">
+					<a href="products.php?category=Lifestyle">
+						<div class="lifestyle-care tw-bg-cover tw-bg-no-repeat tw-bg-center tw-h-[180px]"
+							style="border-radius: 10px; overflow: hidden;">
+							<img src="img/categories/new/lifestyle.png" class="tw-h-full tw-w-full tw-object-contain"
+								alt="">
 						</div>
 					</a>
 				</div>
@@ -196,7 +205,7 @@ require_once('couch/cms.php'); ?>
 			}
 		</style>
 		<div class="">
-			<div class=" wrapper ">
+			<div class=" tw-mx-7">
 				<div class="head">
 					<h2 class="tw-font-bold tw-text-3xl text-center tw-py-5">Products Testimonies</h2>
 				</div>
@@ -248,7 +257,7 @@ require_once('couch/cms.php'); ?>
 				<section class="section">
 					<h2 class="tw-font-bold tw-text-3xl text-center tw-py-5">Videos Testimonies</h2>
 
-					<div class="">
+					<div class="tw-mx-7">
 						<div class="row">
 							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 								<div class="">
