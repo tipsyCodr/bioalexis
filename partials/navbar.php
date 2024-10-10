@@ -73,9 +73,9 @@ $name = basename($url); ?>
 											<li class="hover:tw-bg-primary hover:tw-text-white" style="width: 100%;">
 												<a href="legal.php" style="width: 100%;">Legal</a>
 											</li>
-											<li class="hover:tw-bg-primary hover:tw-text-white" style="width: 100%;">
+											<!-- <li class="hover:tw-bg-primary hover:tw-text-white" style="width: 100%;">
 												<a href="bank.php" style="width: 100%;">Our Bankers</a>
-											</li>
+											</li> -->
 										</ul>
 									</li>
 									<li
