@@ -1,3 +1,4 @@
+<?php require_once('couch/cms.php'); ?>
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
 <?php require_once 'partials/head.php' ?>

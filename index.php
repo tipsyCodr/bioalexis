@@ -56,6 +56,7 @@ require_once('couch/cms.php'); ?>
 
 	<!-- product Category section -->
 	<section class="primary-bg" style="padding-top: 30px; padding-bottom: 30px;">
+
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-sm-6 col-md-4 col-lg-4 my-2">

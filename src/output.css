@@ -625,6 +625,10 @@ video {
   display: flex;
 }
 
+.tw-h-\[180px\] {
+  height: 180px;
+}
+
 .tw-h-\[50px\] {
   height: 50px;
 }
@@ -636,10 +640,6 @@ video {
 
 .tw-h-full {
   height: 100%;
-}
-
-.tw-h-\[180px\] {
-  height: 180px;
 }
 
 .tw-max-h-\[50px\] {
@@ -826,6 +826,10 @@ video {
   text-align: justify;
 }
 
+.tw-font-sans {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 .tw-text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -920,16 +924,6 @@ video {
 
 .\[hostname\:port\] {
   hostname: port;
-}
-
-.hover\:tw-bg-\[\#0a3b3f\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(10 59 63 / var(--tw-bg-opacity));
-}
-
-.hover\:tw-bg-white:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .hover\:tw-bg-primary:hover {
