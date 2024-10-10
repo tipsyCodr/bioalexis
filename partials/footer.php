@@ -167,7 +167,7 @@
 <script>
 	lightbox.option({
 		'resizeDuration': 200,
-		'wrapAround': true
+		'wrapAround': true,
 		'albumLabel': true
 	})
 </script>
