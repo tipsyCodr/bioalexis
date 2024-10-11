@@ -366,6 +366,23 @@ require_once('couch/cms.php'); ?>
 							array('name' => 'Ortho Oil', 'price' => '249', 'img' => 'oil.jpg', 'category' => 'Personal Care', 'description' => 'Ortho Oil is a dietary supplement in the form of a tablet that is designed for women. To use, simply drop one tablet into a glass of water, watch it fizz, and then drink. Ortho Oil is a convenient and easy way to support your overall health and wellness. The tablets are easy to take on-the-go, and can be taken at any time of day. The unique formula of Ortho Oil is designed to provide a range of benefits, including supporting energy and vitality, and promoting a healthy metabolism. Ortho Oil is a great choice for women who are looking for a convenient and effective way to support their health and wellness.', 'youtube' => 'https://www.youtube.com/watch?v=qhiLRk5LCCs&t=7s'),
 							array('name' => 'Diffender', 'price' => '749', 'img' => 'defender.png', 'category' => 'Personal Care', 'description' => 'Diffender is a dietary supplement in the form of a tablet that is designed for women. To use, simply drop one tablet into a glass of water, watch it fizz, and then drink. Diffender is a convenient and easy way to support your overall health and wellness. The tablets are easy to take on-the-go, and can be taken at any time of day. The unique formula of Diffender is designed to provide a range of benefits, including supporting energy and vitality, and promoting a healthy metabolism. Diffender is a great choice for women who are looking for a convenient and effective way to support their health and wellness.', 'youtube' => 'https://youtu.be/CND36CGCSBk?si=oE1F9qGmtn8kq2zK'),
 							array('name' => 'Sliming Tea', 'price' => '699', 'img' => 'vema-tea.jpg', 'category' => 'Personal Care', 'description' => 'Sliming Tea is a dietary supplement in the form of a tablet that is designed for women. To use, simply drop one tablet into a glass of water, watch it fizz, and then drink. Sliming Tea is a convenient and easy way to support your overall health and wellness. The tablets are easy to take on-the-go, and can be taken at any time of day. The unique formula of Sliming Tea is designed to provide a range of benefits, including supporting energy and vitality, and promoting a healthy metabolism. Sliming Tea is a great choice for women who are looking for a convenient and effective way to support their health and wellness.', 'youtube' => 'https://youtu.be/6WWNv2r0U9U?si=J4HVphqgRzi3nabU'),
+							array(
+								'name' => 'Sanitary Napkin',
+								'price' => '299',
+								'img' => 'sanitary-napkin.png',
+								'category' => 'Personal Care',
+								'description' => 'Anion sanitary pads are feminine hygiene products that incorporate anion (negative ion) technology, which is believed to offer various health benefits. The concept behind these pads is that they release negative ions (anions) when in use, which can help improve comfort, hygiene, and overall health.
+
+Benefit -
+Reduce Pain
+Improve Hormonal balance
+Decrease Stress
+No Risk of Infections
+Decrease odor
+Increase levels of Serotonin
+Boost Immune System',
+								'youtube' => 'https://youtu.be/CND36CGCSBk?si=oE1F9qGmtn8kq2zK'
+							),
 						);
 						foreach ($products as $product) {
 							?>
