@@ -45,6 +45,11 @@
     h6 {
         font-size: 1rem;
     }
+
+    p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
 </style>
 
 <body>
