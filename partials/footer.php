@@ -1,161 +1,133 @@
 <!-- Footer Area -->
-<footer id="footer" class="footer ">
+<?php $products = array(
+	array('name' => 'Alexis Trufit', 'price' => '1600', 'img' => 'alexis trufit.jpg', 'category' => 'Personal Care', 'description' => 'Alexis Trufit is a dietary supplement in the form of a tablet that is designed for women. To use, simply drop one tablet into a glass of water, watch it fizz, and then drink. Alexis Trufit is a convenient and easy way to support your overall health and wellness. The tablets are easy to take on-the-go, and can be taken at any time of day. The unique formula of Alexis Trufit is designed to provide a range of benefits, including supporting energy and vitality, and promoting a healthy metabolism. Alexis Trufit is a great choice for women who are looking for a convenient and ef	ctive way to support their health and wellness.'),
+	array('name' => 'Mr. Alexis ', 'price' => '933', 'img' => 'mr_alexis.jpg', 'category' => 'Personal Care', 'description' => 'Mr. Alexis is a dietary supplement in the form of a tablet that is designed for men. To use, simply drop one tablet into a glass of water, watch it fizz, and then drink. Mr. Alexis is a convenient and easy way to support your overall health and wellness. The tablets are easy to take on-the-go, and can be taken at any time of day. The unique formula of Mr. Alexis is designed to provide a range of benefits, including supporting energy and vitality, and promoting a healthy metabolism. Mr. Alexis is a great choice for men who are looking for a convenient and effective way to support their health and wellness.'),
+	array('name' => 'Alexis Vama', 'price' => '1350', 'img' => 'alexi8.png', 'category' => 'Personal Care', 'description' => 'Alexis Vama is a dietary supplement in the form of a tablet that is designed for women. To use, simply drop one tablet into a glass of water, watch it fizz, and then drink. Alexis Vama is a convenient and easy way to support your overall health and wellness. The tablets are easy to take on-the-go, and can be taken at any time of day. The unique formula of Alexis Vama is designed to provide a range of benefits, including supporting energy and vitality, and promoting a healthy metabolism. Alexis Vama is a great choice for women who are looking for a convenient and effective way to support their health and wellness.'),
+	array('name' => 'Chloro Alexis', 'price' => '2499', 'img' => 'chloro.png', 'category' => 'Personal Care', 'description' => 'Chloro Alexis is a dietary supplement in the form of a tablet that is designed for women. To use, simply drop one tablet into a glass of water, watch it fizz, and then drink. Chloro Alexis is a convenient and easy way to support your overall health and wellness. The tablets are easy to take on-the-go, and can be taken at any time of day. The unique formula of Chloro Alexis is designed to provide a range of benefits, including supporting energy and vitality, and promoting a healthy metabolism. Chloro Alexis is a great choice for women who are looking for a convenient and effective way to support their health and wellness.'),
+	array('name' => 'Alexis Juice', 'price' => '2500', 'img' => 'omega-rich.png', 'category' => 'Personal Care', 'description' => 'Alexis Juice is a dietary supplement in the form of a tablet that is designed for women. To use, simply drop one tablet into a glass of water, watch it fizz, and then drink. Alexis Juice is a convenient and easy way to support your overall health and wellness. The tablets are easy to take on-the-go, and can be taken at any time of day. The unique formula of Alexis Juice is designed to provide a range of benefits, including supporting energy and vitality, and promoting a healthy metabolism. Alexis Juice is a great choice for women who are looking for a convenient and effective way to support their health and wellness.'),
+);
+?>?>
+<footer id="footer" class="tw-bg-primary text-white py-8">
 	<!-- Footer Top -->
-	<div class="footer-top">
-		<div class=" tw-mx-10 sm:tw-ml-[4rem] " style="">
-			<div class="tw-flex tw-justify-evenly tw-gap-7 tw-flex-wrap">
-				<div class="tw-w-full sm:tw-w-[270px]  tw-flex-initial">
+	<div class="footer-top tw-py-10">
+		<div class="tw-container tw-mx-auto tw-px-4 sm:tw-px-10">
+			<div class="tw-flex tw-justify-between tw-flex-wrap tw-gap-6">
+
+				<!-- About Us Section -->
+				<div class="tw-w-full sm:tw-w-[270px] tw-flex-initial">
 					<div class="single-footer">
-						<h2>About Us</h2>
-						<p class="tw-capitalize tw-text-justify">Bioalexis Trading India Private Limited registered
+						<h2 class="tw-text-lg tw-text-white tw-font-semibold">About Us</h2>
+						<img src="img/logo.png" alt="Bioalexis Trading India Private Limited"
+							class="tw-w-40 tw-h-auto tw-mb-4">
+
+						<p class="tw-capitalize tw-text-justify tw-flex tw-flex-col tw-mt-6 tw-gap-y-2">Bioalexis
+							Trading India Private Limited
+							registered
 							under The Companies Act 2013 in INDIA.
 						</p>
-						<!-- Social -->
-						<ul class="social">
-							<li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-							<li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-							<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-							<li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+						<!-- Social Links -->
+						<ul class="social tw-flex tw-gap-6 tw-mt-4">
+							<li><a href="#" class="tw-text-white hover:tw-text-gray-400"><i
+										class="fa-brands fa-facebook"></i></a></li>
+							<li><a href="#" class="tw-text-white hover:tw-text-gray-400"><i
+										class="fa-brands fa-youtube"></i></a></li>
+							<li><a href="#" class="tw-text-white hover:tw-text-gray-400"><i
+										class="fa-brands fa-x-twitter"></i></a></li>
+							<li><a href="#" class="tw-text-white hover:tw-text-gray-400"><i
+										class="fa-brands fa-instagram"></i></a></li>
+							<li><a href="#" class="tw-text-white hover:tw-text-gray-400"><i
+										class="fa-brands fa-linkedin"></i></a></li>
 						</ul>
-						<!-- End Social -->
+						<!-- End Social Links -->
 					</div>
 				</div>
 
-				<div class="">
+				<!-- Company Links Section -->
+				<div class="tw-w-full sm:tw-w-[270px]">
 					<div class="single-footer f-link">
-						<h2>Company</h2>
-						<div class="row">
-							<div class="col-lg-6 col-md-6 col-12">
-								<ul>
-									<li><a href="index.php"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a>
-									</li>
-									<li class="tw-text-nowrap"><a href="about.php"><i class="fa fa-caret-right"
-												aria-hidden="true"></i>About
-											Us</a>
-
-
-									<li class="tw-text-nowrap"> <a href="dir_message.php" style="width: 100%;"><i
-												class="fa fa-caret-right" aria-hidden="true"></i>Director's Message</a>
-									</li>
-									<li class="tw-text-nowrap"><a href="about.php"><i class="fa fa-caret-right"
-												aria-hidden="true"></i> Mission
-											& Vision
-										</a></li>
-									<li class="tw-text-nowrap"><a href="bussiness-plan.php"><i class="fa fa-caret-right"
-												aria-hidden="true"></i> Bussiness Plan
-										</a></li>
-									<li class="tw-text-nowrap"><a href="bank.php"><i class="fa fa-caret-right"
-												aria-hidden="true"></i> Banking Details
-										</a></li>
-									<!-- <li><a href="contact.php"><i class="fa fa-caret-right" aria-hidden="true"></i>
-											Contact Us </a></li> -->
-								</ul>
-							</div>
-
-						</div>
+						<h2 class="tw-text-lg tw-text-white tw-font-semibold">Company</h2>
+						<ul class="tw-flex tw-flex-col tw-mt-6 tw-gap-y-2">
+							<li><a href="index.php" class="tw-text-white hover:tw-text-gray-400"><i
+										class="fa fa-caret-right"></i> Home</a></li>
+							<li><a href="about.php" class="tw-text-white hover:tw-text-gray-400"><i
+										class="fa fa-caret-right"></i> About Us</a></li>
+							<li><a href="dir_message.php" class="tw-text-white hover:tw-text-gray-400"><i
+										class="fa fa-caret-right"></i> Director's Message</a></li>
+							<li><a href="about.php" class="tw-text-white hover:tw-text-gray-400"><i
+										class="fa fa-caret-right"></i> Mission & Vision</a></li>
+							<li><a href="bussiness-plan.php" class="tw-text-white hover:tw-text-gray-400"><i
+										class="fa fa-caret-right"></i> Business Plan</a></li>
+							<li><a href="bank.php" class="tw-text-white hover:tw-text-gray-400"><i
+										class="fa fa-caret-right"></i> Banking Details</a></li>
+						</ul>
 					</div>
 				</div>
-				<?php
-				$products = array(
-					array('name' => 'Alexis Trufit', 'price' => '1600', 'img' => 'alexis trufit.jpg', 'category' => 'Personal Care', 'description' => 'Alexis Trufit is a dietary supplement in the form of a tablet that is designed for women. To use, simply drop one tablet into a glass of water, watch it fizz, and then drink. Alexis Trufit is a convenient and easy way to support your overall health and wellness. The tablets are easy to take on-the-go, and can be taken at any time of day. The unique formula of Alexis Trufit is designed to provide a range of benefits, including supporting energy and vitality, and promoting a healthy metabolism. Alexis Trufit is a great choice for women who are looking for a convenient and ef	ctive way to support their health and wellness.'),
-					array('name' => 'Mr. Alexis ', 'price' => '933', 'img' => 'mr_alexis.jpg', 'category' => 'Personal Care', 'description' => 'Mr. Alexis is a dietary supplement in the form of a tablet that is designed for men. To use, simply drop one tablet into a glass of water, watch it fizz, and then drink. Mr. Alexis is a convenient and easy way to support your overall health and wellness. The tablets are easy to take on-the-go, and can be taken at any time of day. The unique formula of Mr. Alexis is designed to provide a range of benefits, including supporting energy and vitality, and promoting a healthy metabolism. Mr. Alexis is a great choice for men who are looking for a convenient and effective way to support their health and wellness.'),
-					array('name' => 'Alexis Vama', 'price' => '1350', 'img' => 'alexi8.png', 'category' => 'Personal Care', 'description' => 'Alexis Vama is a dietary supplement in the form of a tablet that is designed for women. To use, simply drop one tablet into a glass of water, watch it fizz, and then drink. Alexis Vama is a convenient and easy way to support your overall health and wellness. The tablets are easy to take on-the-go, and can be taken at any time of day. The unique formula of Alexis Vama is designed to provide a range of benefits, including supporting energy and vitality, and promoting a healthy metabolism. Alexis Vama is a great choice for women who are looking for a convenient and effective way to support their health and wellness.'),
-					array('name' => 'Chloro Alexis', 'price' => '2499', 'img' => 'chloro.png', 'category' => 'Personal Care', 'description' => 'Chloro Alexis is a dietary supplement in the form of a tablet that is designed for women. To use, simply drop one tablet into a glass of water, watch it fizz, and then drink. Chloro Alexis is a convenient and easy way to support your overall health and wellness. The tablets are easy to take on-the-go, and can be taken at any time of day. The unique formula of Chloro Alexis is designed to provide a range of benefits, including supporting energy and vitality, and promoting a healthy metabolism. Chloro Alexis is a great choice for women who are looking for a convenient and effective way to support their health and wellness.'),
-					array('name' => 'Alexis Juice', 'price' => '2500', 'img' => 'omega-rich.png', 'category' => 'Personal Care', 'description' => 'Alexis Juice is a dietary supplement in the form of a tablet that is designed for women. To use, simply drop one tablet into a glass of water, watch it fizz, and then drink. Alexis Juice is a convenient and easy way to support your overall health and wellness. The tablets are easy to take on-the-go, and can be taken at any time of day. The unique formula of Alexis Juice is designed to provide a range of benefits, including supporting energy and vitality, and promoting a healthy metabolism. Alexis Juice is a great choice for women who are looking for a convenient and effective way to support their health and wellness.'),
-				);
-				?>
-				<div class="">
+
+				<!-- Products Section -->
+				<div class="tw-w-full sm:tw-w-[270px]">
 					<div class="single-footer f-link">
-						<h2>Our Products</h2>
-						<div class="row">
-							<div class="col-lg-6 col-md-6 col-12">
-								<ul>
-									<?php foreach ($products as $product): ?>
-
-										<li><a class="tw-text-nowrap"
-												href="product-details.php?title=<?php echo $product['name']; ?>&price=<?php echo $product['price']; ?>&img=<?php echo $product['img']; ?>&category=<?php echo $product['category']; ?>&description=<?php echo $product['description']; ?>">
-												<i class="fa fa-caret-right" aria-hidden="true"></i>
-												<?php echo $product['name']; ?>
-											</a>
-										</li>
-									<?php endforeach; ?>
-
-								</ul>
-							</div>
-
-						</div>
+						<h2 class="tw-text-lg tw-text-white tw-font-semibold">Our Products</h2>
+						<ul class="tw-flex tw-flex-col tw-mt-6 tw-gap-y-2">
+							<?php foreach ($products as $product): ?>
+								<li><a class="tw-text-white hover:tw-text-gray-400"
+										href="product-details.php?title=<?php echo $product['name']; ?>&price=<?php echo $product['price']; ?>&img=<?php echo $product['img']; ?>&category=<?php echo $product['category']; ?>&description=<?php echo $product['description']; ?>">
+										<i class="fa fa-caret-right"></i>
+										<?php echo $product['name']; ?>
+									</a>
+								</li>
+							<?php endforeach; ?>
+						</ul>
 					</div>
 				</div>
-				<div class="">
-					<div class="single-footer f-link ">
-						<h2>Quick Links</h2>
-						<div class="row">
-							<div class="col-lg-6 col-md-6 col-12">
-								<ul>
-									<li class="tw-text-nowrap"> <a href="terms.php" class="tw-text-nowrap"
-											style="width: 100%;"><i class="fa fa-caret-right"
-												aria-hidden="true"></i>Terms & Conditions</a>
-									</li>
-									<li class="tw-text-nowrap"><a href="legal.php" class="tw-text-nowrap"><i
-												class="fa fa-caret-right" aria-hidden="true"></i>Legal</a>
 
-									<li class="tw-text-nowrap"><a href="http://login.bioalexis.com/"><i
-												class="fa fa-caret-right" aria-hidden="true"></i>Login</a></li>
-									<li class="tw-text-nowrap"><a href="download.php"><i class="fa fa-caret-right"
-												aria-hidden="true"></i>Download
-										</a></li>
-									<li class="tw-text-nowrap"><a href="gallery.php"><i class="fa fa-caret-right"
-												aria-hidden="true"></i>
-											Gallery</a></li>
-								</ul>
-							</div>
-
-						</div>
+				<!-- Quick Links Section -->
+				<div class="tw-w-full sm:tw-w-[270px]">
+					<div class="single-footer f-link">
+						<h2 class="tw-text-lg tw-text-white tw-font-semibold">Quick Links</h2>
+						<ul class="tw-flex tw-flex-col tw-mt-6 tw-gap-y-2">
+							<li><a href="terms.php" class="tw-text-white hover:tw-text-gray-400"><i
+										class="fa fa-caret-right"></i> Terms & Conditions</a></li>
+							<li><a href="legal.php" class="tw-text-white hover:tw-text-gray-400"><i
+										class="fa fa-caret-right"></i> Legal</a></li>
+							<li><a href="http://login.bioalexis.com/" class="tw-text-white hover:tw-text-gray-400"><i
+										class="fa fa-caret-right"></i> Login</a></li>
+							<li><a href="download.php" class="tw-text-white hover:tw-text-gray-400"><i
+										class="fa fa-caret-right"></i> Download</a></li>
+							<li><a href="gallery.php" class="tw-text-white hover:tw-text-gray-400"><i
+										class="fa fa-caret-right"></i> Gallery</a></li>
+						</ul>
 					</div>
 				</div>
-				<div class="">
-					<div class="single-footer f-link ">
-						<h2>Contact</h2>
-						<div class="row">
-							<div class="col-lg-6 col-md-6 col-12 tw-w-[205px] sm:tw-w-full">
-								<ul>
-									<li> <a href="contact.php" style="width: 100%;"><i class="fa fa-location-dot"
-												aria-hidden="true"></i> Office no 201, (Second floor), National
-											Corporate Park,GE Road , Raipur 492001</a>
-									</li>
-									<li class="tw-text-nowrap"><a href="tel:07713501272" class="tw-text-nowrap"><i
-												class="fa fa-phone" aria-hidden="true"></i> 0771-3501272
 
-
-									<li class="tw-text-nowrap"><a href="https://wa.me/918827268754" target="_blank"><i
-												class="fab fa-whatsapp" aria-hidden="true"></i>+(91)
-											8827268754</a></li>
-									<li class="tw-text-nowrap"><a href="mailto:support@bioalexis.com"
-											class="tw-lowercase"><i class="fa fa-envelope"
-												aria-hidden="true"></i>support@bioalexis.com
-										</a></li>
-
-								</ul>
-							</div>
-
-						</div>
+				<!-- Contact Section -->
+				<div class="tw-w-full sm:tw-w-[270px]">
+					<div class="single-footer f-link">
+						<h2 class="tw-text-lg tw-text-white tw-font-semibold">Contact</h2>
+						<ul class="tw-flex tw-flex-col tw-mt-6 tw-gap-y-2">
+							<li><a href="contact.php" class="tw-text-white hover:tw-text-gray-400"><i
+										class="fa fa-location-dot"></i> Office no 201, (Second floor), National
+									Corporate Park, GE Road, Raipur 492001</a></li>
+							<li><a href="tel:07713501272" class="tw-text-white hover:tw-text-gray-400"><i
+										class="fa fa-phone"></i> 0771-3501272</a></li>
+							<li><a href="https://wa.me/918827268754" target="_blank"
+									class="tw-text-white hover:tw-text-gray-400"><i class="fab fa-whatsapp"></i> +(91)
+									8827268754</a></li>
+							<li><a href="mailto:support@bioalexis.com" class="tw-text-white hover:tw-text-gray-400"><i
+										class="fa fa-envelope"></i> support@bioalexis.com</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!--/ End Footer Top -->
+
 	<!-- Copyright -->
-	<div class=" copyright">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 col-md-12 col-12">
-					<div class="copyright-content">
-						<p>© Copyright 2024 | All Rights Reserved by <a href="http://www.pathideamultiskill.com"
-								target="_blank">Path Idea Multi Skill</a> </p>
-					</div>
-				</div>
+	<div class="copyright bg-gray-700 py-4">
+		<div class="tw-container tw-mx-auto">
+			<div class="tw-text-center">
+				<p>© Copyright 2024 | All Rights Reserved by <a href="http://www.pathideamultiskill.com" target="_blank"
+						class="tw-text-white hover:tw-text-gray-400">Path Idea Multi Skill</a></p>
 			</div>
 		</div>
 	</div>
@@ -163,11 +135,9 @@
 </footer>
 <!--/ End Footer Area -->
 
-
 <script>
 	lightbox.option({
 		'resizeDuration': 200,
 		'wrapAround': true,
-
 	})
 </script>
