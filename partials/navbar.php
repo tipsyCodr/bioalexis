@@ -7,27 +7,6 @@ $name = basename($url); ?>
 		<div class=" tw-flex tw-justify-around tw-flex-col sm:tw-flex-row tw-items-center tw-gap-2 w-full">
 			<p class="text-white tw-text-2xl tracking-widest  tw-font-bold tw-uppercase">Improving Lifes Together</p>
 
-			<!-- Social Icons -->
-			<!-- <div class="tw-flex tw-gap-5">
-				<span><a href="https://www.facebook.com/boialexis/" target="_blank"><i
-							class="fa fa-facebook"></i></a></span>
-				<span><a href="https://www.instagram.com/boialexis/" target="_blank"><i
-							class="fa fa-instagram"></i></a></span>
-				<span><a href="https://twitter.com/boialexis" target="_blank"><i class="fa fa-twitter"></i></a></span>
-				<span><a href="https://www.linkedin.com/company/boialexis/" target="_blank"><i
-							class="fa fa-linkedin"></i></a></span>
-				<span><a href="https://www.youtube.com/channel/boialexis" target="_blank"><i
-							class="fa fa-youtube"></i></a></span>
-			</div> -->
-			<!-- End Social Icons -->
-			<!-- Top Contact -->
-			<!-- <div class="top-contact ">
-				<span class="><a href=" tel:+917974041441"><i class="fa fa-phone"></i>+(91)
-					9876543210</a></span>
-				<span class="><i class=" fa fa-envelope"></i><a
-						href="mailto:agrisoulind@gmail.com">boialexis@gmail.com</a></span>
-			</div> -->
-			<!-- End Top Contact -->
 		</div>
 	</div>
 	<!-- End Topbar -->
@@ -49,7 +28,7 @@ $name = basename($url); ?>
 					</div>
 					<style>
 						.dropdown:hover .dropdown-menu {
-							display: block;
+							/* display: block; */
 						}
 					</style>
 					<div class="col-lg-7 col-md-9 col-12 ">

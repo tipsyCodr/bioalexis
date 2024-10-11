@@ -72,6 +72,7 @@ Version:	1.1
       prependTo: ".mobile-nav",
       duration: 300,
       closeOnClick: true,
+      // allowParentLinks: true, // Allow parent links to be clickable
     });
 
     /*===============================
@@ -313,20 +314,20 @@ Version:	1.1
     /*====================
 			Google Maps JS
 		======================*/
-    var map = new GMaps({
-      el: "#map",
-      lat: 23.011245,
-      lng: 90.88478,
-      scrollwheel: false,
-    });
-    map.addMarker({
-      lat: 23.011245,
-      lng: 90.88478,
-      title: "Marker with InfoWindow",
-      infoWindow: {
-        content: "<p>welcome to Medipro</p>",
-      },
-    });
+    // var map = new GMaps({
+    //   el: "#map",
+    //   lat: 23.011245,
+    //   lng: 90.88478,
+    //   scrollwheel: false,
+    // });
+    // map.addMarker({
+    //   lat: 23.011245,
+    //   lng: 90.88478,
+    //   title: "Marker with InfoWindow",
+    //   infoWindow: {
+    //     content: "<p>welcome to Medipro</p>",
+    //   },
+    // });
   });
 
   /*====================
