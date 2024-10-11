@@ -128,11 +128,11 @@
 	<!--/ End Footer Top -->
 
 	<!-- Copyright -->
-	<div class="copyright bg-gray-700 py-4">
+	<div class="copyright tw-bg-teal-950 py-4">
 		<div class="tw-container tw-mx-auto">
 			<div class="tw-text-center">
-				<p>© Copyright 2024 | All Rights Reserved by <a href="http://www.pathideamultiskill.com" target="_blank"
-						class="tw-text-white hover:tw-text-gray-400">Path Idea Multi Skill</a></p>
+				<span>© Copyright 2024 | All Rights Reserved by <a href="http://www.pathideamultiskill.com"
+						target="_blank" class="tw-text-white hover:tw-text-gray-400">Path Idea Multi Skill</a></span>
 			</div>
 		</div>
 	</div>
