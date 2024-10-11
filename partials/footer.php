@@ -131,8 +131,9 @@
 	<div class="copyright tw-bg-teal-950 py-4">
 		<div class="tw-container tw-mx-auto">
 			<div class="tw-text-center">
-				<span>© Copyright 2024 | All Rights Reserved by <a href="http://www.pathideamultiskill.com"
-						target="_blank" class="tw-text-white hover:tw-text-gray-400">Path Idea Multi Skill</a></span>
+				<span class="tw-px-2">© Copyright 2024 | All Rights Reserved by <a
+						href="http://www.pathideamultiskill.com" target="_blank"
+						class="tw-text-white hover:tw-text-gray-400">Path Idea Multi Skill</a></span>
 			</div>
 		</div>
 	</div>

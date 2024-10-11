@@ -1023,6 +1023,11 @@ video {
   padding-right: 2.5rem;
 }
 
+.tw-px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .tw-pt-8 {
   padding-top: 2rem;
 }
