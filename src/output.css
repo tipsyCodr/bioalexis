@@ -750,16 +750,16 @@ video {
   gap: 2.5rem;
 }
 
+.tw-gap-2 {
+  gap: 0.5rem;
+}
+
 .tw-gap-3 {
   gap: 0.75rem;
 }
 
 .tw-gap-5 {
   gap: 1.25rem;
-}
-
-.tw-gap-2 {
-  gap: 0.5rem;
 }
 
 .tw-overflow-hidden {

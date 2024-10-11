@@ -52,78 +52,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/css/lightbox.min.css"
 	integrity="sha512-xtV3HfYNbQXS/1R1jP53KbFcU9WXiSA1RFKzl5hRlJgdOJm4OxHCWYpskm6lN0xp0XtKGpAfVShpbvlFH3MDAA=="
 	crossorigin="anonymous" referrerpolicy="no-referrer" />
-<!-- <style>
-	/* Remove extra dropdown arrows */
-	.slicknav_menu .slicknav_nav .dropdown-toggle::before {
-		display: none;
-		/* Removes the additional arrow before the submenu */
-	}
 
-	.slicknav_menu .slicknav_nav .dropdown-toggle::after {
-		content: "\f078";
-		/* FontAwesome down arrow */
-		font-family: FontAwesome;
-		font-size: 12px;
-		/* Adjust size as needed */
-		margin-left: 10px;
-		color: #000;
-		/* Customize color */
-	}
-
-	/* Align dropdown items properly */
-	/* .slicknav_menu .slicknav_nav ul {
-		padding-left: 0;
-		margin-left: 0;
-	} */
-
-	.slicknav_menu .slicknav_nav ul li {
-		padding: 10px 15px;
-		border-bottom: 1px solid #ddd;
-	}
-
-	.slicknav_menu .slicknav_nav ul li:last-child {
-		border-bottom: none;
-		/* Remove border from the last item */
-	}
-
-	/* Adjust font size and spacing for better readability */
-	.slicknav_menu .slicknav_nav a {
-		font-size: 16px;
-		color: #000;
-	}
-
-	/* Optional: Adjust spacing between dropdown items */
-	.slicknav_menu .slicknav_nav ul li a {
-		padding: 10px 20px;
-		display: block;
-	}
-
-	.dropdown-toggle::after {
-		display: none;
-	}
-
-	.slicknav_menu .slicknav_nav ul li a {
-		margin-left: 40px;
-		border: 1px #e4e4e4 solid;
-		/* display: block; */
-	}
-
-	.slicknav_menu .slicknav_nav ul li:first-child a {
-		border-top-left-radius: 10px;
-		border-top-right-radius: 10px;
-	}
-
-	.slicknav_menu .slicknav_nav ul li:last-child a {
-		border-bottom-left-radius: 10px;
-		border-bottom-right-radius: 10px;
-	}
-
-	.slicknav_nav li,
-	.slicknav_nav ul {
-		display: contents;
-		margin-left: 20px;
-	}
-</style> -->
 <?php
 function converToEmbed($url)
 {

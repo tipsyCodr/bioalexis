@@ -286,7 +286,7 @@ body {
   border-bottom: 1px solid var(--primary-color);
 }
 .header .topbar {
-  padding: 15px 0;
+  padding: 10px 0;
 }
 .header .top-link {
   float: left;

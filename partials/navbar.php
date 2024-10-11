@@ -115,7 +115,9 @@ $name = basename($url);
 	<!-- Topbar -->
 	<div class="topbar primary-bg">
 		<div class="tw-flex tw-justify-around tw-flex-col sm:tw-flex-row tw-items-center tw-gap-2 w-full">
-			<p class="text-white tw-text-2xl tracking-widest tw-font-bold tw-uppercase">Improving Lives Together</p>
+			<span class="text-white tw-text-2xl tracking-widest tw-font-bold tw-uppercase tw-px-0">Improving Lives
+				Together
+			</span>
 		</div>
 	</div>
 	<!-- End Topbar -->
