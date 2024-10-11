@@ -141,8 +141,8 @@ $name = basename($url);
 						<div class="main-menu">
 							<nav class="navigation">
 								<ul class="nav menu">
-									<li class="<?php echo ($name == "index.php") ? 'active' : ''; ?>">
-										<a href="index.php">Home</a>
+									<li class="<?php echo ($name == "index.php") ? "active" : ""; ?>">
+										<a href="index.php"> Home</a>
 									</li>
 
 									<li class="dropdown ">
@@ -164,8 +164,8 @@ $name = basename($url);
 										</ul>
 									</li>
 
-									<li class="<?php echo ($name == "categories.php?category=All") ? 'active' : ''; ?>">
-										<a href="categories.php?category=All">Products</a>
+									<li class="<?php echo ($name == "products.php?category=All") ? 'active' : ''; ?>">
+										<a href="products.php?category=All">Products</a>
 									</li>
 									<li class="<?php echo ($name == 'awards.php') ? 'active' : ''; ?>">
 										<a href="awards.php">Awards</a>

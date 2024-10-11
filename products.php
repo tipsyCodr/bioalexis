@@ -77,7 +77,7 @@ $category = $_GET['category'] ?? 'All';
 			<div class="container flex flex-wrap tw-justify-center tw-gap-5">
 				<cms:pages masterpage='index.php' folder='<?php echo strtolower($category) ?>' paginate='1' limit='30'>
 					<div class="item rounded tw-p-2 tw-shadow  tw-min-w-[300px] tw-bg-white tw-bg-opacity-70 tw-transition tw-duration-300 hover:tw-bg-opacity-100"
-						onclicsk="location.href='product-details.php?title=<cms:show k_page_title />&img=<cms:show gg_image />&description=<cms:show k_page_title />&price=<cms:show price />&category=<cms:show k_page_title />'">
+						onclick="location.href='<cms:show k_page_link />	'">
 						<div class="p-img tw-p-2 tw-relative">
 							<img class="tw-object-contain tw-w-full hover:tw-bg-opacity-40 tw-object-center"
 								style='height: 200px;' src="<cms:show gg_image />" height="200" alt="">

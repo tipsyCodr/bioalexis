@@ -1,7 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   prefix: "tw-",
-  content: ["./src/**/*.css", "./partials/*.php", "*.{php,css,js}"],
+  content: [
+    "./src/**/*.css",
+    "./partials/*.php",
+    "*.{php,css,js}",
+    "./couch/snippets/*.php",
+  ],
   theme: {
     extend: {
       colors: {
