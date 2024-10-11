@@ -149,7 +149,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 14px;
-    /* color: #888; */
+  /* color: #888; */
 }
 
 #scrollUp {
@@ -399,11 +399,11 @@ body {
   color: white;
   background-color: var(--primary-color);
 }
-.header .nav li:hover a:before {
+/* .header .nav li:hover a:before {
   opacity: 1;
   width: 100%;
   visibility: visible;
-}
+} */
 .header .nav li:hover a {
   /* color:var(--primary-color); */
 }

@@ -52,7 +52,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/css/lightbox.min.css"
 	integrity="sha512-xtV3HfYNbQXS/1R1jP53KbFcU9WXiSA1RFKzl5hRlJgdOJm4OxHCWYpskm6lN0xp0XtKGpAfVShpbvlFH3MDAA=="
 	crossorigin="anonymous" referrerpolicy="no-referrer" />
-<style>
+<!-- <style>
 	/* Remove extra dropdown arrows */
 	.slicknav_menu .slicknav_nav .dropdown-toggle::before {
 		display: none;
@@ -123,7 +123,7 @@
 		display: contents;
 		margin-left: 20px;
 	}
-</style>
+</style> -->
 <?php
 function converToEmbed($url)
 {

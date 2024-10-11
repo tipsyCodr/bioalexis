@@ -1,110 +1,165 @@
 <?php $url = $_SERVER['REQUEST_URI'];
 $name = basename($url); ?>
+<style>
+	/* Remove extra dropdown arrows */
+	.slicknav_menu .slicknav_nav .dropdown-toggle::before {
+		display: none;
+	}
+
+	.slicknav_menu .slicknav_nav .dropdown-toggle::after {
+		content: "\f078";
+		/* FontAwesome down arrow */
+		font-family: FontAwesome;
+		font-size: 12px;
+		margin-left: 10px;
+		color: #000;
+	}
+
+	/* Align dropdown items properly */
+	.slicknav_menu .slicknav_nav ul li {
+		padding: 10px 15px;
+		border-bottom: 1px solid #ddd;
+	}
+
+	.slicknav_menu .slicknav_nav ul li:last-child {
+		border-bottom: none;
+	}
+
+	/* Adjust font size and spacing for better readability */
+	.slicknav_menu .slicknav_nav a {
+		font-size: 16px;
+		color: #000;
+	}
+
+	/* Add custom padding and margins */
+	.slicknav_menu .slicknav_nav ul li a {
+		padding: 10px 20px;
+		display: block;
+		margin-left: 40px;
+		border: 1px solid #e4e4e4;
+	}
+
+	/* Custom border-radius for dropdown */
+	.slicknav_menu .slicknav_nav ul li:first-child a {
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+
+	.slicknav_menu .slicknav_nav ul li:last-child a {
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+
+	/* Dropdown hover effect */
+	.slicknav_menu .slicknav_nav ul li a:hover {
+		background-color: #3498db;
+		color: #fff;
+	}
+
+	/* Remove arrow for submenus */
+	.dropdown-toggle::after {
+		display: none;
+	}
+
+	/* Custom menu layout adjustments */
+	.slicknav_nav li,
+	.slicknav_nav ul {
+		display: contents;
+		margin-left: 20px;
+	}
+
+	/* Hide dropdown by default */
+	.dropdown-menu {
+		display: none;
+	}
+
+	/* Show dropdown on hover on mobile */
+	@media (min-width: 767px) {
+		.dropdown:hover .dropdown-menu {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 100%;
+			flex-direction: column;
+		}
+	}
+</style>
+
+<?php
+$url = $_SERVER['REQUEST_URI'];
+$name = basename($url);
+?>
+
 <!-- Header Area -->
 <header class="header">
 	<!-- Topbar -->
 	<div class="topbar primary-bg">
-		<div class=" tw-flex tw-justify-around tw-flex-col sm:tw-flex-row tw-items-center tw-gap-2 w-full">
-			<p class="text-white tw-text-2xl tracking-widest  tw-font-bold tw-uppercase">Improving Lifes Together</p>
-
+		<div class="tw-flex tw-justify-around tw-flex-col sm:tw-flex-row tw-items-center tw-gap-2 w-full">
+			<p class="text-white tw-text-2xl tracking-widest tw-font-bold tw-uppercase">Improving Lives Together</p>
 		</div>
 	</div>
 	<!-- End Topbar -->
+
 	<!-- Header Inner -->
 	<div class="header-inner">
 		<div class="container">
 			<div class="inner">
 				<div class="row">
+					<!-- Logo Section -->
 					<div class="col-lg-3 col-md-3 col-12">
-						<!-- Start Logo -->
 						<div class="logo">
 							<a href="index.php"><img src="img/logo.png" alt="Bioalexis Trading Pvt. Ltd."
 									style="width:125px"></a>
 						</div>
-						<!-- End Logo -->
-						<!-- Mobile Nav -->
 						<div class="mobile-nav"></div>
-						<!-- End Mobile Nav -->
 					</div>
-					<style>
-						.dropdown:hover .dropdown-menu {
-							/* display: block; */
-						}
-					</style>
-					<div class="col-lg-7 col-md-9 col-12 ">
-						<!-- Main Menu -->
+
+					<!-- Main Menu Section -->
+					<div class="col-lg-7 col-md-9 col-12">
 						<div class="main-menu">
 							<nav class="navigation">
 								<ul class="nav menu">
-									<li class="<?php ($name == "index.php") ? print ("active") : $c = "ac"; ?>"><a
-											href="index.php">Home </i></a></li>
-									<li
-										class="dropdown <?php ($name == 'about.php') ? print ('active') : $c = 'ac'; ?>">
-										<a href="#" class="dropdown-toggle">
-											About Us
-										</a>
-										<ul class="dropdown-menu ">
-											<li class="hover:tw-bg-primary hover:tw-text-white" style="width: 100%;">
-												<a href="about.php" style="width: 100%;">About</a>
-											</li>
+									<li class="<?php echo ($name == "index.php") ? 'active' : ''; ?>">
+										<a href="index.php">Home</a>
+									</li>
 
-
-
-											<li class="hover:tw-bg-primary hover:tw-text-white" style="width: 100%;">
-												<a href="bussiness-plan.php" style="width: 100%;">Bussiness Plan</a>
-											</li>
-
+									<li class="dropdown ">
+										<a href="#" class="dropdown-toggle">About Us</a>
+										<ul class="dropdown-menu">
+											<li><a href="about.php">About</a></li>
+											<li><a href="bussiness-plan.php">Business Plan</a></li>
 										</ul>
 									</li>
-									<li
-										class="dropdown <?php ($name == 'disclaimer.php') ? print ('active') : $c = 'ac'; ?>">
-										<a href="#" class="dropdown-toggle">
-											Company
-										</a>
-										<ul class="dropdown-menu  ">
 
-											<li class="hover:tw-bg-primary hover:tw-text-white <?php ($name == 'contact.php') ? print ('active') : $c = 'ac'; ?>"
-												style="width: 100%;">
-												<a class="tw-block tw-w-full" href="disclaimer.php">Disclaimer</a>
-											</li>
-											<li class="hover:tw-bg-primary hover:tw-text-white" style="width: 100%;">
-												<a href="director_msg.php" style="width: 100%;">Director's Message</a>
-											</li>
-											<!-- <li class="<?php ($name == 'blogs.php') ? print ('active') : $c = 'ac'; ?>"
-												style="width: 100%;">
-												<a class="tw-block tw-w-full" href="blogs.php">Blogs</a>
-											</li> -->
-
-
-											<li class="hover:tw-bg-primary hover:tw-text-white" style="width: 100%;">
-												<a class="tw-block tw-w-full" href="achievers.php"
-													style="width: 100%;">Achievers</a>
-											</li>
-											<li class="hover:tw-bg-primary hover:tw-text-white" style="width: 100%;">
-												<a class="tw-block tw-w-full" href="legal.php"
-													style="width: 100%;">Legal</a>
-											</li>
-											<li class="hover:tw-bg-primary hover:tw-text-white" style="width: 100%;">
-												<a class="tw-block tw-w-full" href="bank.php" style="width: 100%;">Our
-													Bankers</a>
-											</li>
+									<li class="dropdown ">
+										<a href="#" class="dropdown-toggle">Company</a>
+										<ul class="dropdown-menu">
+											<li><a href="disclaimer.php">Disclaimer</a></li>
+											<li><a href="director_msg.php">Director's Message</a></li>
+											<li><a href="achievers.php">Achievers</a></li>
+											<li><a href="legal.php">Legal</a></li>
+											<li><a href="bank.php">Our Bankers</a></li>
 										</ul>
 									</li>
-									<li
-										class="<?php ($name == "categories.php?category=All") ? print ('active') : $c = 'ac'; ?>">
-										<a href="categories.php?category=All ">Products </a>
-									</li>
 
-									<li class="<?php ($name == 'awards.php') ? print ('active') : $c = 'ac'; ?>">
+									<li class="<?php echo ($name == "categories.php?category=All") ? 'active' : ''; ?>">
+										<a href="categories.php?category=All">Products</a>
+									</li>
+									<li class="<?php echo ($name == 'awards.php') ? 'active' : ''; ?>">
 										<a href="awards.php">Awards</a>
 									</li>
-									<li class="<?php ($name == 'contact.php') ? print ('active') : $c = 'ac'; ?>"><a
-											href="contact.php">Contact Us</a></li>
+									<li class="<?php echo ($name == 'contact.php') ? 'active' : ''; ?>">
+										<a href="contact.php">Contact Us</a>
+									</li>
 								</ul>
 							</nav>
 						</div>
-						<!--/ End Main Menu -->
 					</div>
+
+					<!-- Login/Register Button -->
 					<div class="col-lg-2 col-12">
 						<div class="get-quote">
 							<a href="http://login.bioalexis.com/" class="btn">Login/Register</a>
@@ -114,7 +169,7 @@ $name = basename($url); ?>
 			</div>
 		</div>
 	</div>
-	<!--/ End Header Inner -->
 </header>
 <!-- End Header Area -->
-<?php require_once 'partials/breadcrumbs.php' ?>
+
+<?php require_once 'partials/breadcrumbs.php'; ?>
