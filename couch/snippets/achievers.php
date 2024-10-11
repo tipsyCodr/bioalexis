@@ -70,7 +70,7 @@
                             </div>
                         </div>
                     </div>
-                    <h2 class="tw-font-bold tw-text-3xl ">Cars Achievers</h2>
+                    <h2 class="tw-font-bold tw-mt-10 tw-text-3xl ">Cars Achievers</h2>
                     <div class="row">
                         <div class="col-12">
                             <div class="main">
@@ -128,7 +128,7 @@
                             </div>
                         </div>
                     </div>
-                    <h2 class="tw-font-bold tw-text-3xl ">Tour Package Achievers</h2>
+                    <h2 class="tw-font-bold tw-mt-10 tw-text-3xl ">Tour Package Achievers</h2>
                     <div class="row">
                         <div class="col-12">
                             <div class="main">
