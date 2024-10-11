@@ -122,6 +122,9 @@
                                         </div>
                                     </cms:if>
                                 </cms:pages>
+                                <cms:if k_no_pages>
+                                    <div class="alert alert-warning" role="alert">No Achievers Found</div>
+                                </cms:if>
                             </div>
                         </div>
                     </div>
@@ -131,7 +134,6 @@
                             <div class="main">
                                 <cms:pages masterpage='achievers.php' paginate='1' folder="tour" limit='3'>
                                     <div class="row">
-
                                         <div class="col-lg-4">
                                             <!-- News thumbnail -->
                                             <div class="fill news-thumbnail">
@@ -177,6 +179,9 @@
                                         </div>
                                     </cms:if>
                                 </cms:pages>
+                                <cms:if k_no_pages>
+                                    <div class="alert alert-warning" role="alert">No Achievers Found</div>
+                                </cms:if>
                             </div>
                         </div>
                     </div>
