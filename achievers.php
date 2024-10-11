@@ -3,6 +3,9 @@
     <!-- <cms:editable name="achievers_title" type="text" /> -->
     <cms:editable name="achievers_image" crop="1" width="670" height="448" type="image" />
     <cms:editable name="achievers_content" type="richtext" />
+
+    <cms:folder name="tour" title="Tour Achievers" />
+    <cms:folder name="car" title="Car Achievers" />
 </cms:template>
 <!doctype html>
 <html class="no-js" lang="zxx">
