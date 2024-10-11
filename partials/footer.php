@@ -27,15 +27,20 @@
 						</p>
 						<!-- Social Links -->
 						<ul class="social tw-flex tw-gap-6 tw-mt-4">
-							<li><a href="#" class="tw-text-white hover:tw-text-gray-400"><i
+							<li><a href="#"
+									class="tw-text-white hover:tw-text-gray-400 tw-rounded-full tw-outline tw-outline-1 tw-outline-gray-500 tw-w-8 tw-h-8 tw-flex tw-justify-center tw-items-center"><i
 										class="fa-brands fa-facebook"></i></a></li>
-							<li><a href="#" class="tw-text-white hover:tw-text-gray-400"><i
+							<li><a href="#"
+									class="tw-text-white hover:tw-text-gray-400 tw-rounded-full tw-outline tw-outline-1 tw-outline-gray-500 tw-w-8 tw-h-8 tw-flex tw-justify-center tw-items-center"><i
 										class="fa-brands fa-youtube"></i></a></li>
-							<li><a href="#" class="tw-text-white hover:tw-text-gray-400"><i
+							<li><a href="#"
+									class="tw-text-white hover:tw-text-gray-400 tw-rounded-full tw-outline tw-outline-1 tw-outline-gray-500 tw-w-8 tw-h-8 tw-flex tw-justify-center tw-items-center"><i
 										class="fa-brands fa-x-twitter"></i></a></li>
-							<li><a href="#" class="tw-text-white hover:tw-text-gray-400"><i
+							<li><a href="#"
+									class="tw-text-white hover:tw-text-gray-400 tw-rounded-full tw-outline tw-outline-1 tw-outline-gray-500 tw-w-8 tw-h-8 tw-flex tw-justify-center tw-items-center"><i
 										class="fa-brands fa-instagram"></i></a></li>
-							<li><a href="#" class="tw-text-white hover:tw-text-gray-400"><i
+							<li><a href="#"
+									class="tw-text-white hover:tw-text-gray-400 tw-rounded-full tw-outline tw-outline-1 tw-outline-gray-500 tw-w-8 tw-h-8 tw-flex tw-justify-center tw-items-center"><i
 										class="fa-brands fa-linkedin"></i></a></li>
 						</ul>
 						<!-- End Social Links -->
