@@ -10,7 +10,7 @@ require_once('couch/cms.php'); ?>
 
 	<cms:editable name="featured" label="Featured Product" desc="Select one from these" opt_values='No=0 | Yes=1'
 		type='dropdown' />
-	<cms:editable name="joining" label="Featured Product" desc="Select one from these" opt_values='No=0 | Yes=1'
+	<cms:editable name="joining" label="Joining Product" desc="Select one from these" opt_values='No=0 | Yes=1'
 		type='dropdown' />
 
 	<cms:editable name="description" label="Description" type="richtext" />
