@@ -179,8 +179,9 @@
                                         </div>
                                     </cms:if>
                                 </cms:pages>
-                                <cms:if k_no_pages>
-                                    <div class="alert alert-warning" role="alert">No Achievers Found</div>
+                                <cms:if k_folder_name='tour' && k_no_pages>
+                                    <div class="alert alert-warning" role="alert">No Achievers Found in Tour Package
+                                    </div>
                                 </cms:if>
                             </div>
                         </div>
