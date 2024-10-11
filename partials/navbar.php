@@ -11,14 +11,14 @@ $name = basename($url); ?>
 		/* FontAwesome down arrow */
 		font-family: FontAwesome;
 		font-size: 12px;
-		margin-left: 10px;
+		/* margin-left: 10px; */
 		color: #000;
 	}
 
 	/* Align dropdown items properly */
 	.slicknav_menu .slicknav_nav ul li {
-		padding: 10px 15px;
-		border-bottom: 1px solid #ddd;
+		/* padding: 10px 15px; */
+		/* border-bottom: 1px solid #ddd; */
 	}
 
 	.slicknav_menu .slicknav_nav ul li:last-child {
@@ -35,7 +35,7 @@ $name = basename($url); ?>
 	.slicknav_menu .slicknav_nav ul li a {
 		padding: 10px 20px;
 		display: block;
-		margin-left: 40px;
+		/* margin-left: 40px; */
 		border: 1px solid #e4e4e4;
 	}
 
@@ -52,7 +52,7 @@ $name = basename($url); ?>
 
 	/* Dropdown hover effect */
 	.slicknav_menu .slicknav_nav ul li a:hover {
-		background-color: #3498db;
+		background-color: #0a3b3f;
 		color: #fff;
 	}
 
@@ -73,14 +73,31 @@ $name = basename($url); ?>
 		display: none;
 	}
 
+	.dropdown:hover .dropdown-menu li {
+		display: block;
+		width: 100%;
+	}
+
+
+
+	.header .nav li {
+		margin: auto;
+	}
+
 	/* Show dropdown on hover on mobile */
 	@media (min-width: 767px) {
+		.dropdown:hover .dropdown-menu li:hover {
+			background-color: #0a3b3f;
+			color: white;
+
+		}
+
 		.dropdown:hover .dropdown-menu {
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			position: absolute;
-			top: 100%;
+			top: 80%;
 			left: 0;
 			width: 100%;
 			flex-direction: column;
