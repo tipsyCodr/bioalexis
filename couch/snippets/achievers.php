@@ -11,7 +11,7 @@
     <!-- Start Gallery Us -->
     <section class="news section">
         <div class=" container">
-            <h2 class="tw-font-bold tw-text-3xl ">All Achievers</h2>
+            <h2 class="tw-font-bold tw-text-3xl ">Achievers</h2>
 
             <div class="row">
                 <div class="col-lg-8 col-12">
