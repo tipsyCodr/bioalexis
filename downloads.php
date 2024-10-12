@@ -1,66 +1,84 @@
+<?php require_once('couch/cms.php'); ?>
+<cms:template title='Download Section'>
+    <cms:editable name="name" type="text" />
+    <cms:repeatable name="files" label="Files">
+        <cms:editable type="file" name="file" />
+    </cms:repeatable>
+</cms:template>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legal Documents</title>
+    <title>Download Section</title>
     <?php require_once 'partials/head.php' ?>
 </head>
+<style>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: 500;
+        line-height: 1.2;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    h5 {
+        font-size: 1.25rem;
+    }
+
+    h6 {
+        font-size: 1rem;
+    }
+</style>
 
 <body>
     <?php require_once 'partials/navbar.php' ?>
-
-    <!-- Breadcrumbs -->
-    <div class="breadcrumbs overlay">
-        <div class="container">
-            <div class="bread-inner">
-                <div class="row">
-                    <div class="col-12">
-                        <h2>Legal Documents</h2>
-                        <ul class="bread-list">
-                            <li><a href="index.html">Home</a></li>
-                            <li><i class="icofont-simple-right"></i></li>
-                            <li class="active">Legal Documents</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Breadcrumbs -->
-
-    <style>
-        .breadcrumbs {
-            background-image: url('img/networking.jpg');
-        }
-    </style>
-
-
-    <h1 class="tw-font-bold tw-text-2xl tw-text-center tw-my-8">Our Legal Documents</h1>
-    <style>
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-column-gap: 10px;
-            grid-row-gap: 10px;
-        }
-
-        .grid-item {
-            background-color: #f2f2f2;
-            padding: 20px;
-            border: 1px solid #999;
-        }
-
-        .grid-item img {
-            width: 100%;
-        }
-    </style>
+    <?php breadcrumbs('Downloads', 'Downloads') ?>
     <div class="container">
+        <h1 class="tw-font-bold tw-text-2xl tw-text-center tw-my-8">Download Section</h1>
+        <ul class="tw-list-disc tw-pl-4">
+            <cms:pages masterpage="downloads.php">
+                <cms:show name />
+                <cms:repeat 'files'>
+                    <li><a href="<cms:show file/>" target="_blank">
+                            <cms:show file />
+                        </a></li>
+                </cms:repeat>
+            </cms:pages>
+            <div class="tw-flex tw-flex-col sm:tw-flex-row tw-flex-wrap tw-gap-2">
 
+                <?php
+                $files = glob('assets/*');
+                foreach ($files as $file) {
+                    echo '<li class="tw-text-blue-500 tw-p-2 tw-text-nowrap tw-m-2 tw-rounded-xl tw-border tw-bg-gray-50 tw-underline"><a href="' . $file . '" target="_blank" class="tw-hover:tw-text-blue-700 tw-transition tw-duration-150">' . basename($file) . '</a></li>';
+                }
+                ?>
+            </div>
+        </ul>
     </div>
     <?php require_once 'partials/scripts.php' ?>
     <?php require_once 'partials/footer.php' ?>
 </body>
 
 </html>
+
+<?php COUCH::invoke(); ?>
