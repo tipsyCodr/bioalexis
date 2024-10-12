@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Plan</title>
+    <title>Business Opportunities</title>
     <?php require_once 'partials/head.php' ?>
 </head>
 
@@ -20,11 +20,11 @@
             <div class="bread-inner">
                 <div class="row">
                     <div class="col-12">
-                        <h2>Business Plan</h2>
+                        <h2>Business Opportunities</h2>
                         <ul class="bread-list">
                             <li><a href="index.html">Home</a></li>
                             <li><i class="icofont-simple-right"></i></li>
-                            <li class="active">Business Plan</li>
+                            <li class="active">Business Opportunities</li>
                         </ul>
                     </div>
                 </div>
@@ -57,19 +57,34 @@
     </style>
     <section>
         <h1 class="text-center tw-text-4xl tw-font-semibold tw-pt-8">ENROLLMENT</h1>
-        <div class="container">
-            <div class="tw-flex tw-justify-center tw-gap-10">
-                <img class="tw-w-1/2 tw-py-10" src="img/networking.png" alt="">
-                <div class=" ">
-                    <h2 style="text-align:left; font-size: 25px; font-weight: bold;padding-top:84px; ">Joining The
-                        Business
-                    </h2>
-                    <ul class='text-left tw-list-disc'
-                        style="list-style:disc; text-align:center; font-size: 18px;  padding-left: 20px;">
-                        <li style="">ZERO CHARGE FOR ENROLLMENT</li>
-                        <li style="">NO REGISTRATION FEES</li>
-                        <li style="">NO COMPULSION OF ANY TYPE OF PURCHASE.</li>
-                    </ul>
+        <div class="container section">
+            <div class="tw-flex tw-flex-col  tw-justify-center tw-items-center sm:tw-gap-5">
+                <img class="tw-max-w-[500px] tw-w-full tw-py-10" src="img/networking.png" alt="">
+                <div class=" tw-text-center">
+                    <h2 class="tw-py-4 tw-font-bold tw-text-3xl">Joining The Business </h2>
+                    <div class="tw-flex tw-flex-col sm:tw-flex-row tw-justify-center tw-items-center tw-gap-5">
+                        <div class="tw-shadow tw-bg-gray-100 tw-rounded-lg tw-p-5 tw-flex tw-flex-col tw-items-center tw-max-w-md hover:-tw-translate-y-2 tw-transition-all tw-duration-1000"
+                            style="width:300px;height:350px;">
+                            <img src="img/icons/zero.jpg" width="300" height="300" alt="">
+                            <div class="tw-text-lg tw-text-nowrap tw-ml-5 tw-font-bold">
+                                No CHARGE FOR ENROLLMENT
+                            </div>
+                        </div>
+                        <div class="tw-shadow tw-bg-gray-100 tw-rounded-lg tw-p-5 tw-flex tw-flex-col tw-items-center tw-max-w-md hover:-tw-translate-y-2 tw-transition-all tw-duration-1000"
+                            style="width:300px;height:350px;">
+                            <img src="img/icons/no-fee.avif" width="300" height="300" alt="">
+                            <div class="tw-text-lg tw-text-nowrap tw-ml-5 tw-font-bold">
+                                NO REGISTRATION FEES
+                            </div>
+                        </div>
+                        <div class="tw-shadow tw-bg-gray-100 tw-rounded-lg tw-p-5 tw-flex tw-flex-col tw-items-center tw-max-w-md hover:-tw-translate-y-2 tw-transition-all tw-duration-1000"
+                            style="width:300px;height:350px;">
+                            <div class=""><img src="img/icons/nocompulsion.avif" width="300" height="300" alt=""></div>
+                            <div class="tw-text-lg  tw-ml-5 tw-font-bold">
+                                NO COMPULSION OF ANY TYPE OF PURCHASE.
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

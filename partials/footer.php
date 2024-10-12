@@ -16,7 +16,6 @@
 				<!-- About Us Section -->
 				<div class="tw-w-full sm:tw-w-[270px] tw-flex-initial">
 					<div class="single-footer">
-						<h2 class="tw-text-lg tw-text-white tw-font-semibold">About Us</h2>
 						<img src="img/logo.png" alt="Bioalexis Trading India Private Limited"
 							class="tw-w-40 tw-h-auto tw-mb-4">
 
@@ -90,16 +89,20 @@
 					<div class="single-footer f-link">
 						<h2 class="tw-text-lg tw-text-white tw-font-semibold">Quick Links</h2>
 						<ul class="tw-flex tw-flex-col tw-mt-6 tw-gap-y-2">
-							<li><a href="terms.php" class="tw-text-white hover:tw-text-gray-400"><i
-										class="fa fa-caret-right"></i> Terms & Conditions</a></li>
+							<li><a href="disclaimer.php" class="tw-text-white hover:tw-text-gray-400"><i
+										class="fa fa-caret-right"></i> Disclaimer</a></li>
 							<li><a href="legal.php" class="tw-text-white hover:tw-text-gray-400"><i
 										class="fa fa-caret-right"></i> Legal</a></li>
-							<li><a href="http://login.bioalexis.com/" class="tw-text-white hover:tw-text-gray-400"><i
-										class="fa fa-caret-right"></i> Login</a></li>
+							<li><a href="bank.php" class="tw-text-white hover:tw-text-gray-400"><i
+										class="fa fa-caret-right"></i> Our Bankers</a></li>
+							<li><a href="terms.php" class="tw-text-white hover:tw-text-gray-400"><i
+										class="fa fa-caret-right"></i> Terms & Conditions</a></li>
 							<li><a href="downloads.php" class="tw-text-white hover:tw-text-gray-400"><i
 										class="fa fa-caret-right"></i> Download</a></li>
 							<li><a href="gallery.php" class="tw-text-white hover:tw-text-gray-400"><i
 										class="fa fa-caret-right"></i> Gallery</a></li>
+							<li><a href="http://login.bioalexis.com/" class="tw-text-white hover:tw-text-gray-400"><i
+										class="fa fa-caret-right"></i> Login</a></li>
 						</ul>
 					</div>
 				</div>

@@ -4,6 +4,24 @@
 <?php require_once 'partials/head.php' ?>
 
 </head>
+<style>
+  .section h2,
+  .section h3 {
+    color: #0a3b3f !important;
+  }
+
+  p {
+    color: #000 !important;
+  }
+
+  .section {
+    padding: 50px 0;
+  }
+
+  hr {
+    border: unset;
+  }
+</style>
 
 <body>
   <?php require_once 'partials/navbar.php' ?>
@@ -12,53 +30,6 @@
   <!-- Start Contact Us -->
   <section class="contact-us section">
     <div class="container">
-
-      <div class="row">
-        <div class="col-lg-12">
-          <p>
-            Bioalexis is a Direct selling company founded in November 2021 based in Raipur C.G. Founded on the principle
-            of changing lives through its remarkable wellness products and Proven compensation income plan. With
-            extensive experience as network leaders of our board of directors and their innovative spirit and visionary
-            leadership, opening the doors of opportunity and prosperity by empowering distributors to achieve financial
-            independence and economic stability by maximizing the wealth of the market through our products and
-            services. There’s a truth that “ Good health is the foundation which to build a - happy life, a community
-            and economy”. To satisfy people’s health desires and needs, we Insure good results from our research based
-            healthcare products. Starting a business with Bioalexis gives you the potential to earn a significant income
-            stream, have time and freedom to build your life according to your dream
-          </p>
-          <h3>Our Mission</h3>
-          <p style="color:black">Our methodology begins with our lasting mission of asserting our purpose
-            as a company and
-            serves a benchmark for our actions and decisions.</p>
-          <ol style="padding-left: 20px;list-style: disc;color:black">
-            <li>To empower the world.</li>
-            <li>To encourage confidence, optimism and happiness.</li>
-            <li>To create worth and make a distinction.</li>
-          </ol>
-
-          <h3>Our Vision</h3>
-          <p style="color:black">Our vision serves as the outline of our methodology and directs every
-            aspect of our business
-            by unfolding what we need to achieve in order to continue sustainable and quality growth.
-          </p>
-          <ol style="padding-left: 20px;color:black">
-            <li><b>Distributors</b>: To have a great place to work where distributors are inspired to be
-              the
-              best that they can be.</li>
-            <li><b>Products</b>: Bring to the world a portfolio of quality revolutionary products that
-              anticipate and satisfy people’s health desires and needs.</li>
-            <li><b>Partners</b>: Nurture a winning network of customers and distributors, together we
-              creat
-              joint,long term value.</li>
-            <li><b>Efficiency</b>: Be a highly exciting and dynamic organization that will be flexible
-              to
-              furnish the trending needs and desires of the market..</li>
-          </ol>
-        </div>
-      </div>
-
-
-
       <!-- Start Feautes -->
       <section class=" Feautess section" style="padding:0; padding-top: 20px;">
         <div class="container">
@@ -87,10 +58,8 @@
       </section>
       <!--/ End Feautes -->
 
-
-
       <!-- Start Why choose -->
-      <section class="why-choose section" style="padding:0; padding-top: 40px;">
+      <section class="why-choose section tw-border-b tw-border-primary">
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
@@ -167,7 +136,6 @@
         </div>
       </section>
 
-
       <!-- Start Blog Area -->
       <section class="blog section" id="blog">
         <div class="container">
@@ -183,7 +151,7 @@
           <div class="row justify-content-center">
             <div class="col-lg-4 col-md-6 col-12">
               <!-- Single Blog -->
-              <div class="single-news">
+              <div class="single-news hover:-tw-translate-y-2 tw-transition tw-duration-300">
                 <div class="news-head"><a href="#">
                     <img src="img/tarun_yadav.jpg" alt="#"></a>
                 </div>
@@ -202,7 +170,7 @@
             </div>
             <div class="col-lg-4 col-md-6 col-12">
               <!-- Single Blog -->
-              <div class="single-news">
+              <div class="single-news hover:-tw-translate-y-2 tw-transition tw-duration-300">
                 <div class="news-head"><a href="#">
                     <img style="max-height:360px;" src="img/deepak_dewangan.jpg" alt="#"></a>
                 </div>
@@ -224,7 +192,11 @@
         </div>
       </section>
       <!-- End Blog Area -->
-      <div class="contact-info">
+
+
+
+
+      <div class="contact-info tw-hidden">
         <div class="row">
           <!-- single-info -->
           <div class="col-lg-4 col-12">

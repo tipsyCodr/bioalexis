@@ -33,7 +33,41 @@ require_once('couch/cms.php'); ?>
 
 </head>
 
+
+<style>
+	.section {
+		padding: 50px 0;
+	}
+
+	.scroll-container {
+		display: flex;
+		overflow-x: auto;
+		scroll-behavior: smooth;
+		/* Optional, for smooth scrolling */
+		gap: 16px;
+		/* Optional, space between cards */
+		padding: 10px;
+		/* Optional, add padding */
+	}
+
+	.card {
+		min-width: 200px;
+		max-width: 332px;
+		/* Ensure each card has a minimum width */
+		height: 210px;
+		/* Set height of each card */
+		background-color: #f0f0f0;
+		/* Card styling */
+		flex-shrink: 0;
+		/* Prevent cards from shrinking */
+		border-radius: 8px;
+		padding: 20px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	}
+</style>
+
 <body>
+
 	<cms:if k_is_page>
 
 		<cms:embed 'products.php' />
@@ -133,79 +167,24 @@ require_once('couch/cms.php'); ?>
 					</div>
 					<div class="tw-flex tw-gap-10 flex-col tw-mx-auto tw-justify-center tw-items-center md:tw-flex-row">
 						<div
-							class="item tw-flex tw-flex-col sm:tw-flex-row tw-flex-wrap tw-gap-3 tw-justify-center tw-items-center">
+							class="item tw-flex tw-flex-col sm:tw-flex-row tw-flex-wrap tw-gap-3 tw-justify-center tw-items-center ">
 							<cms:pages masterpage='index.php' custom_field="joining=1"
 								folder='<?php echo strtolower($category) ?>' paginate='1' limit='30'>
-								<div class="item rounded tw-p-2 tw-shadow tw-min-w-[300px] tw-bg-white tw-bg-opacity-70 tw-transition tw-duration-300 hover:tw-bg-opacity-100"
+								<div class="item rounded tw-p-2 tw-shadow tw-min-w-[300px] tw-bg-white tw-bg-opacity-70 hover:tw-bg-opacity-100 hover:-tw-translate-y-2 tw-transition-all tw-duration-1000 tw-cursor-pointer "
 									onclick="location.href='<cms:show k_page_link />'">
 									<div class="p-img tw-p-2 tw-relative">
 										<img class="tw-object-contain tw-w-full hover:tw-bg-opacity-40 tw-object-center"
 											style='height: 200px;' src="<cms:show gg_image />" height="200" alt="">
 									</div>
 									<div class="text tw-text-center">
-										<p class="tw-font-normal tw-text-black tw-text-md tw-text-center">
+										<p class="tw-font-semibold  tw-text-black tw-text-md tw-text-center">
 											<cms:show k_page_title />
 										</p>
-										<p class="tw-font-bold tw-text-green-600 tw-text-sm tw-text-center">
-											Rs.
-											<cms:show price />
-										</p>
-										<small class="tw-mx-auto tw-text-center tw-w-full">Joining:
-											<cms:show joining />
-										</small>
-										<small class="tw-mx-auto tw-text-center tw-w-full">Featured:
-											<cms:show featured />
-										</small>
-										<small class="tw-mx-auto tw-text-center tw-w-full">Inclusive of all
-											taxes</small>
+
+
 									</div>
 								</div>
 							</cms:pages>
-
-							<?php
-							// $products = array(
-							// 	array('name' => 'Alexis Trufit', 'price' => '1600', 'img' => 'alexis trufit.jpg', 'category' => 'Personal Care', 'description' => 'Alexis Trufit is a dietary supplement in the form of a tablet that is designed for women. To use, simply drop one tablet into a glass of water, watch it fizz, and then drink. Alexis Trufit is a convenient and easy way to support your overall health and wellness. The tablets are easy to take on-the-go, and can be taken at any time of day. The unique formula of Alexis Trufit is designed to provide a range of benefits, including supporting energy and vitality, and promoting a healthy metabolism. Alexis Trufit is a great choice for women who are looking for a convenient and effective way to support their health and wellness.', 'youtube' => 'https://www.youtube.com/watch?v=mbAu5Iaa6rc&t=79s'),
-							// 	array('name' => 'Mr. Alexis ', 'price' => '933', 'img' => 'mr_alexis.jpg', 'category' => 'Personal Care', 'description' => 'Mr. Alexis is a dietary supplement in the form of a tablet that is designed for men. To use, simply drop one tablet into a glass of water, watch it fizz, and then drink. Mr. Alexis is a convenient and easy way to support your overall health and wellness. The tablets are easy to take on-the-go, and can be taken at any time of day. The unique formula of Mr. Alexis is designed to provide a range of benefits, including supporting energy and vitality, and promoting a healthy metabolism. Mr. Alexis is a great choice for men who are looking for a convenient and effective way to support their health and wellness.', 'youtube' => 'https://www.youtube.com/watch?v=Iuq5JgmDWdw&t=36s'),
-							// 	array('name' => 'Alexis Vama', 'price' => '1350', 'img' => 'alexi8.png', 'category' => 'Personal Care', 'description' => 'Alexis Vama is a dietary supplement in the form of a tablet that is designed for women. To use, simply drop one tablet into a glass of water, watch it fizz, and then drink. Alexis Vama is a convenient and easy way to support your overall health and wellness. The tablets are easy to take on-the-go, and can be taken at any time of day. The unique formula of Alexis Vama is designed to provide a range of benefits, including supporting energy and vitality, and promoting a healthy metabolism. Alexis Vama is a great choice for women who are looking for a convenient and effective way to support their health and wellness.', 'youtube' => 'https://www.youtube.com/watch?v=AY797RWRWfY&t=37s'),
-							// );
-							
-							foreach ($products as $product) {
-								?>
-
-								<div class="item rounded tw-p-2 tw-shadow  tw-min-w-[300px] tw-bg-white tw-bg-opacity-70 tw-transition tw-duration-300 hover:tw-bg-opacity-100"
-									onclick="location.href='product-details.php?title=<?php echo $product['name']; ?>&img=<?php echo $product['img']; ?>&description=<?php echo $product['description']; ?>&price=<?php echo $product['price']; ?>&category=<?php echo $product['category']; ?>&youtube=<?php echo $product['youtube']; ?>'">
-									<div class="p-img tw-p-2 tw-relative">
-										<img class="tw-object-contain tw-w-full hover:tw-bg-opacity-40 tw-object-center"
-											style='height: 200px;' src="img/products/plain/<?php echo $product['img']; ?>"
-											height="200" alt="">
-										<div
-											class="tw-absolute tw-inset-0 tw-flex tw-gap-5 tw-items-center tw-justify-center tw-opacity-0 hover:tw-opacity-100 tw-transition tw-duration-300">
-											<div class="">
-												<a href="#" class="tw-bg-white tw-rounded-full tw-p-2 tw-shadow ">
-													<i style="" class="tw-text-xl icofont-eye"></i>
-												</a>
-											</div>
-											<div class="">
-												<a href="#" class="tw-bg-white tw-rounded-full tw-p-2 tw-shadow">
-													<i class="tw-text-xl icofont-shopping-cart"></i>
-												</a>
-											</div>
-										</div>
-									</div>
-									<div class="text tw-text-center">
-										<p class="tw-font-normal tw-text-black tw-text-md tw-text-center">
-											<?php echo $product['name']; ?>
-										</p>
-										<!-- <p class="tw-font-bold tw-text-green-600  tw-text-sm tw-text-center">
-										Rs. <?php echo $product['price']; ?>
-									</p> -->
-										<small class=" tw-mx-auto tw-text-center tw-w-full">Inclusive of all taxes</small>
-									</div>
-								</div>
-								<?php
-							}
-							?>
-
 						</div>
 
 					</div>
@@ -214,33 +193,53 @@ require_once('couch/cms.php'); ?>
 
 		</section>
 		<!-- Joining Product Section ends -->
-		<style>
-			.scroll-container {
-				display: flex;
-				overflow-x: auto;
-				scroll-behavior: smooth;
-				/* Optional, for smooth scrolling */
-				gap: 16px;
-				/* Optional, space between cards */
-				padding: 10px;
-				/* Optional, add padding */
-			}
 
-			.card {
-				min-width: 200px;
-				max-width: 332px;
-				/* Ensure each card has a minimum width */
-				height: 210px;
-				/* Set height of each card */
-				background-color: #f0f0f0;
-				/* Card styling */
-				flex-shrink: 0;
-				/* Prevent cards from shrinking */
-				border-radius: 8px;
-				padding: 20px;
-				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-			}
-		</style>
+		<!-- Register Yourself Section -->
+		<section class="Feautes section">
+			<div class="container">
+				<h2 class="text-center"> Now is the time to do something! Becoming a distributor is simple and easy
+					awesome
+				</h2>
+				<div class="row">
+					<div class="col-lg-4 col-12">
+						<!-- Start Single features -->
+						<div class="single-features">
+							<div class="signle-icon">
+								<i class="icofont-user"></i>
+							</div>
+							<h3>Register Yourself</h3>
+							<p>Register yourself as a Distributor !</p>
+						</div>
+						<!-- End Single features -->
+					</div>
+					<div class="col-lg-4 col-12">
+						<!-- Start Single features -->
+						<div class="single-features">
+							<div class="signle-icon">
+								<i class="icofont-cart"></i>
+							</div>
+							<h3>Buy Products</h3>
+							<p>Buy Products at DP Price </p>
+						</div>
+						<!-- End Single features -->
+					</div>
+					<div class="col-lg-4 col-12">
+						<!-- Start Single features -->
+						<div class="single-features last">
+							<div class="signle-icon">
+								<i class="icofont-money"></i>
+							</div>
+							<h3>Sell and earn</h3>
+							<p> Sell and Earn Extra Income </p>
+						</div>
+						<!-- End Single features -->
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!-- Register Yourself Ends Section -->
+
 		<!-- Product Testimony -->
 		<section class="" style="padding-top:20px"
 			style="background-image:url('img/bg-featured.jpg');background-repeat: no-repeat;	background-attachment: fixed;">
@@ -396,108 +395,30 @@ require_once('couch/cms.php'); ?>
 				}
 			</style>
 			<div class="">
-				<div class=" wrapper">
-					<div class="head">
-						<h2 class="tw-font-bold tw-text-3xl text-center tw-py-5">Featured Products</h2>
+				<div class="head">
+					<h2 class="tw-font-bold tw-text-3xl text-center tw-py-5">Featured Products</h2>
 
-					</div>
+				</div>
+				<div class="wrapper">
 					<div class="tw-flex tw-gap-10 flex-col tw-mx-auto tw-justify-center tw-items-center md:tw-flex-row">
 						<div
-							class="item tw-flex tw-flex-col sm:tw-flex-row tw-flex-wrap tw-gap-3 tw-justify-center tw-items-center">
+							class=" tw-flex tw-flex-col sm:tw-flex-row tw-flex-wrap tw-gap-3 tw-justify-center tw-items-center">
 							<cms:pages masterpage='index.php' custom_field="featured=1"
 								folder='<?php echo strtolower($category) ?>' paginate='1' limit='30'>
-								<div class="item rounded tw-p-2 tw-shadow tw-min-w-[300px] tw-bg-white tw-bg-opacity-70 tw-transition tw-duration-300 hover:tw-bg-opacity-100"
+								<div class="item rounded tw-p-2 tw-shadow tw-min-w-[300px] tw-bg-white tw-bg-opacity-70 tw-transition-all hover:tw-bg-opacity-100 hover:-tw-translate-y-2 tw-cursor-pointer tw-duration-1000"
 									onclick="location.href='<cms:show k_page_link />'">
 									<div class="p-img tw-p-2 tw-relative">
 										<img class="tw-object-contain tw-w-full hover:tw-bg-opacity-40 tw-object-center"
 											style='height: 200px;' src="<cms:show gg_image />" height="200" alt="">
 									</div>
 									<div class="text tw-text-center">
-										<p class="tw-font-normal tw-text-black tw-text-md tw-text-center">
+										<p class="tw-font-semibold tw-text-black tw-text-md tw-text-center">
 											<cms:show k_page_title />
 										</p>
-										<p class="tw-font-bold tw-text-green-600 tw-text-sm tw-text-center">
-											Rs.
-											<cms:show price />
-										</p>
-										<small class="tw-mx-auto tw-text-center tw-w-full">Joining:
-											<cms:show joining />
-										</small>
-										<small class="tw-mx-auto tw-text-center tw-w-full">Featured:
-											<cms:show featured />
-										</small>
-										<small class="tw-mx-auto tw-text-center tw-w-full">Inclusive of all
-											taxes</small>
+
 									</div>
 								</div>
 							</cms:pages>
-							<?php
-							// 							$products = array(
-// 								array('name' => 'Alexis Trufit', 'price' => '1600', 'img' => 'alexis trufit.jpg', 'category' => 'Personal Care', 'description' => 'Alexis Trufit is a dietary supplement in the form of a tablet that is designed for women. To use, simply drop one tablet into a glass of water, watch it fizz, and then drink. Alexis Trufit is a convenient and easy way to support your overall health and wellness. The tablets are easy to take on-the-go, and can be taken at any time of day. The unique formula of Alexis Trufit is designed to provide a range of benefits, including supporting energy and vitality, and promoting a healthy metabolism. Alexis Trufit is a great choice for women who are looking for a convenient and effective way to support their health and wellness.', 'youtube' => 'https://www.youtube.com/watch?v=mbAu5Iaa6rc&t=79s'),
-// 								array('name' => 'Mr. Alexis ', 'price' => '933', 'img' => 'mr_alexis.jpg', 'category' => 'Personal Care', 'description' => 'Mr. Alexis is a dietary supplement in the form of a tablet that is designed for men. To use, simply drop one tablet into a glass of water, watch it fizz, and then drink. Mr. Alexis is a convenient and easy way to support your overall health and wellness. The tablets are easy to take on-the-go, and can be taken at any time of day. The unique formula of Mr. Alexis is designed to provide a range of benefits, including supporting energy and vitality, and promoting a healthy metabolism. Mr. Alexis is a great choice for men who are looking for a convenient and effective way to support their health and wellness.', 'youtube' => 'https://www.youtube.com/watch?v=Iuq5JgmDWdw&t=36s'),
-// 								array('name' => 'Alexis Vama', 'price' => '1350', 'img' => 'alexi8.png', 'category' => 'Personal Care', 'description' => 'Alexis Vama is a dietary supplement in the form of a tablet that is designed for women. To use, simply drop one tablet into a glass of water, watch it fizz, and then drink. Alexis Vama is a convenient and easy way to support your overall health and wellness. The tablets are easy to take on-the-go, and can be taken at any time of day. The unique formula of Alexis Vama is designed to provide a range of benefits, including supporting energy and vitality, and promoting a healthy metabolism. Alexis Vama is a great choice for women who are looking for a convenient and effective way to support their health and wellness.', 'youtube' => 'https://www.youtube.com/watch?v=AY797RWRWfY&t=37s'),
-// 								array('name' => 'Chloro Alexis', 'price' => '2499', 'img' => 'chloro.png', 'category' => 'Personal Care', 'description' => 'Chloro Alexis is a dietary supplement in the form of a tablet that is designed for women. To use, simply drop one tablet into a glass of water, watch it fizz, and then drink. Chloro Alexis is a convenient and easy way to support your overall health and wellness. The tablets are easy to take on-the-go, and can be taken at any time of day. The unique formula of Chloro Alexis is designed to provide a range of benefits, including supporting energy and vitality, and promoting a healthy metabolism. Chloro Alexis is a great choice for women who are looking for a convenient and effective way to support their health and wellness.', 'youtube' => 'https://youtu.be/LoXbYBgj4MI?si=1Gcll1iRBX6FMWOQ'),
-// 								array('name' => 'Alexis Juice', 'price' => '2500', 'img' => 'omega-rich.png', 'category' => 'Personal Care', 'description' => 'Alexis Juice is a dietary supplement in the form of a tablet that is designed for women. To use, simply drop one tablet into a glass of water, watch it fizz, and then drink. Alexis Juice is a convenient and easy way to support your overall health and wellness. The tablets are easy to take on-the-go, and can be taken at any time of day. The unique formula of Alexis Juice is designed to provide a range of benefits, including supporting energy and vitality, and promoting a healthy metabolism. Alexis Juice is a great choice for women who are looking for a convenient and effective way to support their health and wellness.', 'youtube' => 'https://youtu.be/QDgtI3S0zf8?si=mN3D3EIWHKZ0c-Pr'),
-// 								array('name' => 'Alexis Dibo', 'price' => '3200', 'img' => 'dibo.png', 'category' => 'Personal Care', 'description' => 'Alexis Dibo is a dietary supplement in the form of a tablet that is designed for women. To use, simply drop one tablet into a glass of water, watch it fizz, and then drink. Alexis Dibo is a convenient and easy way to support your overall health and wellness. The tablets are easy to take on-the-go, and can be taken at any time of day. The unique formula of Alexis Dibo is designed to provide a range of benefits, including supporting energy and vitality, and promoting a healthy metabolism. Alexis Dibo is a great choice for women who are looking for a convenient and effective way to support their health and wellness.', 'youtube' => 'https://youtu.be/EZ_ZHHHOPzw?si=ZBeQLSVqqJvD5VR7'),
-// 								array('name' => 'Ortho Cap', 'price' => '684', 'img' => 'ortho capsule.jpg', 'category' => 'Personal Care', 'description' => 'Ortho Cap is a dietary supplement in the form of a tablet that is designed for women. To use, simply drop one tablet into a glass of water, watch it fizz, and then drink. Ortho Cap is a convenient and easy way to support your overall health and wellness. The tablets are easy to take on-the-go, and can be taken at any time of day. The unique formula of Ortho Cap is designed to provide a range of benefits, including supporting energy and vitality, and promoting a healthy metabolism. Ortho Cap is a great choice for women who are looking for a convenient and effective way to support their health and wellness.', 'youtube' => 'https://www.youtube.com/watch?v=qhiLRk5LCCs&t=7s'),
-// 								array('name' => 'Ortho Oil', 'price' => '249', 'img' => 'oil.jpg', 'category' => 'Personal Care', 'description' => 'Ortho Oil is a dietary supplement in the form of a tablet that is designed for women. To use, simply drop one tablet into a glass of water, watch it fizz, and then drink. Ortho Oil is a convenient and easy way to support your overall health and wellness. The tablets are easy to take on-the-go, and can be taken at any time of day. The unique formula of Ortho Oil is designed to provide a range of benefits, including supporting energy and vitality, and promoting a healthy metabolism. Ortho Oil is a great choice for women who are looking for a convenient and effective way to support their health and wellness.', 'youtube' => 'https://www.youtube.com/watch?v=qhiLRk5LCCs&t=7s'),
-// 								array('name' => 'Diffender', 'price' => '749', 'img' => 'defender.png', 'category' => 'Personal Care', 'description' => 'Diffender is a dietary supplement in the form of a tablet that is designed for women. To use, simply drop one tablet into a glass of water, watch it fizz, and then drink. Diffender is a convenient and easy way to support your overall health and wellness. The tablets are easy to take on-the-go, and can be taken at any time of day. The unique formula of Diffender is designed to provide a range of benefits, including supporting energy and vitality, and promoting a healthy metabolism. Diffender is a great choice for women who are looking for a convenient and effective way to support their health and wellness.', 'youtube' => 'https://youtu.be/CND36CGCSBk?si=oE1F9qGmtn8kq2zK'),
-// 								array('name' => 'Sliming Tea', 'price' => '699', 'img' => 'vema-tea.jpg', 'category' => 'Personal Care', 'description' => 'Sliming Tea is a dietary supplement in the form of a tablet that is designed for women. To use, simply drop one tablet into a glass of water, watch it fizz, and then drink. Sliming Tea is a convenient and easy way to support your overall health and wellness. The tablets are easy to take on-the-go, and can be taken at any time of day. The unique formula of Sliming Tea is designed to provide a range of benefits, including supporting energy and vitality, and promoting a healthy metabolism. Sliming Tea is a great choice for women who are looking for a convenient and effective way to support their health and wellness.', 'youtube' => 'https://youtu.be/6WWNv2r0U9U?si=J4HVphqgRzi3nabU'),
-// 								array(
-// 									'name' => 'Sanitary Napkin',
-// 									'price' => '299',
-// 									'img' => 'sanitary-napkin.png',
-// 									'category' => 'Personal Care',
-// 									'description' => 'Anion sanitary pads are feminine hygiene products that incorporate anion (negative ion) technology, which is believed to offer various health benefits. The concept behind these pads is that they release negative ions (anions) when in use, which can help improve comfort, hygiene, and overall health.
-							
-							// Benefit -
-// Reduce Pain
-// Improve Hormonal balance
-// Decrease Stress
-// No Risk of Infections
-// Decrease odor
-// Increase levels of Serotonin
-// Boost Immune System',
-// 									'youtube' => 'https://youtu.be/CND36CGCSBk?si=oE1F9qGmtn8kq2zK'
-// 								),
-// 							);
-							foreach ($products as $product) {
-								?>
-
-								<div class="item rounded tw-p-2 tw-shadow  tw-min-w-[300px] tw-bg-white tw-bg-opacity-70 tw-transition tw-duration-300 hover:tw-bg-opacity-100"
-									onclick="location.href='product-details.php?title=<?php echo $product['name']; ?>&img=<?php echo $product['img']; ?>&description=<?php echo $product['description']; ?>&price=<?php echo $product['price']; ?>&category=<?php echo $product['category']; ?>&youtube=<?php echo $product['youtube']; ?>'">
-									<div class="p-img tw-p-2 tw-relative">
-										<img class="tw-object-contain tw-w-full hover:tw-bg-opacity-40 tw-object-center"
-											style='height: 200px;' src="img/products/plain/<?php echo $product['img']; ?>"
-											height="200" alt="">
-										<div
-											class="tw-absolute tw-inset-0 tw-flex tw-gap-5 tw-items-center tw-justify-center tw-opacity-0 hover:tw-opacity-100 tw-transition tw-duration-300">
-											<div class="">
-												<a href="#" class="tw-bg-white tw-rounded-full tw-p-2 tw-shadow ">
-													<i style="" class="tw-text-xl icofont-eye"></i>
-												</a>
-											</div>
-											<div class="">
-												<a href="#" class="tw-bg-white tw-rounded-full tw-p-2 tw-shadow">
-													<i class="tw-text-xl icofont-shopping-cart"></i>
-												</a>
-											</div>
-										</div>
-									</div>
-									<div class="text tw-text-center">
-										<p class="tw-font-normal tw-text-black tw-text-md tw-text-center">
-											<?php echo $product['name']; ?>
-										</p>
-										<!-- <p class="tw-font-bold tw-text-green-600  tw-text-sm tw-text-center">
-										Rs. <?php echo $product['price']; ?>
-									</p> -->
-										<small class=" tw-mx-auto tw-text-center tw-w-full">Inclusive of all taxes</small>
-									</div>
-								</div>
-								<?php
-							}
-							?>
-
 						</div>
 
 					</div>
@@ -507,49 +428,7 @@ require_once('couch/cms.php'); ?>
 		</section>
 		<!-- Featured Product section ends -->
 
-		<section class="Feautes section">
-			<div class="container">
-				<h2 class="text-center"> Now is the time to do something! Becoming a distributor is simple and easy
-					awesome
-				</h2>
-				<div class="row">
-					<div class="col-lg-4 col-12">
-						<!-- Start Single features -->
-						<div class="single-features">
-							<div class="signle-icon">
-								<i class="icofont-user"></i>
-							</div>
-							<h3>Register Yourself</h3>
-							<p>Register yourself as a Distributor !</p>
-						</div>
-						<!-- End Single features -->
-					</div>
-					<div class="col-lg-4 col-12">
-						<!-- Start Single features -->
-						<div class="single-features">
-							<div class="signle-icon">
-								<i class="icofont-cart"></i>
-							</div>
-							<h3>Buy Products</h3>
-							<p>Buy Products at DP Price </p>
-						</div>
-						<!-- End Single features -->
-					</div>
-					<div class="col-lg-4 col-12">
-						<!-- Start Single features -->
-						<div class="single-features last">
-							<div class="signle-icon">
-								<i class="icofont-money"></i>
-							</div>
-							<h3>Sell and earn</h3>
-							<p> Sell and Earn Extra Income </p>
-						</div>
-						<!-- End Single features -->
-					</div>
 
-				</div>
-			</div>
-		</section>
 
 		<!-- Start Appointment -->
 		<section class="appointment">

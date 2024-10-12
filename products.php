@@ -76,7 +76,7 @@ $category = $_GET['category'] ?? 'All';
 		<div id="lightgallery">
 			<div class="container flex flex-wrap tw-justify-center tw-gap-5">
 				<cms:pages masterpage='index.php' folder='<?php echo strtolower($category) ?>' paginate='1' limit='30'>
-					<div class="item rounded tw-p-2 tw-shadow  tw-min-w-[300px] tw-bg-white tw-bg-opacity-70 tw-transition tw-duration-300 hover:tw-bg-opacity-100"
+					<div class="item rounded tw-p-2 tw-shadow  tw-min-w-[300px] tw-bg-white tw-bg-opacity-70 tw-transition tw-duration-300 hover:-tw-translate-y-2 hover:tw-bg-opacity-100"
 						onclick="location.href='<cms:show k_page_link />	'">
 						<div class="p-img tw-p-2 tw-relative">
 							<img class="tw-object-contain tw-w-full hover:tw-bg-opacity-40 tw-object-center"
@@ -99,11 +99,7 @@ $category = $_GET['category'] ?? 'All';
 							<p class="tw-font-normal tw-text-black tw-text-md tw-text-center">
 								<cms:show k_page_title />
 							</p>
-							<!-- <p class="tw-font-bold tw-text-green-600  tw-text-sm tw-text-center">
-								Rs.
-								<cms:show price />
-							</p> -->
-							<small class=" tw-mx-auto tw-text-center tw-w-full">Inclusive of all taxes</small>
+
 						</div>
 					</div>
 				</cms:pages>

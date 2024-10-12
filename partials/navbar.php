@@ -84,6 +84,10 @@ $name = basename($url); ?>
 		margin: auto;
 	}
 
+	.header .topbar {
+		padding: 5px 0;
+	}
+
 	/* Show dropdown on hover on mobile */
 	@media (min-width: 767px) {
 		.dropdown:hover .dropdown-menu li:hover {
@@ -114,8 +118,10 @@ $name = basename($url);
 <header class="header">
 	<!-- Topbar -->
 	<div class="topbar primary-bg">
-		<div class="tw-flex tw-justify-around tw-flex-col sm:tw-flex-row tw-items-center tw-gap-2 w-full">
-			<span class="text-white tw-text-2xl tracking-widest tw-font-bold tw-uppercase tw-px-0">Improving Lives
+		<div class="tw-flex tw-justify-around tw-items-center tw-gap-2 w-full tw-my-0 tw-py-0">
+			<span
+				class="text-white tw-text-xl tracking-widest tw-font-bold tw-uppercase tw-my-1 tw-px-0 tw-py-0">Improving
+				Lives
 				Together
 			</span>
 		</div>
@@ -149,27 +155,25 @@ $name = basename($url);
 										<a href="#" class="dropdown-toggle">About Us</a>
 										<ul class="dropdown-menu">
 											<li><a href="about.php">About</a></li>
-											<li><a href="bussiness-plan.php">Business Plan</a></li>
+											<li><a href="achievers.php">Achievers</a></li>
+											<li><a href="awards.php">Awards</a></li>
+											<li><a href="director_msg.php">Director's Message</a></li>
+											<li><a href="testimonials.php">Testimonials</a></li>
+
 										</ul>
 									</li>
 
-									<li class="dropdown ">
-										<a href="#" class="dropdown-toggle">Company</a>
-										<ul class="dropdown-menu">
-											<li><a href="disclaimer.php">Disclaimer</a></li>
-											<li><a href="director_msg.php">Director's Message</a></li>
-											<li><a href="achievers.php">Achievers</a></li>
-											<li><a href="legal.php">Legal</a></li>
-											<li><a href="bank.php">Our Bankers</a></li>
-										</ul>
+									<li class="<?php echo ($name == "index.php") ? "active" : ""; ?>">
+										<a href="bussiness-plan.php"> Business Oppurtunities</a>
 									</li>
 
 									<li class="<?php echo ($name == "products.php?category=All") ? 'active' : ''; ?>">
 										<a href="products.php?category=All">Products</a>
 									</li>
-									<li class="<?php echo ($name == 'awards.php') ? 'active' : ''; ?>">
-										<a href="awards.php">Awards</a>
+									<li class="<?php echo ($name == "products.php?category=All") ? 'active' : ''; ?>">
+										<a href="blogs.php?category=All">Blogs</a>
 									</li>
+
 									<li class="<?php echo ($name == 'contact.php') ? 'active' : ''; ?>">
 										<a href="contact.php">Contact Us</a>
 									</li>

@@ -255,45 +255,39 @@
                                 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
                             }
                         </style>
-                        <div class="tw-flex tw-flex-col tw-gap-5 tw-mt-8 tw-py-10">
-                            <div class="scroll-container">
-                                <div class="tw-flex tw-gap-5 tw-overflow-x-scroll ">
-                                    <cms:show_repeatable 'videos'>
-                                        <div class="tw-mb-4 card">
-                                            <!-- Display the Video Title -->
-                                            <!-- Display the Video using the ID in an iframe -->
-                                            <iframe width="300" height="200"
-                                                src="https://www.youtube.com/embed/<cms:show video_id />"
-                                                title="<cms:show video_title />" frameborder="0"
-                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                allowfullscreen>
-                                            </iframe>
-                                            <h3 class="tw-text-lg tw-font-semibold">
-                                                <cms:show video_title />
-                                            </h3>
-                                        </div>
-                                    </cms:show_repeatable>
-                                </div>
-                            </div>
 
-                            <!-- <?php $embedLink = converToEmbed($product['youtube']) ?>
-                            <div class="tw-flex tw-overflow-x-auto">
-                                <div class="tw-flex tw-gap-3 tw-whitespace-nowrap">
-                                    <?php if (isset($product['youtube'])): ?>
-                                        <iframe width="300px" height="200" src="<?php echo $embedLink; ?>"
-                                            title="<cms:show k_page_title />" frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen></iframe>
-                                    <?php endif; ?>
-                                </div>
-                            </div> -->
-
+                        <div class=" tw-py-5">
                             <a href="https://wa.me/+918827268754?text=Hi!%20I'm%20interested%20in%20your%20product%20<cms:show k_page_title /> "
                                 target="_blank" class="btn btn-success tw-p-5">
                                 <i class="fab fa-whatsapp" aria-hidden="true"></i> Chat on WhatsApp
                             </a>
                         </div>
                     </div>
+            </div>
+            <div class="tw-flex tw-flex-col tw-gap-5 tw-mt-8 tw-border">
+                <h2 class="tw-font-bold tw-text-center tw-text-2xl tw-py-5 tw-border-b ">Product Videos</h2>
+                <div class="scroll-container">
+                    <div class="tw-flex tw-gap-5 tw-overflow-x-scroll ">
+                        <cms:show_repeatable 'videos'>
+                            <div class="tw-flex tw-flex-col tw-gap-1 tw-justify-center tw-items-center">
+                                <h3 class="tw-text-lg tw-font-semibold">
+                                    <cms:show video_title />
+                                </h3>
+                                <div class="tw-mb-4 card" style="width: 400px; height: 200px">
+                                    <!-- Display the Video Title -->
+                                    <!-- Display the Video using the ID in an iframe -->
+                                    <iframe width="300" height="200"
+                                        src="https://www.youtube.com/embed/<cms:show video_id />"
+                                        title="<cms:show video_title />" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen>
+                                    </iframe>
+
+                                </div>
+                            </div>
+                        </cms:show_repeatable>
+                    </div>
+                </div>
                 </cms:pages>
 
             </div>
