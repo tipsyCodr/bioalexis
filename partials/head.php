@@ -93,3 +93,29 @@ function converToEmbed($url)
 	return $embed_url;
 }
 ?>
+<script>
+	// javascript version of above function
+	function convertToEmbedLink(url) {
+		// Check if the URL is in youtu.be format
+		if (url.includes("youtu.be/")) {
+			id = url.split("youtu.be/")[1].split("?")[0]; // Get the video ID
+		}
+		// Check if the URL is in youtube.com format
+		else if (url.includes("youtube.com/watch?v=")) {
+			id = url.split("v=")[1].split("&")[0]; // Get the video ID
+		}
+		// Check if the URL is in a different format (optional)
+		else {
+			console.error("Invalid YouTube URL:", url);
+		}
+
+		// Only write the iframe if the ID is valid
+		if (id) {
+			document.write(
+				'<iframe width="100%" height="200" src="https://www.youtube.com/embed/' +
+				id +
+				'" frameborder="0" allowfullscreen></iframe>'
+			);
+		}
+	}
+</script>

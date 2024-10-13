@@ -21,7 +21,7 @@ function breadcrumbs($title, $link)
     </div>
     <!-- End Breadcrumbs -->
     <style>
-        p {
+        .breadcrumbs p {
             padding: 20px 10px;
         }
     </style>
