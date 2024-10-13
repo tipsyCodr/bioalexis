@@ -136,7 +136,7 @@ $name = basename($url);
 					<!-- Logo Section -->
 					<div class="col-lg-3 col-md-3 col-12">
 						<div class="logo">
-							<a href="index.php"><img src="img/logo.png" alt="Bioalexis Trading Pvt. Ltd."
+							<a href="/index.php"><img src="/img/logo.png" alt="Bioalexis Trading Pvt. Ltd."
 									style="width:125px"></a>
 						</div>
 						<div class="mobile-nav"></div>
@@ -148,34 +148,34 @@ $name = basename($url);
 							<nav class="navigation">
 								<ul class="nav menu">
 									<li class="<?php echo ($name == "index.php") ? "active" : ""; ?>">
-										<a href="index.php"> Home</a>
+										<a href="/index.php"> Home</a>
 									</li>
 
 									<li class="dropdown ">
 										<a href="#" class="dropdown-toggle">About Us</a>
 										<ul class="dropdown-menu">
-											<li><a href="about.php">About</a></li>
-											<li><a href="achievers.php">Achievers</a></li>
-											<li><a href="awards.php">Awards</a></li>
-											<li><a href="director_msg.php">Director's Message</a></li>
-											<li><a href="testimonials.php">Testimonials</a></li>
+											<li><a href="/about.php">About</a></li>
+											<li><a href="/achievers.php">Achievers</a></li>
+											<li><a href="/awards.php">Awards</a></li>
+											<li><a href="/director_msg.php">Director's Message</a></li>
+											<li><a href="/testimonials.php">Testimonials</a></li>
 
 										</ul>
 									</li>
 
 									<li class="<?php echo ($name == "index.php") ? "active" : ""; ?>">
-										<a href="bussiness-plan.php"> Business Oppurtunities</a>
+										<a href="/bussiness-plan.php"> Business Oppurtunities</a>
 									</li>
 
 									<li class="<?php echo ($name == "products.php?category=All") ? 'active' : ''; ?>">
-										<a href="products.php?category=All">Products</a>
+										<a href="/products.php?category=All">Products</a>
 									</li>
 									<li class="<?php echo ($name == "products.php?category=All") ? 'active' : ''; ?>">
-										<a href="blogs.php?category=All">Blogs</a>
+										<a href="/blogs.php?category=All">Blogs</a>
 									</li>
 
 									<li class="<?php echo ($name == 'contact.php') ? 'active' : ''; ?>">
-										<a href="contact.php">Contact Us</a>
+										<a href="/contact.php">Contact Us</a>
 									</li>
 								</ul>
 							</nav>
@@ -195,4 +195,4 @@ $name = basename($url);
 </header>
 <!-- End Header Area -->
 
-<?php require_once 'partials/breadcrumbs.php'; ?>
+<?php require_once 'breadcrumbs.php'; ?>

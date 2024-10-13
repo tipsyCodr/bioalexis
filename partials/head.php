@@ -10,7 +10,7 @@
 <title>Bioalexis Trading Company Ltd. Pvt. | IMPROVING LIVES TOGETHER… </title>
 
 <!-- Favicon -->
-<link rel="icon" href="img/favicon.png">
+<link rel="icon" href="/img/favicon.png">
 
 <!-- Google Fonts -->
 <link
@@ -18,13 +18,13 @@
 	rel="stylesheet">
 
 <!-- Bootstrap CSS -->
-<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/bootstrap.min.css">
 <!-- Nice Select CSS -->
-<link rel="stylesheet" href="css/nice-select.css">
+<link rel="stylesheet" href="/css/nice-select.css">
 <!-- Font Awesome CSS -->
-<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/font-awesome.min.css">
 <!-- icofont CSS -->
-<link rel="stylesheet" href="css/icofont.css">
+<link rel="stylesheet" href="/css/icofont.css">
 <!-- CDN <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@icon/icofont@1.0.1-alpha.1/icofont.min.css"> -->
 
 <!-- fa icons -->
@@ -33,22 +33,22 @@
 	crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <!-- Slicknav -->
-<link rel="stylesheet" href="css/slicknav.min.css">
+<link rel="stylesheet" href="/css/slicknav.min.css">
 
 <!-- Owl Carousel CSS -->
-<link rel="stylesheet" href="css/owl-carousel.css">
+<link rel="stylesheet" href="/css/owl-carousel.css">
 <!-- Datepicker CSS -->
-<link rel="stylesheet" href="css/datepicker.css">
+<link rel="stylesheet" href="/css/datepicker.css">
 <!-- Animate CSS -->
-<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="/css/animate.min.css">
 <!-- Magnific Popup CSS -->
-<link rel="stylesheet" href="css/magnific-popup.css">
+<link rel="stylesheet" href="/css/magnific-popup.css">
 
 <!-- Medipro CSS -->
-<link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="css/responsive.css">
-<link rel="stylesheet" href="src/output.css">
+<link rel="stylesheet" href="/css/normalize.css">
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/css/responsive.css">
+<link rel="stylesheet" href="/src/output.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/css/lightbox.min.css"
 	integrity="sha512-xtV3HfYNbQXS/1R1jP53KbFcU9WXiSA1RFKzl5hRlJgdOJm4OxHCWYpskm6lN0xp0XtKGpAfVShpbvlFH3MDAA=="
 	crossorigin="anonymous" referrerpolicy="no-referrer" />
