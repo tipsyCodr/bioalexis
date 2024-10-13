@@ -22,7 +22,7 @@ require_once('couch/cms.php'); ?>
     <cms:pages masterpage='video_testimonial.php' paginate='1' limit='30'>
         <div class="testimonial-item tw-shadow tw-p-4 tw-rounded tw-mb-4 tw-bg-white">
             <img src="<cms:show gg_image />" alt="<cms:show k_page_title />" class="tw-w-full tw-h-auto tw-rounded" />
-            <h3 class="tw-text-lg tw-font-semibold tw-mt-2">
+            <h3 class="tw-text-lg tw-font-bold tw-mt-2">
                 <cms:show k_page_title />
             </h3>
             <p>
