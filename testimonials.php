@@ -9,6 +9,7 @@
         <cms:editable name="image" label="Image" type="image" />
     </cms:repeatable>
     <cms:repeatable name='videos' label='Testimonial Videos'>
+        <cms:editable name='video_title' label='Video Title' type='text' />
         <cms:editable name='video_link' label='Video Link' type='text' />
     </cms:repeatable>
 </cms:template>
@@ -135,7 +136,7 @@
     <?php breadcrumbs('Testimonials', 'Testimonials') ?>
     <cms:if k_is_page>
 
-		<cms:embed 'products.php' />
+		<cms:embed 'testimonials.php' />
 		<cms:else />
     <div class="section">
 
@@ -233,17 +234,14 @@
         <cms:pages masterpage='testimonials.php' folder="videos_testimonials" paginate='1' limit='10'>
                 <div class="card-sl">
                 <div class="card-image">
-                                    <cms:if k_total_images>
-                                        <cms:show_repeatable 'testimonials_images' start="1" limit="1">
-                                            <img class="tw-object-cover" src="<cms:show image />"
-                                                style="width: 100%; height: 200px;">
-                                        </cms:show_repeatable>
-                                        <cms:else />
-                                        <img class="tw-object-cover"
-                                            src="https://via.placeholder.com/200x200?text=No+Image"
-                                            style="width: 100%; height: 200px;">
-                                    </cms:if>
-                                </div>
+            <cms:show_repeatable 'videos' start="1" limit="1">
+                    <script>
+                        const url = '<cms:show video_link />';
+                        // Assuming you have a function like this elsewhere in your JS to handle the URL conversion
+                        convertToEmbedLink(url);  
+                    </script>
+            </cms:show_repeatable>
+          
                     <a class="card-action" href="<cms:show k_page_link />"><i class="fa fa-chain"></i></a>
                     <div class="card-heading">
                         <a href="<cms:show k_page_link />" class="txt4">
