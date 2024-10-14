@@ -238,7 +238,7 @@
                     <div class="card-image">
                         <cms:show_repeatable 'videos' start="1" limit="1">
                             <script>
-                                var url = '<cms:show video_link />';
+                                 url = '<cms:show video_link />';
                                 // Assuming you have a function like this elsewhere in your JS to handle the URL conversion
                                 convertToEmbedLink(url);
                             </script>
