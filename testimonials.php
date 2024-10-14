@@ -133,6 +133,10 @@
 <body>
     <?php require_once 'partials/navbar.php' ?>
     <?php breadcrumbs('Testimonials', 'Testimonials') ?>
+    <cms:if k_is_page>
+
+		<cms:embed 'products.php' />
+		<cms:else />
     <div class="section">
 
         <div class="">
@@ -264,6 +268,8 @@
 
 
     </div>
+    </cms:if>
+
     <?php require_once 'partials/scripts.php' ?>
     <?php require_once 'partials/footer.php' ?>
 </body>
