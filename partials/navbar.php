@@ -141,7 +141,6 @@ $name = basename($url);
 						</div>
 						<div class="mobile-nav"></div>
 					</div>
-
 					<!-- Main Menu Section -->
 					<div class="col-lg-7 col-md-9 col-12">
 						<div class="main-menu">
@@ -150,7 +149,6 @@ $name = basename($url);
 									<li class="<?php echo ($name == "index.php") ? "active" : ""; ?>">
 										<a href="/index.php"> Home</a>
 									</li>
-
 									<li class="dropdown ">
 										<a href="#" class="dropdown-toggle">About Us</a>
 										<ul class="dropdown-menu">
@@ -159,7 +157,6 @@ $name = basename($url);
 											<li><a href="/awards.php">Awards</a></li>
 											<li><a href="/director_msg.php">Director's Message</a></li>
 											<li><a href="/testimonials.php">Testimonials</a></li>
-
 										</ul>
 									</li>
 
