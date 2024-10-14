@@ -73,7 +73,7 @@
                                 <div class="single-main">
                                     <!-- News Head -->
                                     <div class="news-head">
-                                        <img src="<cms:show achievers_image />" alt="#">
+                                        <img class="tw-object-contain" src="<cms:show achievers_image />" alt="#">
 
                                     </div>
                                     <!-- News Title -->
