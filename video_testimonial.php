@@ -2,7 +2,8 @@
 require_once('couch/cms.php'); ?>
 <cms:template title='Video Testimonials' clonable='1'>
     <cms:editable name="description" label="Description" type="richtext" />
-    <cms:repeatable name='testimonials_videos' label='Testimonial Videos'>
+    <cms:repeatable name='videos' label='
+    |Videos'>
         <cms:editable name='video_link' label='Video Link' type='text' />
     </cms:repeatable>
 </cms:template>
@@ -21,7 +22,6 @@ require_once('couch/cms.php'); ?>
     <?php breadcrumbs('Video Testimonials', 'Video Testimonials') ?>
     <cms:pages masterpage='video_testimonial.php' paginate='1' limit='30'>
         <div class="testimonial-item tw-shadow tw-p-4 tw-rounded tw-mb-4 tw-bg-white">
-            <img src="<cms:show gg_image />" alt="<cms:show k_page_title />" class="tw-w-full tw-h-auto tw-rounded" />
             <h3 class="tw-text-lg tw-font-bold tw-mt-2">
                 <cms:show k_page_title />
             </h3>
@@ -33,7 +33,7 @@ require_once('couch/cms.php'); ?>
                 <cms:repeatable name='testimonials_videos'>
                     <script>
                         var url = "<cms:show video_link />";
-                        var id = "";
+                        var id = ""; 
                         convertToEmbedCode(url);
 
                     </script>

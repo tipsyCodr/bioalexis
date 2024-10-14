@@ -1,11 +1,14 @@
 <?php require_once('couch/cms.php'); ?>
 <cms:template title='Testimonials' clonable='1'>
-    <cms:editable name="title" label="Title" type="text" />
+    <cms:folder name='testimonials' title='Written Testimonials' />
+    <cms:folder name='product_testimonials' title='Product Testimonials' />
+    <cms:folder name='videos_testimonials' title='Video Testimonials' />
+
     <cms:editable name="description" label="Description" type="richtext" />
     <cms:repeatable name='testimonials_images' label='Testimonial Images'>
         <cms:editable name="image" label="Image" type="image" />
     </cms:repeatable>
-    <cms:repeatable name='testimonials_videos' label='Testimonial Videos'>
+    <cms:repeatable name='videos' label='Testimonial Videos'>
         <cms:editable name='video_link' label='Video Link' type='text' />
     </cms:repeatable>
 </cms:template>
@@ -138,15 +141,20 @@
                 <div class="container">
 
                     <div class="scroll-container">
-                        <cms:pages masterpage='testimonials.php' paginate='1' limit='10'>
+                        <cms:pages masterpage='testimonials.php' folder="testimonials" paginate='1' limit='10'>
                             <div class="card-sl">
                                 <div class="card-image">
-                                    <cms:show_repeatable 'testimonials_images' start="1" limit="1">
-                                        <img class="tw-object-cover" src="<cms:show image />"
+                                    <cms:if k_total_images>
+                                        <cms:show_repeatable 'testimonials_images' start="1" limit="1">
+                                            <img class="tw-object-cover" src="<cms:show image />"
+                                                style="width: 100%; height: 200px;">
+                                        </cms:show_repeatable>
+                                        <cms:else />
+                                        <img class="tw-object-cover"
+                                            src="https://via.placeholder.com/200x200?text=No+Image"
                                             style="width: 100%; height: 200px;">
-                                    </cms:show_repeatable>
+                                    </cms:if>
                                 </div>
-
                                 <a class="card-action" href="<cms:show k_page_link />"><i class="fa fa-chain"></i></a>
                                 <div class="card-heading">
                                     <a href="<cms:show k_page_link />" class="txt4">
@@ -176,75 +184,76 @@
     <div>
         <h2 class="tw-font-bold tw-text-2xl tw-my-6 tw-text-center">Product Testimonials</h2>
         <div class="container">
-            <cms:pages masterpage='product_testimonials.php' paginate='1' limit='10'>
-                <div class="scroll-container">
-                    <div class="card-sl">
-                        <div class="card-image">
-                            <cms:show_repeatable 'testimonials_images' start="1" limit="1">
-                                <img class="tw-object-cover" src="<cms:show image />"
-                                    style="width: 100%; height: 200px;">
-                            </cms:show_repeatable>
-                        </div>
-                        <a class="card-action" href="<cms:show k_page_link />"><i class="fa fa-chain"></i></a>
-                        <div class="card-heading">
-                            <a href="<cms:show k_page_link />" class="txt4">
-                                <cms:show title />
-                            </a>
-                        </div>
-                        <div class="card-text">
-                            <cms:show description />
-                        </div>
-                        <div class="card-text">
-                        </div>
-                        <a href="<cms:show k_page_link />"
-                            class="card-button tw-text-white visited:tw-text-white hover:tw-text-gray-100">
-                            View</a>
+            <cms:pages masterpage='testimonials.php' folder="product_testimonials" paginate='1' limit='10'>
+                <div class="card-sl">
+                    <div class="card-image">
+                        <cms:show_repeatable 'testimonials_images' start="1" limit="1">
+                            <img class="tw-object-cover" src="<cms:show image />" style="width: 100%; height: 200px;">
+                        </cms:show_repeatable>
                     </div>
+
+                    <a class="card-action" href="<cms:show k_page_link />"><i class="fa fa-chain"></i></a>
+                    <div class="card-heading">
+                        <a href="<cms:show k_page_link />" class="txt4">
+                            <cms:show title />
+                        </a>
+                    </div>
+                    <div class="card-text">
+                        <cms:show description />
+
+                    </div>
+                    <div class="card-text">
+
+                    </div>
+                    <a href="<cms:show k_page_link />"
+                        class="card-button tw-text-white visited:tw-text-white hover:tw-text-gray-100">
+                        View</a>
                 </div>
+
             </cms:pages>
         </div>
     </div>
     <div>
         <h2 class="tw-font-bold tw-text-2xl tw-my-6 tw-text-center">Videos Testimonials</h2>
         <div class="container">
-            <cms:pages masterpage='video_testimonial.php' paginate='1' limit='10'>
-                <div class="scroll-container">
-
-                    <div class="card-sl">
-                        <div class="card-image">
-                            <cms:show_repeatable 'testimonials_videos' start="1" limit="1">
-                                <div style="width: 100%; height: 200px;">
-                                    <cms:if "<cms:show video_link />">
-                                        <script>
-                                            var url = "<cms:show video_link />";
-                                            var id = "";
-                                            convertToEmbedLink(url);
-                                        </script>
-                                    </cms:if>
-                                </div>
-                            </cms:show_repeatable>
-                        </div>
-
-                        <a class="card-action" href="<cms:show k_page_link />"><i class="fa fa-chain"></i></a>
-                        <div class="card-heading">
-                            <a href="<cms:show k_page_link />" class="txt4">
-                                <cms:show title />
-                            </a>
-                        </div>
-                        <div class="card-text">
-                            <cms:show description />
-
-                        </div>
-                        <div class="card-text">
-
-                        </div>
-                        <a href="<cms:show k_page_link />"
-                            class="card-button tw-text-white visited:tw-text-white hover:tw-text-gray-100">
-                            View</a>
+            <cms:pages masterpage='testimonials.php' folder="videos_testimonials" paginate='1' limit='10'>
+                <div class="card-sl">
+                
+                    <div class="card-image">
+                        <cms:repeatable name='videos' >
+                  
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <script>
+                                    window.onload = function() {
+                                        let url = '<cms:show video_link />';
+                                        convertToEmbedLink(url);
+                                        console.log(url);
+                                    };
+                                </script>
+                                <iframe class="embed-responsive-item" src="<cms:show video_link />"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </cms:repeatable>
                     </div>
 
+                    <a class="card-action" href="<cms:show k_page_link />"><i class="fa fa-chain"></i></a>
+                    <div class="card-heading">
+                        <a href="<cms:show k_page_link />" class="txt4">
+                            <cms:show title />
+                        </a>
+                    </div>
+                    <div class="card-text">
+                        <cms:show description />
 
+                    </div>
+                    <div class="card-text">
+
+                    </div>
+                    <a href="<cms:show k_page_link />"
+                        class="card-button tw-text-white visited:tw-text-white hover:tw-text-gray-100">
+                        View</a>
                 </div>
+
             </cms:pages>
         </div>
     </div>
