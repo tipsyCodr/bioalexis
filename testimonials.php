@@ -230,41 +230,49 @@
         </div>
     </div>
     <div>
-        <h2 class="tw-font-bold tw-text-2xl tw-my-6 tw-text-center">Videos Testimonials</h2>
-        <div class="container">
+    <h2 class="tw-font-bold tw-text-2xl tw-my-6 tw-text-center">Videos Testimonials</h2>
+    <div class="container">
         <div class="scroll-container">
-        <cms:pages masterpage='testimonials.php' folder="videos_testimonials" paginate='1' limit='10'>
+            <cms:pages masterpage='testimonials.php' folder="videos_testimonials" paginate='1' limit='10'>
                 <div class="card-sl">
-                <div class="card-image">
-            <cms:show_repeatable 'videos' start="1" limit="1">
-                    <script>
-                        url = '<cms:show video_link />';
-                        // Assuming you have a function like this elsewhere in your JS to handle the URL conversion
-                        convertToEmbedLink(url);  
-                    </script>
-            </cms:show_repeatable>
-          
-                    <a class="card-action" href="<cms:show k_page_link />"><i class="fa fa-chain"></i></a>
-                    <div class="card-heading">
-                        <a href="<cms:show k_page_link />" class="txt4">
-                            <cms:show title />
+                    <div class="card-image">
+                        <cms:show_repeatable 'videos' start="1" limit="1">
+                            <script>
+                                var url = '<cms:show video_link />';
+                                // Assuming you have a function like this elsewhere in your JS to handle the URL conversion
+                                convertToEmbedLink(url);
+                            </script>
+                        </cms:show_repeatable>
+                        
+                        <!-- Add image or video placeholder here -->
+                        <img src="https://via.placeholder.com/200x200?text=Video+Thumbnail" alt="Video Thumbnail">
+                    </div>
+
+                    <div class="card-content">
+                        <a class="card-action" href="<cms:show k_page_link />">
+                            <i class="fa fa-chain"></i>
                         </a>
-                    </div>
-                    <div class="card-text">
-                        <cms:show description />
 
-                    </div>
-                    <div class="card-text">
+                        <div class="card-heading">
+                            <a href="<cms:show k_page_link />" class="txt4">
+                                <cms:show title />
+                            </a>
+                        </div>
 
-                    </div>
-                    <a href="<cms:show k_page_link />"
-                        class="card-button tw-text-white visited:tw-text-white hover:tw-text-gray-100">
-                        View</a>
-                </div>
+                        <div class="card-text">
+                            <cms:show description />
+                        </div>
+
+                        <a href="<cms:show k_page_link />" class="card-button tw-text-white visited:tw-text-white hover:tw-text-gray-100">
+                            View
+                        </a>
+                    </div> <!-- End of card-content -->
+                </div> <!-- End of card-sl -->
             </cms:pages>
-        </div>
-        </div>
-    </div>
+        </div> <!-- End of scroll-container -->
+    </div> <!-- End of container -->
+</div>
+
 
 
     </div>
