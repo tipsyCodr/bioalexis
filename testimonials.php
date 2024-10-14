@@ -214,7 +214,7 @@
     </div>
     <div>
         <h2 class="tw-font-bold tw-text-2xl tw-my-6 tw-text-center">Videos Testimonials</h2>
-        <div class="container">
+        <div class="scroll-container">
         <cms:pages masterpage='testimonials.php' folder="videos_testimonials" paginate='1' limit='10'>
                 <div class="card-sl">
                     <div class="card-image">
