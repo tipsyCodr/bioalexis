@@ -244,8 +244,6 @@
                             </script>
                         </cms:show_repeatable>
                         
-                        <!-- Add image or video placeholder here -->
-                        <img src="https://via.placeholder.com/200x200?text=Video+Thumbnail" alt="Video Thumbnail">
                     </div>
 
                     <div class="card-content">
