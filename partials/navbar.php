@@ -167,11 +167,11 @@ $name = basename($url);
 										<a href="/bussiness-plan.php"> Business Oppurtunities</a>
 									</li>
 
-									<li class="<?php echo ($name == "products.php?category=All") ? 'active' : ''; ?>">
+									<li class="<?php echo ($name == "products.php") ? 'active' : ''; ?>">
 										<a href="/products.php">Products</a>
 									</li>
-									<li class="<?php echo ($name == "products.php?category=All") ? 'active' : ''; ?>">
-										<a href="/blogs.php?category=All">Blogs</a>
+									<li class="<?php echo ($name == "blogs.php") ? 'active' : ''; ?>">
+										<a href="/blogs.php">Blogs</a>
 									</li>
 
 									<li class="<?php echo ($name == 'contact.php') ? 'active' : ''; ?>">
