@@ -1,5 +1,5 @@
 <?php require_once('couch/cms.php');
-$category = $_GET['category'] ?? 'All';
+$category = $_GET['category'] ?? '';
 
 ?>
 <!doctype html>
