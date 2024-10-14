@@ -209,31 +209,18 @@
                         class="card-button tw-text-white visited:tw-text-white hover:tw-text-gray-100">
                         View</a>
                 </div>
-
             </cms:pages>
         </div>
     </div>
     <div>
         <h2 class="tw-font-bold tw-text-2xl tw-my-6 tw-text-center">Videos Testimonials</h2>
         <div class="container">
-            <cms:pages masterpage='testimonials.php' folder="videos_testimonials" paginate='1' limit='10'>
+        <cms:pages masterpage='testimonials.php' folder="videos_testimonials" paginate='1' limit='10'>
                 <div class="card-sl">
-                
                     <div class="card-image">
-                        <cms:repeatable name='videos' >
-                  
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <script>
-                                    window.onload = function() {
-                                        let url = '<cms:show video_link />';
-                                        convertToEmbedLink(url);
-                                        console.log(url);
-                                    };
-                                </script>
-                                <iframe class="embed-responsive-item" src="<cms:show video_link />"
-                                    allowfullscreen></iframe>
-                            </div>
-                        </cms:repeatable>
+                        <cms:show_repeatable 'testimonials_images' start="1" limit="1">
+                            <img class="tw-object-cover" src="<cms:show image />" style="width: 100%; height: 200px;">
+                        </cms:show_repeatable>
                     </div>
 
                     <a class="card-action" href="<cms:show k_page_link />"><i class="fa fa-chain"></i></a>
@@ -253,7 +240,6 @@
                         class="card-button tw-text-white visited:tw-text-white hover:tw-text-gray-100">
                         View</a>
                 </div>
-
             </cms:pages>
         </div>
     </div>
