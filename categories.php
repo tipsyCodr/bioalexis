@@ -61,9 +61,9 @@ $category = $_GET['category'] ?? '';
                         <p class="tw-font-normal tw-text-black tw-text-md tw-text-center">
                             <?php echo $product['name']; ?>
                         </p>
-                        <p class="tw-font-bold tw-text-green-600  tw-text-sm tw-text-center">
+                        <!-- <p class="tw-font-bold tw-text-green-600  tw-text-sm tw-text-center">
                             Rs. <?php echo $product['price']; ?>
-                        </p>
+                        </p> -->
                         <small class=" tw-mx-auto tw-text-center tw-w-full">Inclusive of all taxes</small>
                     </div>
                 </div>
