@@ -2,10 +2,10 @@
     <div class="container">
         <div class="row">
             <!-- Product Details -->
-            <cms:pages masterpage='testimonials.php' paginate='1' limit='3'>
+            <cms:pages masterpage='testimonials.php' paginate='1' limit='1'>
                 <!-- Product Image Section -->
                 <div class="col-md-6">
-                <cms:show_repeatable 'testimonials_images' start="1" limit="1">
+                <cms:show_repeatable 'testimonials_images' start="1" >
                     <a href="<cms:show image />" data-toggle="lightbox" data-gallery="product-gallery">
                         <img src="<cms:show image/>" alt="<cms:show k_page_title />" class="img-fluid">
                     </a>
