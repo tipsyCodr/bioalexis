@@ -1,5 +1,5 @@
 <?php
-$category = $_GET['category'] ?? 'All';
+$category = $_GET['category'] ?? '';
 
 ?>
 <!DOCTYPE html>
