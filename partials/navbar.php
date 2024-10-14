@@ -168,7 +168,7 @@ $name = basename($url);
 									</li>
 
 									<li class="<?php echo ($name == "products.php?category=All") ? 'active' : ''; ?>">
-										<a href="/products.php?category=All">Products</a>
+										<a href="/products.php">Products</a>
 									</li>
 									<li class="<?php echo ($name == "products.php?category=All") ? 'active' : ''; ?>">
 										<a href="/blogs.php?category=All">Blogs</a>
