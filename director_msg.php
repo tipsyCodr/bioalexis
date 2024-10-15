@@ -1,6 +1,11 @@
 <?php require_once('couch/cms.php'); ?>
 <cms:template title='Edit Director`s Message'>
-
+    <cms:repeatable name='team' label='Team'>
+        <cms:editable name="name" label="Name" type="text" />
+        <cms:editable name="designation" label="Designation" type="text" />
+        <cms:editable name="bio" label="Bio" type="richtext" />
+        <cms:editable name="image" label="Image" type="image" />
+    </cms:repeatable>
 </cms:template>
 <!DOCTYPE html>
 <html lang="en">
@@ -57,9 +62,32 @@
     <?php breadcrumbs('Director`s Message', 'Director`s Message') ?>
     <div class="container">
         <!-- <h1 class="tw-font-bold tw-text-2xl tw-text-center tw-my-8">Company Disclaimer</h1> -->
+        <div class="tw-flex tw-flex-col tw-py-10">
+            <cms:pages masterpage="director_msg.php">
+                <cms:show_repeatable 'team'>
+                    <div class="tw-flex tw-flex-col sm:tw-flex-row tw-gap-10">
+                        <div class="image tw-flex tw-flex-col tw-justify-center tw-items-center ">
+                            <div class="tw-w-[300px] " 600px="" 300px=""><img class="tw-object-cover"
+                                    src="<cms:show image /> " alt=""></div>
+                            <h3 class="tw-text-lg tw-font-semibold">
+                                <cms:show name />
+                            </h3>
+                            <small class="tw-text-sm tw-text-primary">
+                                <cms:show designation />
+                            </small>
+                        </div>
+                        <div class="content">
+                            <p>
+                                <cms:show bio />
+                            </p>
+                        </div>
+                    </div>
+                </cms:show_repeatable>
+            </cms:pages>
+
+        </div>
         <p class="tw-text-black">
-            <cms:editable name='message' label='Director`s Message' type='richtext'>
-            </cms:editable>
+
         </p>
     </div>
     <?php require_once 'partials/scripts.php' ?>
