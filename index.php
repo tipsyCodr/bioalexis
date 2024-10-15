@@ -88,7 +88,7 @@ require_once('couch/cms.php'); ?>
 				</div>
 				<cms:pages masterpage='popup.php'>
 					<div class="notice">
-						<img class='' style="max-height: 500px;" src="<cms:show popup/>" alt="<cms:show k_page_title/>">
+						<img class='' style="max-height: 500px;" src="<cms:show image/>" alt="<cms:show k_page_title/>">
 					</div>
 				</cms:pages>
 			</div>
