@@ -1,7 +1,7 @@
 <?php require_once('couch/cms.php'); ?>
 <cms:template title='Achievers' clonable="1" commentable='1'>
     <!-- <cms:editable name="achievers_title" type="text" /> -->
-    <cms:editable name="achievers_image" crop="1" width="670" height="448" type="image" />
+    <cms:editable name="achievers_image" type="image" />
     <cms:editable name="achievers_content" type="richtext" />
 
     <cms:folder name="tour" title="Tour Achievers" />
@@ -88,14 +88,15 @@
                                                 <a href="contact.php">
                                                     <img class='tw-object-cover' src="img/logo.png" alt="#">
                                                 </a>
-                                                <a class=" tw-font-bold" href="contact.php">Bio Alexis Trading Pvt. Ltd.</a>
+                                                <a class=" tw-font-bold" href="contact.php">Bio Alexis Trading Pvt.
+                                                    Ltd.</a>
                                             </div>
                                         </div>
                                         <div class="">
                                             <span class="date"><i class="fa fa-clock-o"></i>
                                                 <cms:date k_page_date format='jS M, y' />
                                             </span>
-                                           
+
                                         </div>
                                     </div>
                                     <!-- News Text -->
@@ -106,16 +107,20 @@
                                         <!-- Social Share -->
                                         <!-- Next Prev -->
                                         <ul class="tw-flex tw-justify-between ">
-                                            <li class="prev"><a class="tw-inline-block text-black border rounded px-3 py-2 tw-border-primary hover:tw-bg-primary tw-transition-all hover:tw-text-white" href="<cms:show k_page_link prev='1'/>">Next </a>
+                                            <li class="prev"><a
+                                                    class="tw-inline-block text-black border rounded px-3 py-2 tw-border-primary hover:tw-bg-primary tw-transition-all hover:tw-text-white"
+                                                    href="<cms:show k_page_link prev='1'/>">Next </a>
                                             </li>
-                                            <li class="next"><a class="tw-inline-block text-black border rounded px-2 py-2 tw-border-primary hover:tw-bg-primary tw-transition-all hover:tw-text-white" href="<cms:show k_page_link next='1'/>">Previous</a>
+                                            <li class="next"><a
+                                                    class="tw-inline-block text-black border rounded px-2 py-2 tw-border-primary hover:tw-bg-primary tw-transition-all hover:tw-text-white"
+                                                    href="<cms:show k_page_link next='1'/>">Previous</a>
                                             </li>
                                         </ul>
                                         <!--/ End Next Prev -->
                                     </div>
                                 </div>
                             </div>
-                            
+
 
 
                         </div>
