@@ -364,18 +364,16 @@ require_once('couch/cms.php'); ?>
 											class="tw-min-w-[250px] tw-max-w-[250px] tw-bg-gray-200 tw-rounded-xl tw-inline-block">
 											<div class="">
 												<div class="">
-													<img src="<cms:show achievers_image />"
-														class="tw-h-[200px] tw-w-full" alt="">
-													<h5 class="card-title">
-														<a href="<cms:show k_page_link/>">
+													<a href="<cms:show k_page_link/>">
+														<img src="<cms:show achievers_image />"
+															class="tw-h-[200px] tw-w-full" alt="">
+														<h5 class="card-title">
 															<b>
 																<cms:show k_page_title />
 															</b>
-														</a>
-													</h5>
-													<cms:excerpt count="10" ignore="img">
-														<cms:show achievers_content />
-													</cms:excerpt>
+														</h5>
+
+													</a>
 												</div>
 											</div>
 										</div>
