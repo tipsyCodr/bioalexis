@@ -96,7 +96,7 @@
             </p>
         </div>
         <div
-            style="padding: 20px ;max-width: 860px; position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
+            style="padding: 20px; position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
             <iframe src="https://www.youtube.com/embed/ceqY61gx41g?si=yx5Z61wvhiY2QZRK" title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
