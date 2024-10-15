@@ -353,6 +353,7 @@ require_once('couch/cms.php'); ?>
 		<section class="">
 			<h2 class="tw-font-bold tw-text-3xl text-center tw-py-5">Achievers</h2>
 
+
 			<div class="tw-mx-7">
 				<div class="row">
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -380,11 +381,14 @@ require_once('couch/cms.php'); ?>
 
 								</cms:pages>
 
+
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+
+
 		</section>
 
 
