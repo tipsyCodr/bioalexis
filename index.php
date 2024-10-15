@@ -312,30 +312,13 @@ require_once('couch/cms.php'); ?>
 													<h3 class="tw-text-lg tw-font-semibold tw-mt-2">
 													</h3>
 													<div class="tw-mt-2">
-														<cms:if "<cms:show video_link />">
+														<cms:show_repeatable 'videos' start="1" limit="1">
 															<script>
-																var url = "<cms:show video_link />";
-																var id = "";
-
-																// Check if the URL is in youtu.be format
-																if (url.includes('youtu.be/')) {
-																	id = url.split('youtu.be/')[1].split('?')[0]; // Get the video ID
-																}
-																// Check if the URL is in youtube.com format
-																else if (url.includes('youtube.com/watch?v=')) {
-																	id = url.split('v=')[1].split('&')[0]; // Get the video ID
-																}
-																// Check if the URL is in a different format (optional)
-																else {
-																	console.error("Invalid YouTube URL:", url);
-																}
-
-																// Only write the iframe if the ID is valid
-																if (id) {
-																	document.write('<iframe width="300" height="150" src="https://www.youtube.com/embed/' + id + '" frameborder="0" allowfullscreen></iframe>');
-																}
+																url = '<cms:show video_link />';
+																// Assuming you have a function like this elsewhere in your JS to handle the URL conversion
+																convertToEmbedLink(url);
 															</script>
-														</cms:if>
+														</cms:show_repeatable>
 													</div>
 												</div>
 											</cms:pages>
