@@ -306,8 +306,8 @@ require_once('couch/cms.php'); ?>
 										<div class="scroll-container">
 											<cms:pages masterpage='testimonials.php' folder="videos_testimonials"
 												paginate='1' limit='30'>
-												<div
-													class="tw-px-4 tw-w-[300px] tw-bg-gray-400 testimonial-item tw-shadow  tw-rounded tw-mb-4 ">
+												<div style="width:300px;height:350px; "
+													class="tw-px-4  tw-bg-gray-400 testimonial-item tw-shadow  tw-rounded tw-mb-4 ">
 
 													<h3 class="tw-text-lg tw-font-semibold tw-mt-2">
 													</h3>
