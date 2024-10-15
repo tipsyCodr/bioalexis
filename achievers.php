@@ -215,8 +215,6 @@
         </section>
         <!--/ End Single News -->
 
-        <?php require_once 'partials/scripts.php'; ?>
-        <?php require_once 'partials/footer.php'; ?>
         <cms:else />
         <cms:embed 'achievers.php' />
 
