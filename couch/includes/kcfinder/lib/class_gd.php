@@ -65,10 +65,11 @@ class gd {
                 ($type == IMAGETYPE_JPEG)     ? @imagecreatefromjpeg($image) : (
                 ($type == IMAGETYPE_JPEG2000) ? @imagecreatefromjpeg($image) : (
                 ($type == IMAGETYPE_PNG)      ? imagecreatefrompng($image)  : (
-                ($type == IMAGETYPE_XBM)      ? @imagecreatefromxbm($image)  : false
-            )))));
+                ($type == IMAGETYPE_XBM)      ? @imagecreatefromxbm($image)  : (
+                ($type == IMAGETYPE_WEBP)     ? @imagecreatefromwebp($image) : false
+            ))))));
 
-            if ($type == IMAGETYPE_PNG)
+            if ($type == IMAGETYPE_PNG || $type == IMAGETYPE_WEBP)
                 imagealphablending($image, false);
         }
 
@@ -395,6 +396,13 @@ class gd {
         if (is_null($filename) && !headers_sent())
             header("Content-Type: image/gif");
         return imagegif($this->image, $filename);
+    }
+
+    // Add this new method for WebP support
+    public function imagewebp($filename=null, $quality=80) {
+        if (is_null($filename) && !headers_sent())
+            header("Content-Type: image/webp");
+        return imagewebp($this->image, $filename, $quality);
     }
 }
 
