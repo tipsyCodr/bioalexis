@@ -158,7 +158,7 @@ $tour = false;
         <!-- Single Widget -->
         <div class="single-widget recent-post ">
             <h3 class="title">Recent post</h3>
-            <div class="tw-flex- tw-flex-col tw-gap-4 tw-items-center">
+            <div class="tw-flex tw-flex-col tw-gap-4 tw-items-center">
                 <!-- Single Post -->
                 <cms:pages>
                     <div class="single-post">
