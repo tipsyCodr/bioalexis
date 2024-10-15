@@ -1,8 +1,8 @@
 <?php require_once('couch/cms.php'); ?>
 <cms:template title='Download Section'>
-    <cms:editable name="name" type="text" />
     <cms:repeatable name="files" label="Files">
-        <cms:editable type="file" name="file" />
+        <cms:editable name="name" label="File Name" type="text" />
+        <cms:editable name='file' label='Downloadable File' desc='Upload the file here' type='file' />
     </cms:repeatable>
 </cms:template>
 <!DOCTYPE html>
@@ -58,23 +58,27 @@
         <ul class="tw-list-disc tw-pl-4">
             <cms:pages masterpage="downloads.php">
                 <cms:show name />
-                <cms:repeat 'files'>
+                <cms:show_repeatable 'files'>
                     <li><a href="<cms:show file/>" target="_blank">
-                            <cms:show file />
+                            <cms:if name>
+                                <cms:show name />
+                                <cms:else />
+                                <cms:show k_file_name />
+                            </cms:if>
                         </a></li>
-                </cms:repeat>
+                </cms:show_repeatable>
             </cms:pages>
         </ul>
 
-        <div class="tw-my-6 tw-flex tw-flex-col sm:tw-flex-row tw-flex-wrap tw-gap-2">
+        <!-- <div class="tw-my-6 tw-flex tw-flex-col sm:tw-flex-row tw-flex-wrap tw-gap-2">
 
             <?php
-            $files = glob('assets/*');
-            foreach ($files as $file) {
-                echo '<li class="tw-text-blue-500 tw-p-2 tw-text-nowrap tw-m-2 tw-rounded-xl tw-border tw-bg-gray-50 tw-underline"><a href="' . $file . '" target="_blank" class="tw-hover:tw-text-blue-700 tw-transition tw-duration-150">' . basename($file) . '</a></li>';
-            }
+            //$files = glob('assets/*');
+            //foreach ($files as $file) {
+            //     echo '<li class="tw-text-blue-500 tw-p-2 tw-text-nowrap tw-m-2 tw-rounded-xl tw-border tw-bg-gray-50 tw-underline"><a href="' . $file . '" target="_blank" class="tw-hover:tw-text-blue-700 tw-transition tw-duration-150">' . basename($file) . '</a></li>';
+            // }
             ?>
-        </div>
+        </div> -->
     </div>
     <?php require_once 'partials/scripts.php' ?>
     <?php require_once 'partials/footer.php' ?>

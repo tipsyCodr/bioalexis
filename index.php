@@ -346,7 +346,7 @@ require_once('couch/cms.php'); ?>
 						<div class="">
 							<div class="scroll-container tw-overflow-x-auto tw-whitespace-nowrap tw-py-4">
 								<div class="tw-flex tw-justify-center tw-items-center tw-gap-5">
-									<cms:pages masterpage='achievers.php' paginate='1' limit='3'>
+									<cms:pages masterpage='achievers.php' paginate='1' limit='10'>
 										<!-- Card -->
 										<div class=" tw-bg-gray-200 tw-rounded-xl tw-inline-block"
 											style="width:250px; height:250px;">
