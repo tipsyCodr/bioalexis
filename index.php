@@ -352,44 +352,42 @@ require_once('couch/cms.php'); ?>
 		<!-- Achievers section  -->
 		<section class="">
 			<h2 class="tw-font-bold tw-text-3xl text-center tw-py-5">Achievers</h2>
-
-
 			<div class="tw-mx-7">
 				<div class="row">
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 						<div class="">
-							<div class="scroll-container">
-								<cms:pages masterpage='achievers.php' paginate='1' limit='3'>
-									<!-- Card -->
-									<div class="tw-p-2 tw-bg-gray-200 tw-rounded-xl">
-										<div class="">
+							<div class="scroll-container tw-overflow-x-auto tw-whitespace-nowrap tw-py-4">
+								<div class="tw-flex tw-space-x-4">
+									<cms:pages masterpage='achievers.php' paginate='1' limit='3'>
+										<!-- Card -->
+										<div
+											class="tw-min-w-[250px] tw-max-w-[250px] tw-bg-gray-200 tw-rounded-xl tw-inline-block">
 											<div class="">
-
-												<img src="<cms:show achievers_image />" class="tw-h-[200px] tw-w-full "
-													alt="">
-												<h5 class="card-title"><a href="<cms:show k_page_link/>"><b>
-															<cms:show k_page_title />
-														</b> </a></h5>
-												<cms:excerpt count="10" ignore="img">
-													<cms:show achievers_content />
-												</cms:excerpt>
-
+												<div class="">
+													<img src="<cms:show achievers_image />"
+														class="tw-h-[200px] tw-w-full" alt="">
+													<h5 class="card-title">
+														<a href="<cms:show k_page_link/>">
+															<b>
+																<cms:show k_page_title />
+															</b>
+														</a>
+													</h5>
+													<cms:excerpt count="10" ignore="img">
+														<cms:show achievers_content />
+													</cms:excerpt>
+												</div>
 											</div>
 										</div>
-
-									</div>
-
-								</cms:pages>
-
-
+									</cms:pages>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-
-
 		</section>
+
 
 
 		<!-- Featured Product section  -->
