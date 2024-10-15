@@ -82,18 +82,20 @@
                                             <cms:show k_page_title />
                                         </a></h1>
                                     <!-- Meta -->
-                                    <div class="meta">
-                                        <div class="meta-left">
-                                            <span class="author"><a href="#"><img src="img/author1.jpg"
-                                                        alt="#">Admin</a></span>
+                                    <div class="meta tw-flex tw-justify-between tw-items-center">
+                                        <div class="">
+                                            <div class="author tw-flex tw-items-center">
+                                                <a href="contact.php">
+                                                    <img class='tw-object-cover' src="img/logo.png" alt="#">
+                                                </a>
+                                                <a class=" tw-font-bold" href="contact.php">Bio Alexis Trading Pvt. Ltd.</a>
+                                            </div>
                                         </div>
-                                        <div class="meta-right">
+                                        <div class="">
                                             <span class="date"><i class="fa fa-clock-o"></i>
                                                 <cms:date k_page_date format='jS M, y' />
                                             </span>
-                                            <span class="comments"><a href="#"><i class="fa fa-comments"></i>
-                                                    <cms:show k_comment_count /> Comments
-                                                </a></span>
+                                           
                                         </div>
                                     </div>
                                     <!-- News Text -->
@@ -102,79 +104,18 @@
                                     </div>
                                     <div class="achievers-bottom">
                                         <!-- Social Share -->
-                                        <ul class="social-share">
-                                            <li class="facebook"><a href="#"><i
-                                                        class="fa fa-facebook"></i><span>Facebook</span></a></li>
-                                            <li class="twitter"><a href="#"><i
-                                                        class="fa fa-twitter"></i><span>Twitter</span></a></li>
-                                            <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a>
-                                            </li>
-                                            <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                            <li class="pinterest"><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                        </ul>
                                         <!-- Next Prev -->
-                                        <ul class="prev-next">
-                                            <li class="prev"><a href="#"><i class="fa fa-angle-double-left"></i></a>
+                                        <ul class="tw-flex tw-justify-between ">
+                                            <li class="prev"><a class="tw-inline-block text-black border rounded px-3 py-2 tw-border-primary hover:tw-bg-primary tw-transition-all hover:tw-text-white" href="<cms:show k_page_link prev='1'/>">Next </a>
                                             </li>
-                                            <li class="next"><a href="#"><i class="fa fa-angle-double-right"></i></a>
+                                            <li class="next"><a class="tw-inline-block text-black border rounded px-2 py-2 tw-border-primary hover:tw-bg-primary tw-transition-all hover:tw-text-white" href="<cms:show k_page_link next='1'/>">Previous</a>
                                             </li>
                                         </ul>
                                         <!--/ End Next Prev -->
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12">
-                                <div class="achievers-comments">
-                                    <h2>No Comments Yet</h2>
-                                    <div class="comments-body">
-                                        <!-- Single Comments -->
-                                        <!-- <div class="single-comments">
-                                            <div class="main">
-                                                <div class="head">
-                                                    <img src="img/author1.jpg" alt="#"/>
-                                                </div>
-                                                <div class="body">
-                                                    <h4>Afsana Mimi</h4>
-                                                    <div class="comment-meta"><span class="meta"><i class="fa fa-calendar"></i>March 05, 2019</span><span class="meta"><i class="fa fa-clock-o"></i>03:38 AM</span></div>
-                                                    <p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas</p>
-                                                    <a href="#"><i class="fa fa-reply"></i>replay</a>
-                                                </div>
-                                            </div>
-                                        </div>		 -->
-                                        <!--/ End Single Comments -->
-                                        <!-- Single Comments -->
-                                        <!-- <div class="single-comments left">
-                                            <div class="main">
-                                                <div class="head">
-                                                    <img src="img/author2.jpg" alt="#"/>
-                                                </div>
-                                                <div class="body">
-                                                    <h4>Naimur Rahman</h4>
-                                                    <div class="comment-meta"><span class="meta"><i class="fa fa-calendar"></i>March 05, 2019</span><span class="meta"><i class="fa fa-clock-o"></i>03:38 AM</span></div>
-                                                    <p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas</p>
-                                                    <a href="#"><i class="fa fa-reply"></i>replay</a>
-                                                </div>
-                                            </div>
-                                        </div>		 -->
-                                        <!--/ End Single Comments -->
-                                        <!-- Single Comments -->
-                                        <!-- <div class="single-comments">
-                                            <div class="main">
-                                                <div class="head">
-                                                    <img src="img/author3.jpg" alt="#"/>
-                                                </div>
-                                                <div class="body">
-                                                    <h4>Suriya Molharta</h4>
-                                                    <div class="comment-meta"><span class="meta"><i class="fa fa-calendar"></i>March 05, 2019</span><span class="meta"><i class="fa fa-clock-o"></i>03:38 AM</span></div>
-                                                    <p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas</p>
-                                                    <a href="#"><i class="fa fa-reply"></i>replay</a>
-                                                </div>
-                                            </div>
-                                        </div>		 -->
-                                        <!--/ End Single Comments -->
-                                    </div>
-                                </div>
-                            </div>
+                            
 
 
                         </div>

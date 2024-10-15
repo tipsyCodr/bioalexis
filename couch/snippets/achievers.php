@@ -64,8 +64,16 @@
                             </div>
                         </div>
                     </div>
+                    <?php 
+                    $car = false;
+                    $tour = false;
+                    ?>
                     <h2 class="tw-font-bold tw-mt-10 tw-text-3xl ">Cars Achievers</h2>
                     <div class="row">
+                        <cms:php>
+                            $car = true;
+                        </cms:php>
+
                         <div class="col-12">
                             <div class="main">
                                 <cms:pages masterpage='achievers.php' paginate='1' folder="car" limit='3'>
@@ -88,8 +96,8 @@
                                             <!-- Meta -->
                                             <div class="meta">
                                                 <div class="meta-left">
-                                                    <span class="author"><a href="#"><img src="img/author1.jpg"
-                                                                alt="#">Admin</a></span>
+                                                    <span class="author"><a href="#"><img src="img/logo.png"
+                                                                alt="#">Bio Alexis</a></span>
                                                     <span class="date"><i class="fa fa-clock-o"></i>
                                                         <cms:date k_page_date format='jS M, y' />
                                                     </span>
@@ -100,22 +108,14 @@
                                                 </div>
                                             </div>
                                         </div>
-
                                         <hr />
                                     </div>
-                                    <cms:if k_paginated_bottom>
-                                        <div style="width:100%; text-align:center; padding:20px;color:green;">
-                                            <span style="">
-                                                <cms:if k_paginated_link_prev><a
-                                                        href="<cms:show k_paginated_link_next/>">
-                                                        < Previous Posts</a> | </cms:if>
-                                                <cms:if k_paginated_link_next><a
-                                                        href="<cms:show k_paginated_link_prev/>"> Newer Posts ></a>
-                                                </cms:if>
-                                            </span>
-                                        </div>
-                                    </cms:if>
                                 </cms:pages>
+                                <cms:php>
+                                    if (!$car) {
+                                        echo '<div class="alert alert-notice text-center" role="alert">No Achievers Found</div>';
+                                    }
+                                </cms:php>
                                 <cms:if k_no_pages>
                                     <div class="alert alert-warning" role="alert">No Achievers Found</div>
                                 </cms:if>
@@ -128,6 +128,9 @@
                             <div class="main">
                                 <cms:pages masterpage='achievers.php' paginate='1' folder="tour" limit='3'>
                                     <div class="row">
+                                    <cms:php>
+                            $tour = true;
+                        </cms:php>
                                         <div class="col-lg-4">
                                             <!-- News thumbnail -->
                                             <div class="fill news-thumbnail">
@@ -160,23 +163,13 @@
 
                                         <hr />
                                     </div>
-                                    <cms:if k_paginated_bottom>
-                                        <div style="width:100%; text-align:center; padding:20px;color:green;">
-                                            <span style="">
-                                                <cms:if k_paginated_link_prev><a
-                                                        href="<cms:show k_paginated_link_next/>">
-                                                        < Previous Posts</a> | </cms:if>
-                                                <cms:if k_paginated_link_next><a
-                                                        href="<cms:show k_paginated_link_prev/>"> Newer Posts ></a>
-                                                </cms:if>
-                                            </span>
-                                        </div>
-                                    </cms:if>
+                                    
                                 </cms:pages>
-                                <cms:if k_folder_name='tour' && k_no_pages>
-                                    <div class="alert alert-warning" role="alert">No Achievers Found in Tour Package
-                                    </div>
-                                </cms:if>
+                                <cms:php>
+                                    if (!$tour) {
+                                        echo '<div class="alert alert-notice text-center" role="alert">No Achievers Found</div>';
+                                    }
+                                </cms:php>
                             </div>
                         </div>
                     </div>
