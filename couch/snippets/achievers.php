@@ -144,8 +144,10 @@
                                         <!-- Meta -->
                                         <div class="meta">
                                             <div class="meta-left">
-                                                <span class="author"><a href="#"><img src="img/author1.jpg"
-                                                            alt="#">Admin</a></span>
+                                                <span class="author"><a class='tw-font-bold' href="#"><img
+                                                            class='tw-object-cover' src="img/logo.jpg" alt="#">Bio
+                                                        Alexis Trading Pvt.
+                                                        Ltd.</a></span>
                                                 <span class="date"><i class="fa fa-clock-o"></i>
                                                     <cms:date k_page_date format='jS M, y' />
                                                 </span>

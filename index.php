@@ -68,6 +68,11 @@ require_once('couch/cms.php'); ?>
 
 <body>
 
+
+
+	<?php require_once 'partials/navbar.php' ?>
+
+
 	<cms:if k_is_page>
 
 		<cms:embed 'products.php' />
@@ -86,9 +91,6 @@ require_once('couch/cms.php'); ?>
 				</div>
 			</div>
 		</div>
-
-
-		<?php require_once 'partials/navbar.php' ?>
 
 		<!-- Slider Area -->
 		<section class="slider">

@@ -160,7 +160,7 @@ $name = basename($url);
 										</ul>
 									</li>
 
-									<li class="<?php echo ($name == "index.php") ? "active" : ""; ?>">
+									<li class="<?php echo ($name == "bussiness-plan.php") ? "active" : ""; ?>">
 										<a href="/bussiness-plan.php"> Business Oppurtunities</a>
 									</li>
 
