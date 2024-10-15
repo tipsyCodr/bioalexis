@@ -87,7 +87,6 @@ require_once('couch/cms.php'); ?>
 						onclick="document.querySelector('.popup_backdrop').style.display='none'">&times;</button>
 				</div>
 				<cms:pages masterpage='awards.php'>
-
 					<div class="notice">
 						<img class='' style="max-height: 500px;" src="<cms:show popup/>" alt="">
 					</div>
