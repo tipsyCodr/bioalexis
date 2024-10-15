@@ -94,7 +94,6 @@ require_once('couch/cms.php'); ?>
 			</div>
 
 		</div>
-
 		<!-- Slider Area -->
 		<section class="slider">
 			<div class="hero-slider">

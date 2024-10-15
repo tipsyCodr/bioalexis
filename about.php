@@ -115,7 +115,8 @@
             </div>
             <div class="col-lg-6 col-12">
               <!-- Start Choose Rights -->
-              <div class="choose-right">
+
+              <div class="choose-right" style="background-image: url(' img/about1.jpg');">
                 <div class="video-image">
                   <!-- Video Animation -->
                   <div class="promo-video">
