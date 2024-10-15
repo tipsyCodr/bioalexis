@@ -616,14 +616,29 @@ video {
   margin: 0.5rem;
 }
 
+.tw-mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 .tw-mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
 
+.tw-mx-20 {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
 .tw-mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+.tw-mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
 }
 
 .tw-mx-7 {
@@ -664,21 +679,6 @@ video {
 .tw-my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
-}
-
-.tw-mx-0 {
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
-.tw-mx-20 {
-  margin-left: 5rem;
-  margin-right: 5rem;
-}
-
-.tw-mx-5 {
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
 }
 
 .tw-mb-3 {
@@ -962,12 +962,12 @@ video {
   border-radius: 0.5rem;
 }
 
-.tw-rounded-xl {
-  border-radius: 0.75rem;
-}
-
 .tw-rounded-md {
   border-radius: 0.375rem;
+}
+
+.tw-rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .tw-border {
@@ -1390,17 +1390,7 @@ video {
   opacity: 1;
 }
 
-.focus\:tw-text-white:focus {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 @media (min-width: 640px) {
-  .sm\:tw-mx-20 {
-    margin-left: 5rem;
-    margin-right: 5rem;
-  }
-
   .sm\:tw-ml-\[4rem\] {
     margin-left: 4rem;
   }
