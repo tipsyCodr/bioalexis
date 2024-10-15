@@ -1,17 +1,9 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
 
-<head>
-    <?php require_once 'partials/head.php' ?>
-    <link rel="stylesheet" href="css/my-style.css" />
-</head>
 
-<body>
-    <?php require_once 'partials/navbar.php' ?>
     <!-- Start Gallery Us -->
     <section class="news section">
         <div class=" container">
-            <h2 class="tw-font-bold tw-text-3xl ">Achievers</h2>
+            <h2 class="tw-font-bold tw-text-3xl ">All Achievers</h2>
 
             <div class="row">
                 <div class="col-lg-8 col-12">
@@ -25,7 +17,9 @@
                                         <div class="col-lg-4">
                                             <!-- News thumbnail -->
                                             <div class="fill news-thumbnail">
+                                            <a href="<cms:show k_page_link/>">
                                                 <img src="<cms:show achievers_image/>" alt="#">
+                                            </a>
                                             </div>
                                         </div>
                                         <div class="col-lg-8">
@@ -223,10 +217,3 @@
             </div>
         </div>
     </section>
-    <!--/ End Gallery Us -->
-
-    <?php require_once 'partials/scripts.php'; ?>
-    <?php require_once 'partials/footer.php'; ?>
-</body>
-
-</html>

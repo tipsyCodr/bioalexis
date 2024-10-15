@@ -18,9 +18,10 @@
     <meta name="description" content="">
     <meta name='copyright' content=''>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/my-style.css" />
 
     <!-- Title -->
-    <title>Bioalexis - Achievers</title>
+    <title>Bioalexis - All Achievers</title>
 
     <!-- Favicon -->
     <link rel="icon" href="img/favicon.png">
@@ -93,7 +94,6 @@
                                             <span class="comments"><a href="#"><i class="fa fa-comments"></i>
                                                     <cms:show k_comment_count /> Comments
                                                 </a></span>
-                                            <!-- <span class="views"><i class="fa fa-eye"></i>33K Views</span> -->
                                         </div>
                                     </div>
                                     <!-- News Text -->
