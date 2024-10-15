@@ -67,15 +67,15 @@
                 ?>
                 <h2 class="tw-font-bold tw-mt-10 tw-text-3xl ">Cars Achievers</h2>
                 <div class="row">
-                    <cms:php>
-                        $car = true;
-                    </cms:php>
+
 
                     <div class="col-12">
                         <div class="main">
                             <cms:pages masterpage='achievers.php' paginate='1' folder="car">
                                 <div class="row">
-
+                                    <cms:php>
+                                        $car = true;
+                                    </cms:php>
                                     <div class="col-lg-4">
                                         <!-- News thumbnail -->
                                         <div class="fill news-thumbnail">
@@ -124,9 +124,7 @@
                         <div class="main">
                             <cms:pages masterpage='achievers.php' paginate='1' folder="tour">
                                 <div class="row">
-                                    <cms:php>
-                                        $tour = true;
-                                    </cms:php>
+
                                     <div class="col-lg-4">
                                         <!-- News thumbnail -->
                                         <div class="fill news-thumbnail">
@@ -163,12 +161,7 @@
                                 </div>
 
                             </cms:pages>
-                            <cms:php>
-                                if (!$tour) {
-                                echo '<div class="alert alert-notice text-center" role="alert">No Achievers Found</div>
-                                ';
-                                }
-                            </cms:php>
+
                         </div>
                     </div>
                 </div>
