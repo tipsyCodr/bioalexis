@@ -305,7 +305,7 @@ require_once('couch/cms.php'); ?>
 									<div class="">
 										<div class="scroll-container">
 											<cms:pages masterpage='testimonials.php' folder="videos_testimonials"
-												paginate='1' limit='30'>
+												paginate='1' limit='5'>
 												<div style=" flex-shrink: 0;border-radius: 8px;padding-left: 20px; padding-right: 20px; padding-bottom: 10px;box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"
 													class="tw-px-4  tw-bg-gray-400 testimonial-item tw-shadow  tw-rounded tw-mb-4 ">
 
@@ -322,7 +322,18 @@ require_once('couch/cms.php'); ?>
 													</div>
 												</div>
 											</cms:pages>
+											<!-- View More Link -->
+											<div class="tw-bg-gray-200 tw-rounded-xl hover:tw-bg-primary hover:tw-text-white tw-flex tw-justify-center tw-items-center"
+												style="width:250px; height:250px;">
 
+
+												<a href="testimonials.php"
+													class="tw-w-full tw-h-full tw-flex tw-items-center tw-justify-center">
+													<b>View More <i class="fa-solid fa-angles-right"></i></b>
+												</a>
+
+
+											</div>
 
 										</div>
 									</div>
