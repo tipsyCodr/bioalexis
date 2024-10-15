@@ -307,7 +307,7 @@ require_once('couch/cms.php'); ?>
 											<cms:pages masterpage='testimonials.php' folder="videos_testimonials"
 												paginate='1' limit='30'>
 												<div
-													class="card testimonial-item tw-shadow tw-p-4 tw-rounded tw-mb-4 tw-bg-white">
+													class="card testimonial-item tw-shadow  tw-rounded tw-mb-4 tw-bg-white">
 
 													<h3 class="tw-text-lg tw-font-semibold tw-mt-2">
 													</h3>
