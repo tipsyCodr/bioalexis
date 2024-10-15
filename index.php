@@ -356,7 +356,7 @@ require_once('couch/cms.php'); ?>
 														<img src="<cms:show achievers_image />"
 															class="tw-h-[200px] tw-w-full" alt="">
 														<h5
-															class="card-title text-center tw-capitalize tw-py-4 tw-text-ellipsis tw-overflow-hidden">
+															class="tw-px-4 card-title text-center tw-capitalize tw-py-4 tw-text-ellipsis tw-overflow-hidden">
 															<b>
 																<cms:show k_page_title />
 															</b>
