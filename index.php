@@ -346,7 +346,7 @@ require_once('couch/cms.php'); ?>
 						<div class="">
 							<div class="scroll-container tw-overflow-x-auto tw-whitespace-nowrap tw-py-4">
 								<div class="tw-flex tw-justify-center tw-items-center tw-gap-5">
-									<cms:pages masterpage='achievers.php' paginate='1'>
+									<cms:pages masterpage='achievers.php' paginate='1' limit="5">
 										<!-- Card -->
 										<div class=" tw-bg-gray-200 tw-rounded-xl tw-inline-block"
 											style="width:250px; height:250px;">
@@ -367,6 +367,18 @@ require_once('couch/cms.php'); ?>
 											</div>
 										</div>
 									</cms:pages>
+									<!-- View More Link -->
+									<div class="tw-bg-gray-200 tw-rounded-xl hover:tw-bg-primary hover:tw-text-white tw-flex tw-justify-center tw-items-center"
+										style="width:250px; height:250px;">
+
+
+										<a href="achievers.php"
+											class="tw-w-full tw-h-full tw-flex tw-items-center tw-justify-center">
+											<b>View More <i class="fa-solid fa-angles-right"></i></b>
+										</a>
+
+
+									</div>
 								</div>
 							</div>
 						</div>
