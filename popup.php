@@ -17,6 +17,11 @@
 <body>
     <?php require_once 'partials/navbar.php' ?>
 
+    <h1 class="tw-font-bold tw-text-2xl">
+        <cms:show title />
+    </h1>
+    <img src="<cms:show image />" alt="<cms:show title />">
+
     <?php require_once 'partials/scripts.php' ?>
     <?php require_once 'partials/footer.php' ?>
 </body>
