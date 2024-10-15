@@ -361,7 +361,7 @@ require_once('couch/cms.php'); ?>
 									<cms:pages masterpage='achievers.php' paginate='1' limit='3'>
 										<!-- Card -->
 										<div class=" tw-bg-gray-200 tw-rounded-xl tw-inline-block"
-											style="width:250px height:250px">
+											style="width:250px; height:250px;">
 											<div class="">
 												<div class="">
 													<a href="<cms:show k_page_link/>">
