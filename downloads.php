@@ -70,15 +70,15 @@
             </cms:pages>
         </ul>
 
-        <!-- <div class="tw-my-6 tw-flex tw-flex-col sm:tw-flex-row tw-flex-wrap tw-gap-2">
+        <div class="tw-my-6 tw-flex tw-flex-col sm:tw-flex-row tw-flex-wrap tw-gap-2">
 
             <?php
-            //$files = glob('assets/*');
-            //foreach ($files as $file) {
-            //     echo '<li class="tw-text-blue-500 tw-p-2 tw-text-nowrap tw-m-2 tw-rounded-xl tw-border tw-bg-gray-50 tw-underline"><a href="' . $file . '" target="_blank" class="tw-hover:tw-text-blue-700 tw-transition tw-duration-150">' . basename($file) . '</a></li>';
-            // }
+            $files = glob('assets/*');
+            foreach ($files as $file) {
+                echo '<li class="tw-text-blue-500 tw-p-2 tw-text-nowrap tw-m-2 tw-rounded-xl tw-border tw-bg-gray-50 tw-underline"><a href="' . $file . '" target="_blank" class="tw-hover:tw-text-blue-700 tw-transition tw-duration-150">' . basename($file) . '</a></li>';
+            }
             ?>
-        </div> -->
+        </div>
     </div>
     <?php require_once 'partials/scripts.php' ?>
     <?php require_once 'partials/footer.php' ?>
