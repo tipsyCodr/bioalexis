@@ -67,8 +67,9 @@
                 <cms:show_repeatable 'team'>
                     <div class="tw-flex tw-flex-col sm:tw-flex-row tw-gap-10">
                         <div class="image tw-flex tw-flex-col tw-justify-center tw-items-center ">
-                            <div class="tw-w-[300px] " 600px="" 300px=""><img class="tw-object-cover"
-                                    src="<cms:show image /> " alt=""></div>
+                            <div class="tw-w-[300px] tw-rounded-lg tw-overflow-hidden ">
+                                <img class="tw-object-cover" src="<cms:show image /> " alt="">
+                            </div>
                             <h3 class="tw-text-lg tw-font-semibold">
                                 <cms:show name />
                             </h3>
