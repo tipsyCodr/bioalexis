@@ -367,7 +367,7 @@ require_once('couch/cms.php'); ?>
 													<a href="<cms:show k_page_link/>">
 														<img src="<cms:show achievers_image />"
 															class="tw-h-[200px] tw-w-full" alt="">
-														<h5 class="card-title">
+														<h5 class="card-title text-centert tw-capitalize tw-py-4">
 															<b>
 																<cms:show k_page_title />
 															</b>
