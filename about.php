@@ -10,7 +10,7 @@
     color: #0a3b3f !important;
   }
 
-  p {
+  .Feautess p {
     color: #000 !important;
   }
 
