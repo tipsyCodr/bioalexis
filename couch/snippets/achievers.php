@@ -9,7 +9,7 @@
                     <div class="col-12">
                         <div class="main">
 
-                            <cms:pages masterpage='achievers.php' paginate='1' limit='3'>
+                            <cms:pages masterpage='achievers.php' paginate='1'>
                                 <div class="row">
 
                                     <div class="col-lg-4">
@@ -73,7 +73,7 @@
 
                     <div class="col-12">
                         <div class="main">
-                            <cms:pages masterpage='achievers.php' paginate='1' folder="car" limit='3'>
+                            <cms:pages masterpage='achievers.php' paginate='1' folder="car">
                                 <div class="row">
 
                                     <div class="col-lg-4">
@@ -122,7 +122,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="main">
-                            <cms:pages masterpage='achievers.php' paginate='1' folder="tour" limit='3'>
+                            <cms:pages masterpage='achievers.php' paginate='1' folder="tour">
                                 <div class="row">
                                     <cms:php>
                                         $tour = true;
