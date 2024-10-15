@@ -26,19 +26,21 @@
 						</p>
 						<!-- Social Links -->
 						<ul class="social tw-flex tw-gap-6 tw-mt-4">
-							<li><a href="https://www.facebook.com/share/Nmvd5Pf52NcEAUZJ/?mibextid=LQQJ4d"
+							<li><a target="_blank"
+									href="https://www.facebook.com/share/Nmvd5Pf52NcEAUZJ/?mibextid=LQQJ4d"
 									class="tw-text-white hover:tw-text-gray-400 tw-rounded-full tw-outline tw-outline-1 tw-outline-gray-500 tw-w-8 tw-h-8 tw-flex tw-justify-center tw-items-center"><i
 										class="fa-brands fa-facebook"></i></a></li>
-							<li><a href="https://www.youtube.com/@bioalexisofficial2211/videos"
+							<li><a target="_blank" href="https://www.youtube.com/@bioalexisofficial2211/videos"
 									class="tw-text-white hover:tw-text-gray-400 tw-rounded-full tw-outline tw-outline-1 tw-outline-gray-500 tw-w-8 tw-h-8 tw-flex tw-justify-center tw-items-center"><i
 										class="fa-brands fa-youtube"></i></a></li>
-							<li><a href="#"
+							<li><a target="_blank" href="#"
 									class="tw-text-white hover:tw-text-gray-400 tw-rounded-full tw-outline tw-outline-1 tw-outline-gray-500 tw-w-8 tw-h-8 tw-flex tw-justify-center tw-items-center"><i
 										class="fa-brands fa-x-twitter"></i></a></li>
-							<li><a href="https://www.youtube.com/@bioalexisofficial2211/videos"
+							<li><a target="_blank"
+									href="https://www.instagram.com/bioalexisofficial?igsh=MTRzcHdsMWFwN2htcg=="
 									class="tw-text-white hover:tw-text-gray-400 tw-rounded-full tw-outline tw-outline-1 tw-outline-gray-500 tw-w-8 tw-h-8 tw-flex tw-justify-center tw-items-center"><i
 										class="fa-brands fa-instagram"></i></a></li>
-							<li><a href="#"
+							<li><a target="_blank" href="#"
 									class="tw-text-white hover:tw-text-gray-400 tw-rounded-full tw-outline tw-outline-1 tw-outline-gray-500 tw-w-8 tw-h-8 tw-flex tw-justify-center tw-items-center"><i
 										class="fa-brands fa-linkedin"></i></a></li>
 						</ul>
