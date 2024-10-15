@@ -143,7 +143,7 @@
 						<div class="single-info">
 							<i class="icofont icofont-wall-clock"></i>
 							<div class="content">
-								<h3 style="padding:0px">Mon - Sat: 8am - 5pm</h3>
+								<h3 style="padding:0px">Mon - Sat: 10:30am - 7pm</h3>
 								<p style="padding:0px">Sunday Closed</p>
 							</div>
 						</div>
