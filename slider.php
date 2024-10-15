@@ -1,6 +1,6 @@
 <?php require_once('couch/cms.php'); ?>
 
-<cms:template title='Change Banner Image' clonable='1'>
+<cms:template title='Change Banner Image'>
     <cms:repeatable name='banner_images' label='Banner Images'>
         <cms:editable name='image' label='Image' type='image' show_preview='1' preview_height='200' />
         <cms:editable name="gg_thumb" assoc_field="image" label="Image Thumbnail" desc="Thumbnail of image above"
@@ -19,12 +19,15 @@
 
 <body>
     <?php require_once 'partials/navbar.php' ?>
+
+
     <cms:pages masterpage='slider.php'>
-        <cms:show_repeatable banner_images>
+        <cms:show_repeatable 'banner_images'>
             <div class="tw-p-2 tw-my-10">
-                <img src="<cms:show image />" alt="<cms:show title />">
+                <img src="<cms:show image />" alt="">
             </div>
         </cms:show_repeatable>
+
     </cms:pages>
 
     <?php require_once 'partials/scripts.php' ?>

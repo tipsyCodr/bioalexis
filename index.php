@@ -99,18 +99,13 @@ require_once('couch/cms.php'); ?>
 		<section class="slider">
 			<div class="hero-slider">
 				<cms:pages masterpage='slider.php'>
-					<div class="single-slider">
-						<img src="<cms:show image />" alt="<cms:show k_page_title />">
-					</div>
+					<cms:show_repeatable 'banner_images'>
+						<div class="single-slider">
+							<img src="<cms:show image />" alt="">
 
+						</div>
+					</cms:show_repeatable>
 				</cms:pages>
-
-				<?php
-				$images = glob("img/banner/*.*");
-				foreach ($images as $image) {
-					echo '<div class="tw-w-full single-slider"><img src="' . $image . '" alt=""></div>';
-				}
-				?>
 			</div>
 		</section>
 		<!--/ End Slider Area -->
