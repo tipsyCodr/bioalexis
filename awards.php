@@ -79,7 +79,7 @@
                         </p>
                         <a class="tw-block tw-overflow-hidden" href="<cms:show image />" data-lightbox="awards"
                             onclick="event.preventDefault();">
-                            <img class="tw-w-full tw-h-[200px] tw-object-cover" src="<cms:show image />"
+                            <img class="tw-w-full tw-h-[200px] tw-object-contain" src="<cms:show image />"
                                 alt="<cms:show caption />" />
                         </a>
 
