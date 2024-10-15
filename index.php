@@ -86,10 +86,14 @@ require_once('couch/cms.php'); ?>
 					<button class="close"
 						onclick="document.querySelector('.popup_backdrop').style.display='none'">&times;</button>
 				</div>
-				<div class="notice">
-					<img class='' style="max-height: 500px;" src="img/new/popup.png" alt="">
-				</div>
+				<cms:pages masterpage='awards.php'>
+
+					<div class="notice">
+						<img class='' style="max-height: 500px;" src="<cms:show popup/>" alt="">
+					</div>
+				</cms:pages>
 			</div>
+
 		</div>
 
 		<!-- Slider Area -->
