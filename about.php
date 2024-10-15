@@ -126,7 +126,7 @@
                     </div>
                   </div>
                   <!--/ End Video Animation -->
-                  <a href="https://www.youtube.com/watch?v=De_-bXyBBOc" class="video video-popup mfp-iframe"><i
+                  <a href="https://www.youtube.com/watch?v=GSTHsbgbEaU" class="video video-popup mfp-iframe"><i
                       class="fa fa-play"></i></a>
                 </div>
               </div>
