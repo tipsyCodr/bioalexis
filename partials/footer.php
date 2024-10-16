@@ -101,6 +101,8 @@
 										class="fa fa-caret-right"></i> Terms & Conditions</a></li>
 							<li><a href="downloads.php" class="tw-text-white hover:tw-text-gray-400"><i
 										class="fa fa-caret-right"></i> Download</a></li>
+							<li><a href="grievance.php" class="tw-text-white hover:tw-text-gray-400"><i
+										class="fa fa-caret-right"></i> Grievance</a></li>
 							<li><a href="gallery.php" class="tw-text-white hover:tw-text-gray-400"><i
 										class="fa fa-caret-right"></i> Gallery</a></li>
 							<li><a href="http://login.bioalexis.com/" class="tw-text-white hover:tw-text-gray-400"><i
