@@ -28,6 +28,23 @@
 
   <?php breadcrumbs('About Us', 'About Us') ?>
   <!-- Start Contact Us -->
+
+  <div onclick="document.querySelector('.popup_backdrop').style.display='none'"
+    class="popup_backdrop tw-z-[1000] tw-flex tw-justify-center tw-items-center tw-bg-black tw-fixed  tw-w-full tw-h-full tw-bg-opacity-50 tw-backdrop-blur-md "
+    style="top:0;">
+    <div class="popup tw-p-2  tw-bg-white tw-w-fit tw-h-fit">
+      <div class="head flex flex-row tw-justify-between tw-items-center gap-5">
+        <h2 class="tw-font-bold tw-text-black">News</h2>
+        <button class="close" onclick="document.querySelector('.popup_backdrop').style.display='none'">&times;</button>
+      </div>
+      <cms:pages masterpage='popup.php'>
+        <div class="notice">
+          <img class='' style="max-height: 500px;" src="<cms:show image/>" alt="<cms:show k_page_title/>">
+        </div>
+      </cms:pages>
+    </div>
+
+  </div>
   <section class="contact-us section">
     <div class="container">
       <!-- Start Feautes -->
