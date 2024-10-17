@@ -148,7 +148,7 @@
                   </div>
                   <!--/ End Video Animation -->
                   <a onclick="document.querySelector('.popup_backdrop').style.display='flex'"
-                    href="https://www.youtube.com/watch?v=GSTHsbgbEaU" class="vzideo vzideo-pzopup mzfp-ifzrame"><i
+                    href="https://www.youtube.com/watch?v=GSTHsbgbEaU" class="video video-popup mzfp-ifzrame"><i
                       class="fa fa-play"></i></a>
                 </div>
               </div>
