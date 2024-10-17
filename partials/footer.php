@@ -74,14 +74,13 @@
 					<div class="single-footer f-link">
 						<h2 class="tw-text-lg tw-text-white tw-font-semibold">Our Products</h2>
 						<ul class="tw-flex tw-flex-col tw-mt-6 tw-gap-y-2">
-							<?php foreach ($products as $product): ?>
-								<li><a class="tw-text-white hover:tw-text-gray-400"
-										href="product-details.php?title=<?php echo $product['name']; ?>&price=<?php echo $product['price']; ?>&img=<?php echo $product['img']; ?>&category=<?php echo $product['category']; ?>&description=<?php echo $product['description']; ?>">
+							<cms:pages masterpage="index.php">
+								<li><a class="tw-text-white hover:tw-text-gray-400" href="<cms:show k_page_link />">
 										<i class="fa fa-caret-right"></i>
-										<?php echo $product['name']; ?>
+										<cms:show k_page_title />
 									</a>
 								</li>
-							<?php endforeach; ?>
+							</cms:pages>
 						</ul>
 					</div>
 				</div>

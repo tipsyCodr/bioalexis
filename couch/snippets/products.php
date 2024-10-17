@@ -6,8 +6,7 @@
             <cms:pages masterpage='products.php' paginate='1' limit='3'>
                 <div class="col-md-6">
 
-                    <a href="img/products/plain/<?php echo $product['img']; ?>" data-toggle="lightbox"
-                        data-gallery="product-gallery">
+                    <a href="<cms:show gg_image/>" data-toggle="lightbox" data-gallery="product-gallery">
                         <img src="<cms:show gg_image/>" alt="<cms:show k_page_title />" class="img-fluid">
                     </a>
                 </div>
