@@ -74,7 +74,7 @@
 					<div class="single-footer f-link">
 						<h2 class="tw-text-lg tw-text-white tw-font-semibold">Our Products</h2>
 						<ul class="tw-flex tw-flex-col tw-mt-6 tw-gap-y-2">
-							<cms:pages masterpage="index.php">
+							<cms:pages masterpage="index.php" start=1 limit=7>
 								<li><a class="tw-text-white hover:tw-text-gray-400" href="<cms:show k_page_link />">
 										<i class="fa fa-caret-right"></i>
 										<cms:show k_page_title />
