@@ -82,8 +82,6 @@
                             <img class="tw-w-full tw-h-[200px] tw-object-contain" src="<cms:show image />"
                                 alt="<cms:show caption />" />
                         </a>
-
-
                     </div>
 
                 </cms:show_repeatable>
