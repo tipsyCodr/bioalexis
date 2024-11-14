@@ -325,7 +325,7 @@ require_once('couch/cms.php'); ?>
 											</cms:pages>
 											<div style=" flex-shrink: 0;border-radius: 8px;padding-left: 20px; padding-right: 20px; padding-bottom: 10px;box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"
 												onclick="location.href='testimonials.php'"
-												class="tw-px-4 tw-flex tw-items-center tw-justify-center tw-bg-gray-400 testimonial-item tw-shadow tw-rounded tw-mb-4 ">
+												class="tw-px-4 tw-cursor-pointer tw-flex tw-items-center tw-justify-center tw-bg-gray-400 testimonial-item tw-shadow tw-rounded tw-mb-4 ">
 												<a href="testimonials.php" class=" tw-font-bold tw-text-white">
 													View More
 												</a>
