@@ -81,8 +81,8 @@ require_once('couch/cms.php'); ?>
 		<div onclick="document.querySelector('.popup_backdrop').style.display='none'"
 			class="popup_backdrop tw-z-[1000] tw-flex tw-justify-center tw-items-center tw-bg-black tw-fixed  tw-w-full tw-h-full tw-bg-opacity-50 tw-backdrop-blur-md "
 			style="top:0;">
-			<div class="popup tw-p-2  tw-bg-white tw-w-fit tw-h-fit">
-				<div class="head flex flex-row tw-justify-between tw-items-center gap-5">
+			<div class="popup tw-p-2 tw-bg-white tw-w-fit tw-h-fit">
+				<div class="flex flex-row gap-5 head tw-justify-between tw-items-center">
 					<h2 class="tw-font-bold tw-text-black">News</h2>
 					<button class="close"
 						onclick="document.querySelector('.popup_backdrop').style.display='none'">&times;</button>
@@ -115,7 +115,7 @@ require_once('couch/cms.php'); ?>
 
 			<div class="tw-mx-2 sm:tw-ml-[4rem]">
 				<div class="row">
-					<div class="col-12 col-sm-6 col-md-3 col-lg-3 my-2">
+					<div class="my-2 col-12 col-sm-6 col-md-3 col-lg-3">
 						<a href="products.php?category=Health">
 							<div class="health-care tw-bg-cover tw-bg-no-repeat tw-bg-center tw-h-[180px]"
 								style="border-radius: 10px; overflow: hidden;">
@@ -124,7 +124,7 @@ require_once('couch/cms.php'); ?>
 							</div>
 						</a>
 					</div>
-					<div class="col-12 col-sm-6 col-md-3 col-lg-3 my-2">
+					<div class="my-2 col-12 col-sm-6 col-md-3 col-lg-3">
 						<a href="products.php?category=Personal">
 							<div class="personal-care tw-bg-contain tw-bg-no-repeat tw-bg-center tw-h-[180px]"
 								style="border-radius: 10px; overflow: hidden;">
@@ -133,7 +133,7 @@ require_once('couch/cms.php'); ?>
 							</div>
 						</a>
 					</div>
-					<div class="col-12 col-sm-6 col-md-3 col-lg-3 my-2">
+					<div class="my-2 col-12 col-sm-6 col-md-3 col-lg-3">
 						<a href="products.php?category=Agriculture">
 							<div class="agriculture-care tw-bg-cover tw-bg-no-repeat tw-bg-center tw-h-[180px]"
 								style="border-radius: 10px; overflow: hidden;">
@@ -142,7 +142,7 @@ require_once('couch/cms.php'); ?>
 							</div>
 						</a>
 					</div>
-					<div class="col-12 col-sm-6 col-md-3 col-lg-3 my-2">
+					<div class="my-2 col-12 col-sm-6 col-md-3 col-lg-3">
 						<a href="products.php?category=Lifestyle">
 							<div class="lifestyle-care tw-bg-cover tw-bg-no-repeat tw-bg-center tw-h-[180px]"
 								style="border-radius: 10px; overflow: hidden;">
@@ -170,9 +170,9 @@ require_once('couch/cms.php'); ?>
 			<div class="">
 				<div class=" wrapper">
 					<div class="head">
-						<h2 class="tw-font-bold tw-text-3xl text-center tw-py-5">Joining Products</h2>
+						<h2 class="text-center tw-font-bold tw-text-3xl tw-py-5">Joining Products</h2>
 					</div>
-					<div class="tw-flex tw-gap-10 flex-col tw-mx-auto tw-justify-center tw-items-center md:tw-flex-row">
+					<div class="flex-col tw-flex tw-gap-10 tw-mx-auto tw-justify-center tw-items-center md:tw-flex-row">
 						<div
 							class="item tw-flex tw-flex-col sm:tw-flex-row tw-flex-wrap tw-gap-3 tw-justify-center tw-items-center ">
 							<cms:pages masterpage='index.php' custom_field="joining=1"
@@ -184,7 +184,7 @@ require_once('couch/cms.php'); ?>
 											style='height: 200px;' src="<cms:show gg_image />" height="200" alt="">
 									</div>
 									<div class="text tw-text-center">
-										<p class="tw-font-semibold  tw-text-black tw-text-md tw-text-center">
+										<p class="tw-font-semibold tw-text-black tw-text-md tw-text-center">
 											<cms:show k_page_title />
 										</p>
 
@@ -258,7 +258,7 @@ require_once('couch/cms.php'); ?>
 			<div class="">
 				<div class=" tw-mx-7">
 					<div class="head tw-hidden">
-						<h2 class="tw-font-bold tw-text-3xl text-center tw-py-5">Products Testimonies</h2>
+						<h2 class="text-center tw-font-bold tw-text-3xl tw-py-5">Products Testimonies</h2>
 					</div>
 					<?php
 					$testimonials = array(
@@ -274,7 +274,7 @@ require_once('couch/cms.php'); ?>
 						foreach ($testimonials as $testimonial) {
 							?>
 							<div class="card">
-								<div class="card-body text-center">
+								<div class="text-center card-body">
 									<img src="img/author2.jpg"
 										class="tw-h-[50px] tw-w-[50px] tw-rounded-full tw-mr-3 tw-mb-3 tw-inline-block"
 										alt="profile image">
@@ -298,7 +298,7 @@ require_once('couch/cms.php'); ?>
 
 					<!-- Video Testimony section  -->
 					<section class="">
-						<h2 class="tw-font-bold tw-text-3xl text-center tw-py-5">Videos Testimonies</h2>
+						<h2 class="text-center tw-font-bold tw-text-3xl tw-py-5">Videos Testimonies</h2>
 
 						<div class="tw-mx-7">
 							<div class="row">
@@ -308,7 +308,7 @@ require_once('couch/cms.php'); ?>
 											<cms:pages masterpage='testimonials.php' folder="videos_testimonials"
 												paginate='1' limit='4'>
 												<div style=" flex-shrink: 0;border-radius: 8px;padding-left: 20px; padding-right: 20px; padding-bottom: 10px;box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"
-													class="tw-px-4  tw-bg-gray-400 testimonial-item tw-shadow  tw-rounded tw-mb-4 ">
+													class="tw-px-4 tw-bg-gray-400 testimonial-item tw-shadow tw-rounded tw-mb-4 ">
 
 													<h3 class="tw-text-lg tw-font-semibold tw-mt-2">
 													</h3>
@@ -324,7 +324,7 @@ require_once('couch/cms.php'); ?>
 												</div>
 											</cms:pages>
 											<div style=" flex-shrink: 0;border-radius: 8px;padding-left: 20px; padding-right: 20px; padding-bottom: 10px;box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"
-												class="tw-px-4  tw-bg-gray-400 testimonial-item tw-shadow  tw-rounded tw-mb-4 ">
+												class="tw-px-4 tw-items-center tw-justify-center tw-bg-gray-400 testimonial-item tw-shadow tw-rounded tw-mb-4 ">
 												<a href="videos_testimonials.php"
 													class="tw-block tw-text-lg tw-font-semibold tw-text-center tw-py-2 tw-px-4 tw-rounded tw-bg-primary tw-text-white hover:tw-bg-blue-700">
 													View More
@@ -346,7 +346,7 @@ require_once('couch/cms.php'); ?>
 
 		<!-- Achievers section  -->
 		<section class="">
-			<h2 class="tw-font-bold tw-text-3xl text-center tw-py-5">Achievers</h2>
+			<h2 class="text-center tw-font-bold tw-text-3xl tw-py-5">Achievers</h2>
 			<div class="tw-mx-7">
 				<div class="row">
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -363,7 +363,7 @@ require_once('couch/cms.php'); ?>
 														<img src="<cms:show achievers_image />"
 															class="tw-h-[200px] tw-w-full" alt="">
 														<h5
-															class="tw-px-4 card-title text-center tw-capitalize tw-py-4 tw-text-ellipsis tw-overflow-hidden">
+															class="text-center tw-px-4 card-title tw-capitalize tw-py-4 tw-text-ellipsis tw-overflow-hidden">
 															<b>
 																<cms:show k_page_title />
 															</b>
@@ -406,11 +406,11 @@ require_once('couch/cms.php'); ?>
 			</style>
 			<div class="">
 				<div class="head">
-					<h2 class="tw-font-bold tw-text-3xl text-center tw-py-5">Featured Products</h2>
+					<h2 class="text-center tw-font-bold tw-text-3xl tw-py-5">Featured Products</h2>
 
 				</div>
 				<div class="wrapper">
-					<div class="tw-flex tw-gap-10 flex-col tw-mx-auto tw-justify-center tw-items-center md:tw-flex-row">
+					<div class="flex-col tw-flex tw-gap-10 tw-mx-auto tw-justify-center tw-items-center md:tw-flex-row">
 						<div
 							class=" tw-flex tw-flex-col sm:tw-flex-row tw-flex-wrap tw-gap-3 tw-justify-center tw-items-center">
 							<cms:pages masterpage='index.php' custom_field="featured=1"
