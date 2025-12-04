@@ -278,7 +278,7 @@ function closeChat() {
 
 // WhatsApp Send Function
 function sendWhatsApp() {
-    const msg = document.getElementById('waMessage').value;
+    const msg = document.getElementById('chatMessage').value;
     const phone = "918827268754"; // YOUR WHATSAPP NUMBER
 
     const url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(msg);

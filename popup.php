@@ -2,6 +2,7 @@
 
 <cms:template title='Change Popup Image'>
     <cms:editable name='image' label='Image' type='image' show_preview='1' preview_height='200' />
+    <cms:editable name='enabled' label='Enabled' type='dropdown' opt_values='Yes|No' />
     <cms:editable name="gg_thumb" assoc_field="image" label="Image Thumbnail" desc="Thumbnail of image above"
         width='200' height='200' enforce_max='1' type="thumbnail" />
 </cms:template>
@@ -22,7 +23,7 @@
             <cms:show title />
         </h1>
         <img src="<cms:show image />" alt="<cms:show title />">
-
+        <h4> Popup Enabled: ( <cms:show enabled /> )</h4>
     </cms:pages>
 
     <?php require_once 'partials/scripts.php' ?>

@@ -55,30 +55,34 @@
     <?php breadcrumbs('Downloads', 'Downloads') ?>
     <div class="container">
         <h1 class="tw-font-bold tw-text-2xl tw-text-center tw-my-8">Download Section</h1>
-        <ul class="tw-list-disc tw-pl-4">
+       <div class="tw-grid tw-grid-cols-1 sm:tw-grid-cols-2 md:tw-grid-cols-3 lg:tw-grid-cols-3 tw-gap-4">
             <cms:pages masterpage="downloads.php">
-                <cms:show name />
                 <cms:show_repeatable 'files'>
-                    <li><a href="<cms:show file/>" target="_blank">
-                            <cms:if name>
-                                <cms:show name />
+                    <div class="tw-border tw-p-4 tw-text-center tw-rounded tw-shadow">
+                        <a href="<cms:show file />" target="_blank" class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+                            <i class="icofont-file-pdf" style="font-size: 40px;"></i>
+                            <span class="tw-text-sm tw-font-medium">
+                                <cms:if name>
+                                    <cms:show name />
                                 <cms:else />
-                                <cms:show k_file_name />
-                            </cms:if>
-                        </a></li>
+                                    <cms:show k_file_name />
+                                </cms:if>
+                            </span>
+                        </a>
+                    </div>
                 </cms:show_repeatable>
             </cms:pages>
-        </ul>
+        </div>
 
-        <div class="tw-my-6 tw-flex tw-flex-col sm:tw-flex-row tw-flex-wrap tw-gap-2">
+        <!-- <div class="tw-my-6 tw-flex tw-flex-col sm:tw-flex-row tw-flex-wrap tw-gap-2"> -->
 
             <?php
-            $files = glob('assets/*');
-            foreach ($files as $file) {
-                echo '<li class="tw-text-blue-500 tw-p-2 tw-text-nowrap tw-m-2 tw-rounded-xl tw-border tw-bg-gray-50 tw-underline"><a href="' . $file . '" target="_blank" class="tw-hover:tw-text-blue-700 tw-transition tw-duration-150">' . basename($file) . '</a></li>';
-            }
+            //$files = glob('assets/*');
+           // foreach ($files as $file) {
+           //     echo '<li class="tw-text-blue-500 tw-p-2 tw-text-nowrap tw-m-2 tw-rounded-xl tw-border tw-bg-gray-50 tw-underline"><a href="' . $file . '" target="_blank" class="tw-hover:tw-text-blue-700 tw-transition tw-duration-150">' . basename($file) . '</a></li>';
+           // }
             ?>
-        </div>
+        <!-- </div> -->
     </div>
     <?php require_once 'partials/scripts.php' ?>
     <?php require_once 'partials/footer.php' ?>

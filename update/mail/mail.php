@@ -9,8 +9,7 @@ $phone   = $_POST['phone'] ?? '';
 $subject = $_POST['subject'] ?? 'New Message';
 $message = $_POST['message'] ?? '';
 
-// $to = "info.bioalexis@gmail.com";
-$to = "developerpathideamultiskill.com";
+$to = "info.bioalexis@gmail.com";
 
 $full_message  = "Name: $name\n";
 $full_message .= "Email: $email\n";
